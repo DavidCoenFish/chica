@@ -1,0 +1,1320 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" style="height:100%;">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Test Generic Edit</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+	</head>
+
+	<body style="height:100%;">
+		<div id="root" style="height:100%;"/>
+
+
+		<script src="js/react.js"></script>
+		<script src="js/react-dom.js"></script>
+		<script src="js/react-dom.js"></script>
+
+		<script src="js/system.js"></script>
+		<script type="text/javascript">
+const gStaticsystem = {
+	"version": "dev 0.0.20170830.14",
+	"documenttypes": {
+		"test": {
+			"value": [
+				"test"
+			]
+		},
+		"child":{
+			"value": [
+				"child"
+			]
+		}
+	},
+	"keypath" : {
+		"0" : null,
+		"1" : null,
+		"2" : null,
+		"3" : null,
+		"4" : null
+	},
+	"child" : {
+		"name" : {
+			"type" : "string"
+		},
+		"id" : {
+			"type" : "string"
+		}
+	},
+	"test" : {
+		"bool" : {
+			"type" : "bool"
+		},
+		"boolarray" : {
+			"type" : "boolarray"
+		},
+		"int" : {
+			"type" : "int"
+		},
+		"intarray" : {
+			"type" : "intarray"
+		},
+		"float" : {
+			"type" : "float"
+		},
+		"floatarray" : {
+			"type" : "floatarray"
+		},
+		"string" : {
+			"type" : "string"
+		},
+		"stringarray" : {
+			"type" : "stringarray"
+		},
+		"key" : {
+			"type" : "key",
+			"keypath" : ["keypath"],
+			"defaultvaluekey" : "0"
+		},
+		"keyarray" : {
+			"type" : "keyarray",
+			"keypath" : ["keypath"],
+			"defaultvaluekey" : "0"
+		},
+		"document" : {
+			"type" : "document",
+			"documenttypearray" : ["child"]
+		},
+		"documentarray" : {
+			"type" : "documentarray",
+			"documenttypearray" : ["child"]
+		},
+		"iddocumentmap" : {
+			"type" : "iddocumentmap",
+			"documenttypearray" : ["child"]
+		},
+		"hashset" : {
+			"type" : "hashset"
+		},
+		"hashsetarray" : {
+			"type" : "hashsetarray"
+		}
+	}
+};
+		</script>
+
+		<script type="text/javascript">
+const gDocumentManager = c.DocumentManager.Factory(gStaticsystem, c.InstructionContext);
+const gDocumentData = gDocumentManager.NewDocumentData("test");
+//console.log(JSON.stringify(documentData));
+const gEditDocument = gDocumentManager.DocumentDataToDocument(gDocumentData);
+
+		</script>
+	
+		<script type="text/javascript">
+const e = React.createElement;
+
+const Menu = function(props) {
+	var childContents = props.data.map((item, index) => {
+		var subMenu = undefined;
+		var childProps = (true === props.toplevel) ? { className:"standard interact" } : { className:"wide interact"};
+		if ("data" in item){
+			subMenu = e(Menu, item);
+			if (true !== props.toplevel){
+				childProps["className"] += " expand";
+			}
+		}
+		if ("method" in item){
+			childProps["onClick"] = item.method;
+		}
+		return e("li", {key:index}, e("a", childProps, item.name ), subMenu);
+	});
+
+	var newProps = {};
+	if (true === props.toplevel){
+		newProps["className"] = "menu";
+		newProps["style"] = {display:"flex", "paddingLeft":props.left, "flexGrow":"0", "flexShrink":"0"};
+	}
+
+	return e("ul", newProps, childContents);
+}
+
+const gMenuData0 = {
+	data : [
+		{ 
+			name : "menu0", 
+			data : [
+				{ 
+					name: "sub menu 0"
+				},
+				{ 
+					name: "sub menu 1",
+					data : [
+						{ name: "sub sub menu 0" },
+						{ name: "sub sub menu 1" }
+					]
+				},
+				{ 
+					name: "render menu 2"
+				 }
+			]
+		},
+		{ name : "menu1" },
+		{ name : "menu2" }
+	],
+	toplevel : true,
+	left : "1em"
+};
+
+const Footer = function(){
+	const newProps = {
+		"style":{
+			"flexGrow":0,
+			"flexShrink":0,
+			"alignSelf":"center"
+		}
+	};
+	const newChildProps = {
+		"style":{
+			"fontSize":"0.7em"
+		}
+	};
+	return e("div", newProps,
+			e("p", newChildProps, gStaticsystem.version)
+	);
+}
+
+const FrameWrapper = function(props){
+	return e("div", {
+		"className":"framewrapper",
+		"style":props
+	}, e("div", {"className":"frame"}))
+}
+
+class GenericEditArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChangeIndex(event){
+		var index = parseInt(event.target.value);
+		this.props.onChangeIndex(index);
+	}
+	onChangeCount(event){
+		var count = parseInt(event.target.value);
+		this.props.onChangeCount(count);
+	}
+	render() {
+		var newPropsIndex = {
+				"className": "interact",
+				"type":"number",
+				"onChange" : this.onChangeIndex,
+				"value" : this.props.index,
+				"style": {
+					"width":"4em",
+					"height":"1.333em"
+				}};
+		if ((0 == this.props.count) || (true === this.props.locked)){
+			newPropsIndex["disabled"] = "disabled";
+		}		
+		var newPropsCount = {
+			"className": "interact",
+			"type":"number",
+			"onChange" : this.onChangeCount,
+			"value" : this.props.count,
+			"style": {
+				"width":"4em",
+				"height":"1.333em"
+			}
+		}
+		if (true === this.props.locked){
+			newPropsCount["disabled"] = "disabled";
+		}		
+		return e("div", null, 
+			e("p", null, this.props.name),
+			e("input", newPropsIndex),
+			e("span", null, " of "),
+			e("input", newPropsCount)
+		);
+	}
+}
+
+class GenericEditBool extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);		
+	}
+	onChange(event){
+		//console.log("GenericEditBool checked:" + event.target.checked + " type:" + (typeof event.target.checked));
+		this.props.SetValue(this.props.name, event.target.checked);
+	}
+	render() {
+		var value = this.props.GetValue(this.props.name);
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", {
+				"className": "interact",
+				"type":"checkbox",
+				"onChange" : this.onChange,
+				"checked" : value,
+				"style": {
+					"height":"1.333em"
+				}})
+		);
+	}
+}
+
+class GenericEditBoolArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChange(event){
+		var valueArray = this.props.GetValue(this.props.name);
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			valueArray[this.state.index] = event.target.checked;
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	onChangeIndex(in_index){
+		var valueArray = this.props.GetValue(this.props.name);
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.GetValue(this.props.name);
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	render() {
+		var valueArray = this.props.GetValue(this.props.name);
+		//console.log("GenericEditBoolArray valueArray:" + JSON.stringify(valueArray));
+		var value = false;
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = false; //wtf? 
+			}
+		}
+		var newProps = {
+			"className": "interact",
+			"type":"checkbox",
+			"onChange" : this.onChange,
+			"checked" : value,
+			"style": {
+				"height":"1.333em"
+			}
+		};
+		if (0 == count){
+			newProps["disabled"] = "disabled";
+		}
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", newProps),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"locked" : this.props.data.locked,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+}
+
+class GenericEditInt extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);		
+	}
+	onChange(event){
+		var newValue = Math.round(parseFloat(event.target.value));
+		this.props.SetValue(this.props.name, newValue);
+	}
+	render() {
+		var value = this.props.GetValue(this.props.name);
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", {
+				"className": "interact",
+				"type":"number",
+				"onChange" : this.onChange,
+				"value" : value,
+				"style": {
+					"width":"100%",
+					"height":"1.333em"
+				}})
+		);
+	}
+}
+
+class GenericEditIntArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChange(event){
+		var valueArray = this.props.GetValue(this.props.name);
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			var newValue = Math.round(parseFloat(event.target.value));
+			valueArray[this.state.index] = newValue;
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	onChangeIndex(in_index){
+		var valueArray = this.props.GetValue(this.props.name);
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.GetValue(this.props.name);
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	render() {
+		var valueArray = this.props.GetValue(this.props.name);
+		//console.log("GenericEditBoolArray valueArray:" + JSON.stringify(valueArray));
+		var value = 0;
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = 0; //wtf? 
+			}
+		}
+		var newProps = {
+			"className": "interact",
+			"type":"number",
+			"onChange" : this.onChange,
+			"value" : value,
+			"style": {
+				"width":"100%",
+				"height":"1.333em"
+			}
+		};
+		if (0 == count){
+			newProps["disabled"] = "disabled";
+		}
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", newProps),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"locked" : this.props.data.locked,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+}
+
+class GenericEditFloat extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);		
+	}
+	onChange(event){
+		var newValue = parseFloat(event.target.value);
+		this.props.SetValue(this.props.name, newValue);
+	}
+	render() {
+		var value = this.props.GetValue(this.props.name);
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", {
+				"className": "interact",
+				"rows":"1",
+				"type":"number",
+				"onChange" : this.onChange,
+				"value" : value,
+				"style": {
+					"width":"100%",
+					"height":"1.333em"
+				}})
+		);
+	}
+}
+
+class GenericEditFloatArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChange(event){
+		var valueArray = this.props.GetValue(this.props.name);
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			var newValue = parseFloat(event.target.value);
+			valueArray[this.state.index] = newValue;
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	onChangeIndex(in_index){
+		var valueArray = this.props.GetValue(this.props.name);
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.GetValue(this.props.name);
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	render() {
+		var valueArray = this.props.GetValue(this.props.name);
+		//console.log("GenericEditBoolArray valueArray:" + JSON.stringify(valueArray));
+		var value = 0;
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = 0; //wtf? 
+			}
+		}
+		var newProps = {
+			"className": "interact",
+			"type":"number",
+			"onChange" : this.onChange,
+			"value" : value,
+			"style": {
+				"width":"100%",
+				"height":"1.333em"
+			}
+		};
+		if (0 == count){
+			newProps["disabled"] = "disabled";
+		}
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", newProps),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"locked" : this.props.data.locked,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+}
+
+class GenericEditString extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);		
+	}
+	onChange(event){
+		this.props.SetValue(this.props.name, event.target.value);
+	}
+	render() {
+		var value = this.props.GetValue(this.props.name);
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", {
+				"className" : "interact",
+				"type":"text",
+				"style": {
+					"width":"100%",
+					"height":"1.333em",
+				},
+				"onChange" : this.onChange,
+				"value" : value
+			}));
+	}
+}
+
+class GenericEditStringArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChange(event){
+		var valueArray = this.props.GetValue(this.props.name);
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			var newValue = event.target.value;
+			valueArray[this.state.index] = newValue;
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	onChangeIndex(in_index){
+		var valueArray = this.props.GetValue(this.props.name);
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.GetValue(this.props.name);
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	render() {
+		var valueArray = this.props.GetValue(this.props.name);
+		//console.log("GenericEditBoolArray valueArray:" + JSON.stringify(valueArray));
+		var value = "";
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = ""; //wtf? 
+			}
+		}
+		var newProps = {
+			"className" : "interact",
+			"type":"text",
+			"style": {
+				"width":"100%",
+				"height":"1.333em",
+			},
+			"value" : value,
+			"onChange" : this.onChange,
+		};
+		if (0 == count){
+			newProps["disabled"] = "disabled";
+		}
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", newProps),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"locked" : this.props.data.locked,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+}
+
+class GenericEditKey extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);		
+	}
+	onChange(event){
+		this.props.SetValue(this.props.name, event.target.value);
+	}
+	render() {
+		var optionsData = this.props.data.keyoptions;
+		//console.log("optionsData:" + JSON.stringify(optionsData));
+		var arrayOptions = [];
+		for (var index = 0, total = optionsData.length; index < total; index++) {
+			var option = optionsData[index];
+			var newProps = { "value" : option, "key" : option};
+			arrayOptions.push(e("option", newProps, option));
+		}
+
+		var value = this.props.GetValue(this.props.name);
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("select", {
+				"className": "interact",
+				"value": value,
+				"onChange":this.onChange, 
+				"style": {
+					"width":"100%",
+					"height":"1.3333em"
+				}
+			},
+			arrayOptions
+			)
+		);
+	}
+}
+
+class GenericEditKeyArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChange(event){
+		var valueArray = this.props.GetValue(this.props.name);
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			var newValue = event.target.value;
+			valueArray[this.state.index] = newValue;
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	onChangeIndex(in_index){
+		var valueArray = this.props.GetValue(this.props.name);
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.GetValue(this.props.name);
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	render() {
+		var optionsData = this.props.data.keyoptions;
+		//console.log("optionsData:" + JSON.stringify(optionsData));
+		var arrayOptions = [];
+		for (var index = 0, total = optionsData.length; index < total; index++) {
+			var option = optionsData[index];
+			var newProps = { "value" : option, "key" : option};
+			arrayOptions.push(e("option", newProps, option));
+		}
+		
+		var valueArray = this.props.GetValue(this.props.name);
+		//console.log("GenericEditBoolArray valueArray:" + JSON.stringify(valueArray));
+		var value = optionsData[0];
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = optionsData[0]; //wtf? 
+			}
+		}
+		var newProps = {
+			"className" : "interact",
+			"type":"text",
+			"style": {
+				"width":"100%",
+				"height":"1.333em",
+			},
+			"value": value,
+			"onChange":this.onChange
+		};
+		if (0 == count){
+			newProps["disabled"] = "disabled";
+		}
+
+		var value = this.props.GetValue(this.props.name);
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("select", newProps, arrayOptions),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"locked" : this.props.data.locked,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+}
+
+/*
+	<li class="gedit">
+		<p>name of member</p>
+		<div class="container foreground" style="height:4em;overflow-y:scroll;border-style:groove;border-width: 1px;">
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">trash</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">foo</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">foo</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">foo</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">foo</span>
+			</div>
+		</div>
+	</li>
+*/
+
+class GenericEditDocumentAdd extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);
+	}
+	onClick(event){
+	}
+	render() {
+		return e("div", { "className" : "iconwrapper", "onClick" : this.onClick},
+				e("div", { "className" : "icon"}),
+				e("a", { "className" : "icontext interactive"}, "Add")
+			);
+	}
+}
+
+class GenericEditDocumentTrash extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);
+	}
+	onClick(event){
+	}
+	render() {
+		return e("div", { "className" : "iconwrapper", "onClick" : this.onClick},
+				e("div", { "className" : "icon"}),
+				e("a", { "className" : "icontext interactive"}, "Trash")
+			);
+	}
+}
+
+class GenericEditDocumentArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);		
+	}
+	onClick(event){
+	}
+	render() {
+		var arrayChildren = [];
+
+		arrayChildren.push(e(GenericEditDocumentAdd, {"key" : "__internalAdd"}));
+		arrayChildren.push(e(GenericEditDocumentTrash, {"key" : "__internalTrash"}));
+
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("ul", { "className" : "container foreground", "style" : { "height":"4em","overflowY":"scroll","borderStyle":"solid","borderWidth": "1px"}}, arrayChildren )
+			);
+	}
+}
+
+class GenericEditIDDocumentMap extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);		
+	}
+	onClick(event){
+	}
+	render() {
+		var arrayChildren = [];
+
+		arrayChildren.push(e(GenericEditDocumentAdd, {"key" : "__internalAdd"}));
+		arrayChildren.push(e(GenericEditDocumentTrash, {"key" : "__internalTrash"}));
+
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("ul", { "className" : "container foreground", "style" : { "height":"4em","overflowY":"scroll","borderStyle":"solid","borderWidth": "1px"}}, arrayChildren )
+			);
+	}
+}
+
+class GenericEditHashSet extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);		
+	}
+	onChange(event){
+		//this.props.SetValue(this.props.name, event.target.value);
+	}
+	render() {
+		var valueArray = this.props.GetValue(this.props.name);
+		var value = ""; //todo
+
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", {
+				"className" : "interact",
+				"type":"text",
+				"style": {
+					"width":"100%",
+					"height":"1.333em",
+				},
+				"onChange" : this.onChange,
+				"value" : value
+			}));
+	}
+}
+
+class GenericEditHashSetArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChange(event){
+		return;
+		var valueArray = this.props.GetValue(this.props.name);
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			var newValue = event.target.value;
+			valueArray[this.state.index] = newValue;
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	onChangeIndex(in_index){
+		var valueArray = this.props.GetValue(this.props.name);
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.GetValue(this.props.name);
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.SetValue(this.props.name, valueArray);
+		}
+	}
+	render() {
+		var valueArray = this.props.GetValue(this.props.name);
+		//console.log("GenericEditBoolArray valueArray:" + JSON.stringify(valueArray));
+		var value = "";
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = ""; //wtf? 
+			}
+		}
+		var newProps = {
+			"className" : "interact",
+			"type":"text",
+			"style": {
+				"width":"100%",
+				"height":"1.333em",
+			},
+			"value" : value,
+			"onChange" : this.onChange,
+		};
+		if (0 == count){
+			newProps["disabled"] = "disabled";
+		}
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("input", newProps),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"locked" : this.props.data.locked,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+}
+
+
+
+
+
+class GenericEditDocument extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);		
+	}
+	onClick(event){
+		var cursor = this.props.cursor;
+		cursor.push([this.props.name]);
+		this.props.SetCursor(cursor);
+	}
+	render() {
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, this.props.name),
+			e("div", { "className" : "iconwrapper"},
+				e("div", { "className" : "icon", "onClick" : this.onClick}),
+				e("div", { "className" : "icontext"}, this.props.name)
+			)
+		);
+	}
+}
+
+class GenericEditParent extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);		
+	}
+	onClick(event){
+		var cursor = this.props.cursor;
+		cursor.length -= 1;
+		this.props.SetCursor(cursor);
+	}
+	render() {
+		return e("li", { "className" : "gedit"}, 
+			e("p", null, "return to parent"),
+			e("div", { "className" : "iconwrapper", "onClick" : this.onClick},
+				e("div", { "className" : "icon"}),
+				e("a", { "className" : "icontext interactive"}, "..")
+			)
+		);
+	}
+}
+
+const GenericStaticValue = function(props){
+	return e("li", { "className" : "gedit"}, 
+		e("p", null, props.name),
+		e("p", null, props.value)
+	);
+}
+
+const GenericEdit = function(props){
+	var arrayPropertData = props.GetPropertyDataArray();
+	//console.log("arrayPropertData:" + JSON.stringify(arrayPropertData));
+
+	var childArray = [];
+
+	//if there is a cursor then we have a jump to parent
+	if (0 < props.cursor.length){
+		childArray.push(e(GenericEditParent, {"cursor" : props.cursor, "SetCursor" : props.SetCursor, "key" : "_parent"}));
+	}
+
+	arrayPropertData.map(function(item){
+		var editProp = {
+			"data" : item,
+			"name" : item.name, 
+			"key" : item.name,
+			"SetValue" : props.SetValue,
+			"GetValue" : props.GetValue,
+			"cursor" : props.cursor,
+			"SetCursor" : props.SetCursor
+		};
+
+		switch (item.type){
+			case "bool":
+				childArray.push(e(GenericEditBool, editProp));
+				break;
+			case "boolarray":
+				childArray.push(e(GenericEditBoolArray, editProp));
+				break;
+			case "int":
+				childArray.push(e(GenericEditInt, editProp));
+				break;
+			case "intarray":
+				childArray.push(e(GenericEditIntArray, editProp));
+				break;
+			case "float":
+				childArray.push(e(GenericEditFloat, editProp));
+				break;
+			case "floatarray":
+				childArray.push(e(GenericEditFloatArray, editProp));
+				break;
+			case "string":
+				childArray.push(e(GenericEditString, editProp));
+				break;
+			case "stringarray":
+				childArray.push(e(GenericEditStringArray, editProp));
+				break;
+			case "key":
+				childArray.push(e(GenericEditKey, editProp));
+				break;
+			case "keyarray":
+				childArray.push(e(GenericEditKeyArray, editProp));
+				break;
+			case "document":
+				childArray.push(e(GenericEditDocument, editProp));
+				break;
+			case "documentarray":
+				childArray.push(e(GenericEditDocumentArray, editProp));
+				break;			
+			case "iddocumentmap":
+				childArray.push(e(GenericEditIDDocumentMap, editProp));
+				break;			
+			case "hashset":
+				childArray.push(e(GenericEditHashSet, editProp));
+				break;			
+			case "hashsetarray":
+				childArray.push(e(GenericEditHashSetArray, editProp));
+				break;			
+			default:
+				childArray.push(e(GenericStaticValue, editProp));
+				break;
+		}
+	});
+
+	const newProps = {
+		"className" : "framewrapperparent",
+		"style" : {
+			"display":"flex",
+			"flexDirection":"row",
+			"justifyContent":"flex-start",
+			"flexWrap":"wrap",
+			"alignContent": "flex-start",
+			"padding":"0.25em 1em 0 1.5em"
+		}
+	};
+	return e("ul", newProps, childArray);
+}
+
+const GenericEditWrapper = function(props){
+	const newProps = {
+		"className" : "framewrapperparent",
+		"style" : {
+			"flexGrow":1,
+			"flexShrink":0
+		}
+	};
+	return e("div", newProps, 
+		e(FrameWrapper, {"top":"-0.75em","right":"0.5em","bottom":"0.0em","left":"0.5em"}), 
+		e(GenericEdit, props)
+	);
+}
+
+//change to class and have menudata as state?
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			menuData : gMenuData0,
+			cursor : [],
+			documentManager: gDocumentManager,
+			editDocument : gEditDocument
+		}
+		this.GetValue = this.GetValue.bind(this);
+		this.SetValue = this.SetValue.bind(this);
+		this.SetCursor = this.SetCursor.bind(this);
+		this.GetPropertyDataArray = this.GetPropertyDataArray.bind(this);
+		this.GetCurrentEditDocument = this.GetCurrentEditDocument.bind(this);
+	}
+	GetValue(in_name){
+		var currentDocumentEdit = this.GetCurrentEditDocument();
+		var value = currentDocumentEdit.GetValue(in_name);
+		return value;
+	}
+
+	SetValue(in_name, in_value){
+		var currentDocumentEdit = this.GetCurrentEditDocument();
+		currentDocumentEdit.SetValue(in_name, in_value);		
+		this.setState({editDocument: this.state.editDocument});
+	}
+
+	SetCursor(in_cursor){
+		//console.log("in_cursor:" + JSON.stringify(in_cursor));
+		this.setState({cursor: in_cursor});
+	}
+
+	GetPropertyDataArray(){
+		var currentDocumentEdit = this.GetCurrentEditDocument();
+		if (undefined == currentDocumentEdit){
+			return {};
+		}
+		var propertyNameArray = currentDocumentEdit.GetPropertyNameArray();
+		var type = currentDocumentEdit.GetType();
+		var result = [];
+		for (var index = 0, total = propertyNameArray.length; index < total; index++) {
+			var propertyName = propertyNameArray[index];
+			var propertyData = this.state.documentManager.GetDocumentPropertyData(type, propertyName);
+			propertyData["name"] = propertyName;
+			result.push(propertyData);
+		}
+
+		return result;
+	}
+
+	GetCurrentEditDocument(){
+		var currentDocumentEdit = this.state.editDocument;
+		var cursor = this.state.cursor;
+
+		//console.log("GetCurrentEditDocument cursor:" + JSON.stringify(cursor));
+
+		for (var index = 0, total = cursor.length; index < total; index++) {
+			var propertyNameArray = cursor[index];
+			var propertyName = propertyNameArray[0];
+			var type = currentDocumentEdit.GetType();
+			var propertyData = this.state.documentManager.GetDocumentPropertyData(type, propertyName);
+			//console.log(" propertyName:" + propertyName + " propertyData:" + JSON.stringify(propertyData));
+			var child = undefined;
+			switch (propertyData.type){
+				case "document":
+					child = currentDocumentEdit.GetValue(propertyName);
+					//console.log(" child:" + child + " type:" + child.GetType());
+					break;
+				case "documentarray":
+					var cusrorIndex = propertyNameArray[1];
+					var childArray = currentDocumentEdit.GetValue(propertyName);
+					if ((childArray != undefined) && (0 <= cusrorIndex) && (cursorIndex < childArray.length)){
+						child = childArray[cusrorIndex];
+					}
+					break;
+				case "iddocumentmap":
+					var cusrorKey = propertyNameArray[1];
+					var childObject = currentDocumentEdit.GetValue(propertyName);
+					if ((childObject != undefined) && (cusrorKey in childObject)){
+						child = childObject[cusrorKey];
+					}
+					break;
+				default:
+					break;
+			}
+			if (child !== undefined){
+				currentDocumentEdit = child;
+			} else {
+				break;
+			}
+		}
+
+		return currentDocumentEdit;
+	}
+
+	render() {
+
+		const currentDocument = this.GetCurrentEditDocument();
+		const documentData = gDocumentManager.DocumentToDocumentData(currentDocument);
+		//console.log("render documentData:" + JSON.stringify(documentData));
+
+		const newProps = {
+			"style":{
+				"display":"flex",
+				"flexDirection":"column",
+				"justifyContent":"space-between",
+				"alignItems":"stretch",
+				"height":"100%"
+			}
+		};
+		var newPropsEdit = {
+			"SetValue" : this.SetValue,
+			"GetValue" : this.GetValue,
+			"SetCursor" : this.SetCursor,
+			"GetPropertyDataArray" : this.GetPropertyDataArray,
+			cursor : this.state.cursor
+		};
+		return e("div", newProps,
+			e(Menu, this.state.menuData),
+			e(GenericEditWrapper, newPropsEdit),
+			e(Footer)
+		);
+	}
+}
+
+ReactDOM.render(
+	e(App), 
+	document.getElementById("root")
+);
+		</script>
+	</body>
+</html>

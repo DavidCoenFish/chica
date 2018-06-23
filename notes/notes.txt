@@ -1,0 +1,69 @@
+pillar 0: Drive to JSON
+pillar 1: Document Engine
+	a: document
+	b: action
+pillar 2: Server 
+	a: user, document manage
+	b: plugin (document edit, actions)
+pillar 3: client
+	a: edit document
+	b: render
+pillar 4: applications
+	a: legendary quest character sheet
+	b: LQ character instance
+	c: screen play edit
+
+
+user story:
+I want to edit a legendary quest character sheet in a webpage
+	"	"	"	 with persistant data stored online
+	"	"	"	 with changes syncronised between multiple users (like google sheets)
+
+todo:
+server:
+	account
+		create/ loggin/ session
+	document
+		create/ edit/ share
+	socket document update
+client:
+	login
+	edit document
+	socket document update
+action spec
+	character instance
+	dialog tree
+	combat
+	player visit shop
+	multi player adventure
+
+
+
+change on client to server
+client has version n, makse change, applies change locally as n + 1, sends change to server
+server gets change, if i has data as version n, then apply delta and change version to n + 1, reply edit success. 
+	todo. tell all people editing that version sessionX has applied delta to change from version n to something
+if server has other changes, //actually, we don't have a record of what has changed in each version, or do we, we could keep the delta in a cyclic array for each document.....
+	do merge, apply delta, in response to client, tell about merge and new n, expect client to have delta already arrive?
+	do conflict. do not apply the delta, server is authorative, response contains full document or status of merge conflict and client needs to refresh
+
+make delta (jsonA, jsonB)
+	add item at array (path array[], item (value, array, object))
+	remove item at array (path array[], count)
+	insert/set value
+
+
+does server/ client need to hold onto delta history
+
+
+server document
+owner [array user/guest id]
+parent [array document id]
+
+
+user
+owned documents [array document id]
+shared documents [array documents id]
+//root folder owned // or things with no parent go in root?
+//root folder shared
+

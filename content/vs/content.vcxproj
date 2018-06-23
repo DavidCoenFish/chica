@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="UnitTest|x64">
+			<Configuration>UnitTest</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<VCProjectVersion>15.0</VCProjectVersion>
+		<ProjectGuid>{9898d17b-1fff-4f0f-834a-84be915d32e5}</ProjectGuid>
+		<Keyword>MakeFileProj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<PlatformToolset>v141</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings" />
+	<ImportGroup Label="Shared" />
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">
+		<NMakeBuildCommandLine>cd.. &amp; unittest.bat</NMakeBuildCommandLine>
+		<NMakeOutput />
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+	</PropertyGroup>
+	<ItemDefinitionGroup />
+	<ImportGroup Label="ExtensionSettings" />
+	<ImportGroup Label="Shared" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">
+		<Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+	</ImportGroup>
+	<ItemGroup>
+		<None Include="..\dev\public\icon\legendaryquest.png" />
+		<None Include="..\dev\public\icon\system.png" />
+		<None Include="..\.\install.bat" />
+		<None Include="..\working\test2\css\reset.css" />
+		<None Include="..\working\test2\css\style00.css" />
+		<None Include="..\working\icons.xcf" />
+		<None Include="..\dev\public\js\legendaryquest.js" />
+		<None Include="..\dev\public\js\legendaryquest.json" />
+		<None Include="..\dev\public\js\legendaryquest.map" />
+		<None Include="..\dev\public\js\system.js" />
+		<None Include="..\dev\public\js\system.json" />
+		<None Include="..\dev\public\js\system.map" />
+		<None Include="..\working\test\graphics\icons_folder.png" />
+		<None Include="..\working\test\graphics\icons_lqre.png" />
+		<None Include="..\working\test\graphics\icons_lqre_charactersheet.png" />
+		<None Include="..\working\test\graphics\icons_movie.png" />
+		<None Include="..\working\test\css\blank.css" />
+		<None Include="..\working\test\css\ng-table.min.css" />
+		<None Include="..\working\test\css\reset.css" />
+		<None Include="..\working\test\css\style.css" />
+		<None Include="..\working\test2\js\angular.min.js" />
+		<None Include="..\working\test2\js\login.js" />
+		<None Include="..\working\test2\00dialog.html" />
+		<None Include="..\working\test2\01index.html" />
+		<None Include="..\working\test2\02login.html" />
+		<None Include="..\working\test2\03drive.html" />
+		<None Include="..\working\test2\04genericedit.html" />
+		<None Include="..\working\test2\05characteredit.html" />
+		<None Include="..\working\test2\notes.txt" />
+		<None Include="..\working\test2\style.html" />
+		<None Include="..\working\test2\style.xcf" />
+		<None Include="..\working\test\js\angular.min.js" />
+		<None Include="..\working\test\js\index.js" />
+		<None Include="..\working\test\js\login.js" />
+		<None Include="..\working\test\js\lqre.js" />
+		<None Include="..\working\test\js\ng-table.min.js" />
+		<None Include="..\templates\index.html" />
+		<None Include="..\templates\login.html" />
+		<None Include="..\templates\lqre.html" />
+		<None Include="..\working\test\flex.html" />
+		<None Include="..\working\test\index.html" />
+		<None Include="..\working\test\login.html" />
+		<None Include="..\working\test\lqre.html" />
+		<None Include="..\working\test\style.html" />
+		<None Include="..\working\test\table.html" />
+		<None Include="..\working\test\template.html" />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets" />
+</Project>

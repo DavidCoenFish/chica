@@ -1,0 +1,110 @@
+background, grey, faint blue (sky)
+call to action -gold (invert blue)
+button -blue
+destructive button -red
+
+hover - darker
+selected - more saturated
+
+post http://localhost/accounts  - make a new account
+get http://localhost/accounts - list of accounts
+
+get post http://localhost/accounts/ID - get public account details
+get post http://localhost/accounts/ID&session=XXXXX - get account details for permission level
+
+post http://localhost/accounts/ID/login - attempt to login, return session key
+
+for (var index = 0, total = myArray.length; index < total; index++) {
+for (var property in dataMap) {
+	if (dataMap.hasOwnProperty(property)) {
+
+
+//is distinction of shared files/ ownered files on client
+
+//http://www.restapitutorial.com/httpstatuscodes.html
+200 ok
+201 created
+204 no content
+304 not modified
+400 bad request
+401 unauthorised
+403 forbidden
+404 not found
+409 conflict
+500 internal server error
+
+//game only allows one owner?
+
+http://chaijs.com/api/assert/
+
+
+
+1>LegendaryQuestCharacter body:{"id":"5976a1f8dea5851a80cb16e2","name":"character00","data":{"type":"character","name":"fred","experence_points":100,"race":"ork","gender":"male","handedness":"righthanded"},"write_lock":0}
+1>LegendaryQuestCharacter level:4
+1>LegendaryQuestCharacter racialmax_ps:7
+1>LegendaryQuestCharacter racialmax_st:8
+1>LegendaryQuestCharacter racialmax_ag:2
+1>LegendaryQuestCharacter racialmax_md:-1
+1>LegendaryQuestCharacter racialmax_pc:2
+1>LegendaryQuestCharacter racialmax_wp:-1
+1>LegendaryQuestCharacter racialmax_fa:4
+
+http://stackoverflow.com/questions/12168624/pagination-response-payload-from-a-restful-api
+
+In the human-readable scenario, when navigating to /products?page=5&per_page=20&include=metadata, the response could be:
+
+{
+  "_metadata": 
+  {
+      "page": 5,
+      "per_page": 20,
+      "page_count": 20,
+      "total_count": 521,
+      "Links": [
+        {"self": "/products?page=5&per_page=20"},
+        {"first": "/products?page=0&per_page=20"},
+        {"previous": "/products?page=4&per_page=20"},
+        {"next": "/products?page=6&per_page=20"},
+        {"last": "/products?page=26&per_page=20"},
+      ]
+  },
+  "records": [
+    {
+      "id": 1,
+      "name": "Widget #1",
+      "uri": "/products/1"
+    },
+    {
+      "id": 2,
+      "name": "Widget #2",
+      "uri": "/products/2"
+    },
+    {
+      "id": 3,
+      "name": "Widget #3",
+      "uri": "/products/3"
+    }
+  ]
+}
+For machine-readable metadata, I would add Link headers to the response:
+
+Link: </products?page=5&perPage=20>;rel=self,</products?page=0&perPage=20>;rel=first,</products?page=4&perPage=20>;rel=previous,</products?page=6&perPage=20>;rel=next,</products?page=26&perPage=20>;rel=last
+(the Link header value should be urlencoded)
+
+...and possibly a custom total-count response header, if you so choose:
+
+total-count: 521
+
+
+
+plugin
+	: applicationName
+	: icon
+	?: endpoints
+	: static files (icon, edit page)
+	: application allows additional ownership? allows removal of self as owner (root folder case)
+
+application: folder
+	: 
+
+

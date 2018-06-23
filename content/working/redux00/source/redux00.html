@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" style="height:100%;">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>redux 00</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+	</head>
+
+	<body style="height:100%;">
+		<div id="root" style="height:100%;"/>
+
+		<script src="js/react.js"></script>
+		<script src="js/react-dom.js"></script>
+		<script src="js/redux.js"></script>
+		<script src="js/react-redux.js"></script>
+	
+		<script type="text/javascript">
+
+const ReducerTodo = function(state, action){
+	if (state === undefined){
+		state = [];
+	}
+	switch (action.type) {
+	case "ADD_TODO":
+		return state.concat([{ "id" : action.id, "text" : action.text, "completed" : false }]);
+	case "TOGGLE_TODO":
+		for (var index = 0; index < state.length; ++index) {
+			var item = state[index];
+			if (item.id === action.id){
+				item.completed = (true != item.completed);
+			}
+		}
+		return state;
+	}
+	return state;
+}
+
+const e = React.createElement;
+const gReduxStore = window.Redux.createStore(ReducerTodo);
+
+gReduxStore.subscribe(function(){console.log(JSON.stringify(gReduxStore.getState())); });
+
+const AddTodo = window.ReactRedux.connect()(function(props){
+	return(
+		e("div", null, 
+			e("form", { "onSubmit" : function(event){
+					event.preventDefault();
+					props.dispatch({"type" : "ADD_TODO", "id" : "0000", "text" : input.value, "completed" : true})
+					input.value = "";
+				}},
+				e("input", { "ref" : function(node){ input = node }}),
+				e("button", { "className" : "interact", "type" : "submit"}, "Add Todo")
+			)
+		)
+	);
+})
+
+const App = function(in_props){
+	return e("div", {}, e(AddTodo));	
+}
+
+ReactDOM.render(
+	e(window.ReactRedux.Provider, {"store" : gReduxStore}, e(App)), 
+	//e(App),
+	document.getElementById("root")
+);
+
+gReduxStore.dispatch({"type" : "ADD_TODO", "id" : "0000", "text" : "hellow world", "completed" : false});
+//gReduxStore.dispatch({"type" : "ADD_TODO", "id" : "0001", "text" : "how you doing", "completed" : true});
+//gReduxStore.dispatch({"type" : "TOGGLE_TODO", "id" : "0001"});
+//gReduxStore.dispatch({"type" : "TOGGLE_TODO", "id" : "0000"});
+
+		</script>
+	</body>
+</html>

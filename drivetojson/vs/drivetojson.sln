@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drivetojson", "drivetojson.vcxproj", "{E81C0D18-492A-4467-9570-153F8310D68F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		LegendaryQuestDev.en|x64 = LegendaryQuestDev.en|x64
+		LegendaryQuestDev|x64 = LegendaryQuestDev|x64
+		SystemDev|x64 = SystemDev|x64
+		Test|x64 = Test|x64
+		UnitTest|x64 = UnitTest|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E81C0D18-492A-4467-9570-153F8310D68F}.LegendaryQuestDev.en|x64.ActiveCfg = LegendaryQuestDev.en|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.LegendaryQuestDev.en|x64.Build.0 = LegendaryQuestDev.en|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.LegendaryQuestDev|x64.ActiveCfg = LegendaryQuestDev|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.LegendaryQuestDev|x64.Build.0 = LegendaryQuestDev|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.SystemDev|x64.ActiveCfg = SystemDev|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.SystemDev|x64.Build.0 = SystemDev|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.Test|x64.ActiveCfg = Test|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.Test|x64.Build.0 = Test|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.UnitTest|x64.ActiveCfg = UnitTest|x64
+		{E81C0D18-492A-4467-9570-153F8310D68F}.UnitTest|x64.Build.0 = UnitTest|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

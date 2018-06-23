@@ -1,0 +1,11 @@
+.container{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-content: flex-start;
+}
+
+.table>*:nth-child(2n){
+	background: #d0d0d0;
+}

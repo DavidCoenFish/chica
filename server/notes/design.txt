@@ -1,0 +1,75 @@
+
+
+0. spreadsheet to static data
+1. document manager, client/server mirrored code
+2. server core
+3. server applications
+4. client
+
+
+0. spreadsheet to static data
+complete, given an google drive folder name and public account access, convert spreadsheets with toc tables to json
+
+1. document manager, client/server mirrored code
+bool, string, int, float, string(static data object key), string(guid), string(mongodb objectid), int(date) / [single, array]/ array of things to clear if this is set
+clear rests value to default
+calculate is a series of commands which operate with a stack
+//other than when we need to read the data to constuct dependacies (get/set node) try to avoid using data and just use push const
+	push const [data: bool, string, int, float, string / array]
+	get node [data: node key string]
+	set node [data: node key string] // allow energy (set time)
+	get document value [pop document, pop: node key string] // we point pop the document? we can only reference a document by node key, node key array index, id and node key, id and index and node key
+	set document value [pop document, pop: node key string]
+	get document by id [pop id, data: node key string that has the array of documents]
+	push static data table row [pop: key, pop: table name string array]
+	dup [data: stack index]
+	remove [data: stack index]
+	stack to array
+	array to stack
+	stack to object
+	object to stack
+	if [pop: condition, pop:a, pop:b]
+	value from array
+	value from object [pop key, pop object][push result]
+	concat [data:join inner string]
+	and
+	or
+	fn [
+
+for recusive documents, document needs reference to parent, so if it has a change, parent can be marked dirty
+
+//move to context
+	add [pop:lhs,pop:rhs]
+	addAll
+	if undefined
+	if <
+	if <=
+	if ==
+
+
+dag node can be value or calculate
+dag node collection is a map of dagNodeValue, dagNodeCalculate, provides methods for getValue, setValue, getDirtySet
+documentManager
+	documentDataToDocument
+	documentToDocumentData
+	createDocumentDataPatch //client
+	validateDocumentDataPatch //server
+	getMetadataForType //client
+
+documentValueMetadata
+	name, 
+	type [bool, bool array, int, int array, float, float array, string, string array, id, id array, serverObjectId, serverObjectId array, key, key array], 
+	//just use base64 of nchar[12?] for id
+
+
+
+2. server core
+	manage account, guest. basic doucument routing, load server applications
+
+3. server applications
+	defined document types and routes. 
+
+4. client
+	login, edit document, invoke actions
+
+

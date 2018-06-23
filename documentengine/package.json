@@ -1,0 +1,22 @@
+{
+  "name": "gameengine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "unittest.js",
+  "scripts": {
+    "unittest": "node unittest.js",
+	"build_common_package": "node build.js common prod ./output/",
+	"build_system_package": "node build.js system prod ./output/",
+	"build_legendaryquest_package": "node build.js legendaryquest prod ./output/"
+  },
+  "keywords": [],
+  "author": "David Coen",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "google-closure-compiler": "^20171023.0.1",
+    "google-closure-compiler-js": "^20170910.0.1",
+    "q": "^1.5.1",
+    "vm": "latest"
+  }
+}

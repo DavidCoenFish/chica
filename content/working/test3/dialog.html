@@ -1,0 +1,310 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body style="padding:0.5em;">
+
+		<p style="background-color: #ffffff;background-color:transparent;">BUTTONS</p>
+		<div style="display:flex">
+			<a class="button standard interact">interact</a>
+			<a class="button standard call">call</a>
+			<a class="button standard destruct">destruct</a>
+			<a class="button standard disable">disable</a>
+		</div>
+
+		<p style="background-color:#ffffff;background-color:transparent;">MENU</p>
+		<ul class="menu" style="display:flex">
+			<li>
+				<a class="standard interact">menu0</a>
+				<ul>
+					<li>
+						<a class="wide interact">sub menu0</a>
+					</li>
+					<li>
+						<a class="wide interact expand">sub menu1</a>
+						<ul>
+							<li>
+								<a class="wide interact">sub sub menu0</a>
+							</li>
+							<li>
+								<a class="wide interact">sub sub menu1</a>
+							</li>
+							<li>
+								<a class="wide interact">sub sub menu2</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="wide interact expand">sub menu2</a>
+						<ul>
+							<li>
+								<a class="wide interact">sub sub menu0</a>
+							</li>
+							<li>
+								<a class="wide interact">sub sub menu1</a>
+							</li>
+							<li>
+								<a class="wide interact">sub sub menu2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a class="standard interact">menu1</a>
+				<ul>
+					<li>
+						<a class="wide interact">sub menu0</a>
+					</li>
+					<li>
+						<a class="wide interact">sub menu1</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a class="standard interact">menu2</a>
+				<ul>
+					<li>
+						<a class="wide interact">sub menu0</a>
+					</li>
+					<li>
+						<a class="wide interact">sub menu1</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<p style="background-color:#ffffff;background-color:transparent;">TOOLTIP</p>
+		<p>this is some text with a 
+			<span class="tooltip">
+				<span class="tooltext">tooltip</span>
+				<span class="toolpop">this is the popup text of the tooltip</span>
+			</span>
+		</p>
+		<p>tooltips can also be 
+			<span class="tooltip">
+				<span class="tooltext">recursive</span>
+				<span class="toolpop">to as many level of 
+					<span class="tooltip">
+						<span class="tooltext">recusion</span>
+						<span class="toolpop">to as many level of 
+							<span class="tooltip">
+								<span class="tooltext">recusion</span>
+								<span class="toolpop">to as many level of recusion as desired</span>
+							</span>
+						as desired
+						</span>
+					</span>
+					as desired
+				</span>
+			</span>
+		</p>
+
+		<p style="background-color:#ffffff;background-color:transparent;">ICON CONTAINER</p>
+		<div class="container">
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">a realy long name to see overrunrunrunrun</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+			<div class="iconwrapper">
+				<div class="icon"></div>
+				<span class="icontext">add</span>
+			</div>
+		</div>
+
+		<p style="background-color:#ffffff;background-color:transparent;">GENERIC EDIT</p>
+		<div class="container">
+			<div class="gedit">
+				<p>name of member</p>
+				<textarea class="interact" rows="1" placeholder="generic text edit" style="width:100%;resize:none;vertical-align:top;padding:0 0.25em 0 0.25em;"></textarea>
+				<!-- <input class="interact" type="text" style="width:100%;height:1.333em;" value="generic text edit"></input> -->
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<textarea class="interact" rows="1" placeholder="generic text edit array" style="width:100%;height:1.333em;margin-bottom:0.25em;"></textarea>
+				<!-- <input class="interact" type="text" style="width:100%;height:1.333em;" value="generic text edit array"></input> -->
+				<div>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+					<span > of </span>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+				</div>
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<input class="interact" type="number" style="width:100%;height:1.333em;" value="0"></input>
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<input class="interact" type="number" style="width:100%;height:1.333em;" value="0"></input>
+				<div>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+					<span > of </span>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+				</div>
+			</div>
+
+
+
+			<div class="gedit">
+				<p>name of member</p>
+				<select class="interact" style="width:100%;height:1.3333em;">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<select class="interact" style="width:100%;height:1.333em;">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+				<div>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+					<span > of </span>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+				</div>
+			</div>
+
+
+			<div class="gedit">
+				<p>name of member</p>
+				<input class="interact" type="checkbox" style="height:1.333em;"></input>
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<input class="interact" type="checkbox" style="height:1.333em;"></input>
+				<div>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+					<span > of </span>
+					<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+				</div>
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<div class="container foreground" style="height:4em;overflow-y:scroll;border-style:groove;border-width: 1px;">
+					<div class="iconwrapper">
+						<div class="icon"></div>
+						<span class="icontext">add</span>
+					</div>
+					<div class="iconwrapper">
+						<div class="icon"></div>
+						<span class="icontext">trash</span>
+					</div>
+					<div class="iconwrapper">
+						<div class="icon"></div>
+						<span class="icontext">foo</span>
+					</div>
+					<div class="iconwrapper">
+						<div class="icon"></div>
+						<span class="icontext">foo</span>
+					</div>
+					<div class="iconwrapper">
+						<div class="icon"></div>
+						<span class="icontext">foo</span>
+					</div>
+					<div class="iconwrapper">
+						<div class="icon"></div>
+						<span class="icontext">foo</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="gedit">
+				<p>name of member</p>
+				<div class="iconwrapper">
+					<div class="icon"></div>
+					<span class="icontext">foo</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="dialog_root" class="wash" style="display:flex;justify-content:center;">
+			<div style="width:30em;align-self:center;">
+				<div style="display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:space-between;background-color:transparent;">
+
+					<div class="container" style="margin-right:0.5em;margin-left:0.5em;">
+						<a class="button standard disable">option 0</a>
+						<a class="button standard interact">option 1</a>
+						<a class="button standard interact">option 2</a>
+					</div>
+
+					<div class="framewrapperparent" style="padding:1em;">
+						<div class="framewrapper">
+							<div class="foreground frame"></div>
+						</div>
+						<h1 style="text-align:center;">Heading</h1>
+						<p class="text" style="text-align: center;">Text hhhh hhhhhhhhhh hhhhhh hhhh hh hhhhhh hh h hhhh hh hhh hhh h hhhhh hh h hhhh hh hhhhhh hh hhhhh hh h hhhhh h h</p>
+					</div>
+
+					<div class="container" style="justify-content:flex-end;margin-right:1.0em;margin-left:0.5em;">
+						<a class="button standard interact">interact</a>
+						<a class="button standard call">call</a>
+						<a class="button standard destruct">destruct</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,62 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "unittest",
+			"program": "${workspaceFolder}\\unittest.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "build_common",
+			"program": "${workspaceFolder}\\build.js",
+			"args": [
+				"common",
+				"prod"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "build_system",
+			"program": "${workspaceFolder}\\build.js",
+			"args": [
+				"system",
+				"prod"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "build_legendaryquest",
+			"program": "${workspaceFolder}\\build.js",
+			"args": [
+				"legendaryquest",
+				"prod"
+			]
+		}
+	]
+}
+
+/*
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "build_common",
+			"program": "${workspaceFolder}\\build.js",
+			"args": [
+				"common",
+				"prod",
+				"${workspaceFolder}\\output\\"
+			]
+		},
+
+			"preLaunchTask": "build common",
+				"${workspaceFolder}/../client/source/static/js/",
+
+*/

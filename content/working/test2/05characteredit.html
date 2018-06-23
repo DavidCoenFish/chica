@@ -1,0 +1,519 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" style="height:100%;">
+	<head>
+		<link rel="stylesheet" href="css/reset.css" />
+		<title>05characteredit</title>
+		<script>
+		</script>
+		<style>
+			/*
+			top right bottom left
+			*/
+			.backwrapper {
+			position: absolute;
+			width: 100%;
+			z-index: -1;
+			padding: 0.6em;
+			top:-1.5em;
+			bottom:-0.75em;
+			}
+			.back {
+			position:relative;
+			background: #ff00ff;
+			width: 100%;
+			height: 100%;
+			box-shadow: 2px 2px 4px #080820;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 2px;
+			}
+
+
+			.hidden {
+			visibility:hidden;
+			}
+			.removed {
+			display:none;
+			}
+
+			button {
+			pointer-events: auto;
+			position: relative;
+			overflow: hidden;
+			}
+			.big {
+			padding: 0 0.25em 0 0.25em;
+			margin: 0.1em 0.25em 0.1em 0.25em;
+			min-width: 5em;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 2px;
+			}
+			.topright {
+			border-style: none none solid solid;
+			border-width: 1px;
+			}
+			.bottomright {
+			border-style: solid none none solid;
+			border-width: 1px;
+			}
+			/*
+			*/
+			button:focus {
+			outline:0;
+			}
+			button:before {
+			position: absolute;
+			content: "";
+			width: 200%;
+			height: 200%;
+			background-image: linear-gradient(135deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
+			top: -200%;
+			left: -200%;
+			}
+
+			.small {
+			margin: 0;
+			padding: 0;
+			margin: 0 0.25em 0 0;
+			padding: 0 0.25em 0 0.25em;
+			min-width: 1.5em;
+			}
+
+			.tooltip {
+			position:absolute;
+			left:0em;
+			bottom:75%;
+			width:10em;
+			z-index:1;
+			text-align:center;
+			border-style: solid;
+			border-width: 1px;
+			background: #c0c0c0;
+			border-color: #404040;
+			box-shadow: 2px 2px 4px #080820;
+			display:none;
+			}
+
+			.dummy{
+			box-shadow: 2px 2px 4px #080820;
+			display:none;
+			}
+
+			.tooltipparent{
+			position: relative;
+			}
+
+			.tooltipparent:hover>.tooltip {
+			display:inline;
+			}
+
+
+			button:hover:before {
+			transition: all 0.5s ease-out;
+			top: 100%;
+			left: 100%;
+			}
+
+			button.disabled {
+			pointer-events: none;
+			}
+			button.disabled:before {
+			display: none;
+			}
+
+			/*
+			==========================================
+			COLOUR SCHEMES
+			==========================================
+			*/
+			html {
+			background: linear-gradient(0deg, #808080, #787993);
+			background-attachment: fixed;
+			}
+
+			.back, .disabled{
+			background: #c0c0c0;
+			border-color: #404040;
+			}
+
+			.table>*:nth-child(2n){
+			background: #d0d0d0;
+			}
+
+			.tooltiptext {
+			color: #284868;
+			}
+			.interact {
+			background: #A8C8E8;
+			border-color: #486888;
+			}
+			.interact:hover {
+			background: #C0E0FF;
+			}
+			.interact:focus {
+			background: #90B0D0;
+			}
+			.interact:active {
+			background: #7898B8;
+			}
+
+			.call {
+			background: #98D8B8;
+			border-color: #387858;
+			}
+			.call:hover {
+			background: #B0F0D0;
+			}
+			.call:focus {
+			background: #80C0A0;
+			}
+			.call:active {
+			background: #68A888;
+			}
+
+			.destruct {
+			background: #C888A8;
+			border-color: #682848;
+			}
+			.destruct:hover {
+			background: #E0A0C0;
+			}
+			.destruct:focus {
+			background: #B07090;
+			}
+			.destruct:active {
+			background: #985878;
+			}
+
+			.wash {
+			background-color: rgba(8, 8, 32, 0.75);
+			}
+
+		</style>
+	</head>
+	<body style="height:100%;">
+		<div style="display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;height:100%;">
+			<div id="top_menu_bar" style="flex-grow:0;flex-shrink:0;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;padding:0 1.0em 0 1.0em;">
+				<span style="flex-grow:1;flex-shrink:0;"></span>
+				<button class="big interact" style="flex-grow:0;flex-shrink:0;">file</button>
+				<button class="big interact" style="flex-grow:0;flex-shrink:0;">offline</button>
+			</div>
+			<div id="sub_content" style="flex-grow:1;flex-shrink:0;position:relative;">
+				<div class="backwrapper" style="">
+					<div class="back">
+					</div>
+				</div>
+				<div style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;align-content: flex-start;padding:0.5em 1.0em 0.5em 1em;">
+
+<!--character-->
+					<div id="character" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;">
+						<div id="name" style="position:absolute;top:0;left:0;width:25em;height:3.0em;">
+							<textarea rows="1" placeholder="name" class="interact" style="width:100%;resize:none;vertical-align:top;"></textarea>
+							<p style="font-size:0.8em;">name</p>
+						</div>
+						<div id="race" style="position:absolute;top:3em;left:0;width:8em;height:3.0em;">
+							<select class="interact" style="width:100%;padding:1px;">
+								<option value="human">Human</option>
+								<option value="goblin">Goblin</option>
+								<option value="ork">Ork</option>
+								<option value="elf">Elf</option>
+							</select>
+							<p style="font-size:0.8em;">race</p>
+						</div>
+
+						<div id="gender" style="position:absolute;top:3em;left:8.5em;width:8em;height:3.0em;">
+							<select class="interact" style="width:100%;padding:1px;">
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+								<option value="both">Both</option>
+								<option value="neither">Neither</option>
+							</select>
+							<p style="font-size:0.8em;">gender</p>
+						</div>
+
+						<div id="age" style="position:absolute;top:3em;left:17em;width:8em;height:3.0em;">
+							<textarea rows="1" placeholder="18" class="interact" style="width:8em;resize:none;vertical-align:top;"></textarea>
+							<p style="font-size:0.8em;">age</p>
+						</div>
+
+						<div id="civil" style="position:absolute;top:6em;left:0;width:8em;height:3.0em;">
+							<select class="interact" style="width:100%;padding:1px;">
+								<option value="lawful">Lawful</option>
+								<option value="neutral">Neutral</option>
+								<option value="unlawful">Unlawful</option>
+							</select>
+							<p style="font-size:0.8em;">Civil</p>
+						</div>
+
+						<div id="social" style="position:absolute;top:6em;left:8.5em;width:8em;height:3.0em;">
+							<select class="interact" style="width:100%;padding:1px;">
+								<option value="social">Social</option>
+								<option value="neutral">Neutral</option>
+								<option value="antisocial">Antisocial</option>
+							</select>
+							<p style="font-size:0.8em;">Social</p>
+						</div>
+
+						<div id="moral" style="position:absolute;top:6em;left:17em;width:8em;height:3.0em;">
+							<select class="interact" style="width:100%;padding:1px;">
+								<option value="good">Good</option>
+								<option value="neutral">Neutral</option>
+								<option value="evil">Evil</option>
+							</select>
+							<p style="font-size:0.8em;">Moral</p>
+						</div>
+
+						<div id="height" style="position:absolute;top:9em;left:0em;width:8em;height:3.0em;">
+							<textarea rows="1" placeholder="6 10" class="interact" style="width:8em;resize:none;vertical-align:top;"></textarea>
+							<p style="font-size:0.8em;">height</p>
+						</div>
+
+						<div id="weight" style="position:absolute;top:9em;left:8.5em;width:8em;height:3.0em;">
+							<textarea rows="1" placeholder="490" class="interact" style="width:8em;resize:none;vertical-align:top;"></textarea>
+							<p style="font-size:0.8em;">weight</p>
+						</div>
+
+						<div id="handedness" style="position:absolute;top:9em;left:17em;width:8em;height:3.0em;">
+							<select class="interact" style="width:100%;padding:1px;">
+								<option value="0">Right</option>
+								<option value="1">Left</option>
+								<option value="2">Ambidex</option>
+								<option value="3">Neither</option>
+							</select>
+							<p style="font-size:0.8em;">handedness</p>
+						</div>
+					</div>
+<!--classes-->
+					<div id="classes" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;">
+						<div style="height:1.25em;border-style:none none solid none;border-width:1px;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;">
+							<span>Classes</span>
+							<span>0 of 
+								<span class="tooltipparent">
+									<span class="tooltiptext">1</span>
+									<span class="tooltip">3 + (Intelegence(-4) / 2)</span>
+								</span>
+							</span>
+						</div>
+						<div class="table" style="height:calc(100% - 1.25em);overflow-y:auto;">
+							<div style="height:1em;">none</div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+							<div style="height:1em;"></div>
+						</div>
+					</div>
+
+<!--equipment-->
+					<div id="equipment" class="removed" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;background:#00ff00;">
+					</div>
+
+<!--attributes-->
+					<div id="attributes" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;">
+						<div id="unspent" style="position:absolute;top:0;left:0;width:5em;height:3em;">
+							<div style="width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span class="tooltipparent" style="margin-bottom:-0.5em;">
+									<span class="tooltiptext" style="font-size:2em;">21</span>
+									<span class="tooltip">20 + 
+										<span class="tooltipparent">
+											<span class="tooltiptext">level(1)</span>
+											<span class="tooltip">log2(experence(0) / 25) + 1</span>
+										</span>
+									</span>
+								</span>
+								<span style="font-size:0.7em;">Unspent Points</span>
+							</div>
+						</div>
+
+						<div id="hand_eye" style="position:absolute;top:0;left:10em;width:5em;height:3em;">
+							<div style="width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span class="tooltipparent" style="margin-bottom:-0.5em;">
+									<span class="tooltiptext" style="font-size:2em;">-4</span>
+									<span class="tooltip">Perception(-2) + Manual Dex(-2)</span>
+								</span>
+								<span style="font-size:0.7em;">Hand/Eye</span>
+							</div>
+						</div>
+
+						<div id="faith" style="position:absolute;border-style:solid none none solid;border-width:1px;top:0;left:15em;width:5em;height:3em;display:flex;flex-direction:column;">
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1em;height:1em;">
+								<span class="tooltipparent" style="position:absolute;top:-0.25em;width:100%;text-align:center;">
+									<span class="tooltiptext" style="font-size:0.8em;">1</span>
+									<span class="tooltip">attribute threashold for male human </span>
+								</span>
+
+							</div>
+							<div style="width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span class="tooltipparent" style="margin-bottom:-0.5em;">
+									<span class="tooltiptext" style="font-size:2em;">-2</span>
+									<span class="tooltip">-2 + spent points(0) with attribute threashold(1)</span>
+								</span>
+								<span style="font-size:0.7em;">Faith</span>
+							</div>
+							<button class="interact topright" style="position:absolute;top:0;right:0;width:1em;height:1em;">
+								<span style="position:absolute;top:-0.25em;left:0;width:100%;text-align:center;color:#486888;">&#9652;</span>
+							</button>
+							<button class="interact bottomright" style="position:absolute;bottom:0;right:0;width:1em;height:1em;text-align:center;">
+								<span style="position:absolute;top:-0.125em;left:0;width:100%;text-align:center;color:#486888;">&#9662;</span>
+							</button>
+						</div>
+
+						<div style="position:absolute;border-style:none none none solid;border-width:1px;top:0;left:20em;width:5em;height:3em;"></div>
+
+						<div id="vigor" style="position:absolute;top:3em;left:5em;width:5em;height:3em;">
+							<div style="width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span class="tooltipparent" style="margin-bottom:-0.5em;">
+									<span class="tooltiptext" style="font-size:2em;">-4</span>
+									<span class="tooltip">-2 + 0 spent points with racial max of 3</span>
+								</span>
+								<span style="font-size:0.7em;">Vigor</span>
+							</div>
+						</div>
+
+						<div id="perception" style="position:absolute;border-style:solid none none solid;border-width:1px;top:3em;left:10em;width:5em;height:3em;">
+							<div style="position:absolute;width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span class="tooltipparent" style="margin-bottom:-0.5em;">
+									<span class="tooltiptext" style="font-size:2em;">-2</span>
+									<span class="tooltip">-2 + 0 spent points with racial max of 3</span>
+								</span>
+								<span style="font-size:0.7em;">Perception</span>
+							</div>
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">1</div>
+							<button class="interact topright" style="position:absolute;top:0;right:0;width:1em;height:1em;text-align:center;">&#9652;</button>
+							<button class="interact bottomright" style="position:absolute;bottom:0;right:0;width:1em;height:1em;text-align:center;">&#9662;</button>
+							<span style="position:absolute;top:-0.4em;font-size:1em;width:100%;text-align:center;">&#9653;</span>
+						</div>
+						<div id="willpower" style="position:absolute;border-style:solid none none solid;border-width:1px;top:3em;left:15em;width:5em;height:3em;">
+							<div style="position:absolute;width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span style="font-size:2em;margin-bottom:-0.25em;">-2</span>
+								<span style="font-size:0.7em;">Willpower</span>
+							</div>
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">1</div>
+							<button class="interact topright" style="position:absolute;top:0;right:0;width:1em;height:1em;text-align:center;">&#9652;</button>
+							<button class="interact bottomright" style="position:absolute;bottom:0;right:0;width:1em;height:1em;text-align:center;">&#9662;</button>
+						</div>
+						<div style="position:absolute;border-style:none none none solid;border-width:1px;top:3em;left:20em;width:5em;height:3em;">
+							<div style="position:absolute;width:100%;height:100%;display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:flex-end;align-items:center;">
+								<span style="font-size:2em;margin-bottom:-0.25em;">-4</span>
+								<span style="font-size:0.7em;">Intellegence</span>
+							</div>
+						</div>
+
+						<div id="coordination" style="position:absolute;top:6em;left:0em;width:5em;height:3em;">
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Coordination</span>
+						</div>
+						<div id="agility" style="position:absolute;border-style:solid none none solid;border-width:1px;top:6em;left:5em;width:5em;height:3em;">
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">1</div>
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<div class="interact" style="position:absolute;top:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9650;</div>
+							<div class="interact" style="position:absolute;bottom:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9660;</div>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Agility</span>
+						</div>
+						<div id="manual_dex" style="position:absolute;border-style:solid none none solid;border-width:1px;top:6em;left:10em;width:5em;height:3em;">
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">1</div>
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<div class="interact" style="position:absolute;top:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9650;</div>
+							<div class="interact" style="position:absolute;bottom:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9660;</div>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Manual Dex</span>
+						</div>
+						<div id="charisma" style="position:absolute;border-style:solid none none solid;border-width:1px;top:6em;left:15em;width:5em;height:3em;">
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Charisma</span>
+						</div>
+
+						<div id="stamina" style="position:absolute;border-style:solid none none solid;border-width:1px;top:9em;left:0;width:5em;height:3em;">
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">1</div>
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<div class="interact" style="position:absolute;top:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9650;</div>
+							<div class="interact" style="position:absolute;bottom:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9660;</div>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Stamina</span>
+						</div>
+						<div id="strength" style="position:absolute;border-style:solid none none solid;border-width:1px;top:9em;left:5em;width:5em;height:3em;">
+							<div style="position:absolute;border-style:none solid solid none;border-width:1px;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">1</div>
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<div class="interact" style="position:absolute;top:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9650;</div>
+							<div class="interact" style="position:absolute;bottom:0;right:0;width:1.25em;height:1.25em;text-align:center;font-size:0.8em;">&#9660;</div>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Strength</span>
+						</div>
+						<div id="brawn" style="position:absolute;border-style:solid none none solid;border-width:1px;top:9em;left:10em;width:5em;height:3em;">
+							<span style="position:absolute;width:100%;height:100%;font-size:2em;line-height:1.5em;text-align:center;">13</span>
+							<span style="position:absolute;width:100%;text-align:center;bottom:0;font-size:0.7em;">Brawn</span>
+						</div>
+
+						<div style="position:absolute;border-style:solid none none none;border-width:1px;top:12em;left:0em;width:5em;height:3em;"></div>
+						<div style="position:absolute;border-style:solid none none none;border-width:1px;top:12em;left:5em;width:5em;height:3em;"></div>
+					</div>
+
+<!--stats-->
+					<div id="stats" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;">
+						<div id="level" style="position:absolute;top:0;left:0;width:12.25em;height:3.0em;">
+							<span class="tooltipparent" style="">
+								<span class="tooltiptext" style="">1</span>
+								<span class="tooltip" >log2(experence(0) / 25) + 1</span>
+							</span>
+							<p style="font-size:0.8em;">level</p>
+						</div>
+						<div id="status" style="position:absolute;top:0;left:12.75em;width:12.25em;height:3.0em;">
+							<span class="" style="">concious</span>
+							<p style="font-size:0.8em;">status</p>
+						</div>
+
+						<div id="experence" style="position:absolute;top:3em;left:0;width:12.25em;height:3.0em;">
+							<textarea class="interact" rows="1" placeholder="1" style="width:100%;resize:none;vertical-align:top;">0</textarea>
+							<p style="font-size:0.8em;">experence</p>
+						</div>
+						<div id="unspent_experence" style="position:absolute;top:3em;left:12.75em;width:12.25em;height:3.0em;">
+							<span class="" style="">0</span>
+							<p style="font-size:0.8em;">unspent experence</p>
+						</div>
+
+						<div id="current_dt" style="position:absolute;top:6em;left:0;width:12.25em;height:3.0em;">
+							<span class="tooltipparent" style="">
+								<span class="tooltiptext" style="">1</span>
+								<span class="tooltip">total dt(20) - (physical damage(0) + fatigue(0))</span>
+							</span>
+							<p style="font-size:0.8em;">Current damage tollerance</p>
+						</div>
+						<div id="damage_tollerance" style="position:absolute;top:6em;left:12.75em;width:12.25em;height:3.0em;">
+							<span class="tooltipparent" style="">
+								<span class="tooltiptext" style="">20</span>
+								<span class="tooltip">total dt(20) - (physical damage(0) + fatigue(0))</span>
+							</span>
+							<p style="font-size:0.8em;">Total damage tollerance</p>
+						</div>
+
+						<div id="physical_damage" style="position:absolute;top:9em;left:0;width:12.25em;height:3.0em;">
+							<textarea class="interact" rows="1" style="width:100%;resize:none;vertical-align:top;">0</textarea>
+							<p style="font-size:0.8em;">physical damage</p>
+						</div>
+						<div id="fatigue" style="position:absolute;top:9em;left:12.75em;width:12.25em;height:3.0em;">
+							<textarea class="interact" rows="1" style="width:100%;resize:none;vertical-align:top;">0</textarea>
+							<p style="font-size:0.8em;">fatigue</p>
+						</div>
+
+					</div>
+
+					<div id="level" class="removed" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;background:#00ff00;">
+					</div>
+
+					<div id="combat" class="removed" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;background:#00ff00;">
+					</div>
+
+					<div id="weapons" class="removed" style="width:25em;height:12em;margin:0 0 0.5em 0.5em;position:relative;background:#00ff00;">
+					</div>
+
+				</div>
+			</div>
+			<div id="bottom_footer" style="flex-grow:0;flex-shrink:0;align-self:center;">
+				<p style="font-size:0.7em;margin-top:0.2em;">0123456789 data page served 0123456789 data version copywrite blurb</p>
+			</div>
+		</div>
+
+	</body>
+</html>

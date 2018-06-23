@@ -1,0 +1,259 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" style="height:100%;">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>redux 00</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+	</head>
+
+	<body style="height:100%;">
+		<div id="root" style="height:100%;"/>
+
+		<script src="js/react.js"></script>
+		<script src="js/react-dom.js"></script>
+		<script src="js/redux.js"></script>
+		<script src="js/react-redux.js"></script>
+	
+		<script type="text/javascript">
+
+const Reducer = function(in_state, in_action){
+	if (in_state === undefined){
+		return {
+			"bool" : false,
+			"boolarray" : [false, false, false]
+		};
+	}
+	switch (in_action.type) {
+	case "setbool":
+		var newboolarray = in_state.boolarray.concat([]);
+		return {
+			"bool" : in_action.value,
+			"boolarray" : newboolarray
+		};
+	case "setboolarray":
+		var newboolarray = in_state.boolarray.concat([]);
+		newboolarray[in_action.index] = in_action.value;
+		return {
+			"bool" : in_state.bool,
+			"boolarray" : newboolarray
+		};
+	case "setboolarray2":
+		var newboolarray = in_action.value.concat([]);
+		return {
+			"bool" : in_state.bool,
+			"boolarray" : newboolarray
+		};
+	}
+	return in_state;
+}
+
+const e = React.createElement;
+const gReduxStore = window.Redux.createStore(Reducer);
+
+gReduxStore.subscribe(function(){console.log(JSON.stringify(gReduxStore.getState())); });
+
+
+const EditBoolInput = function(in_props){
+	if (true === in_props.log){
+		console.log("EditBoolInput value:" + JSON.stringify(in_props.value));
+	}
+
+	return e("input", {
+		"type":"checkbox",
+		"onChange" : function(in_event){ in_props.onChange(in_event.target.checked); },
+		"checked" : in_props.value,
+		});
+}
+
+
+const EditBoolMapState = function(in_state, in_props){
+	return { "value" : in_state.bool };
+}
+const EditBoolMapDispatch = function(in_dispatch, in_props){
+	return {
+		"onChange" : function(in_value){ 
+			in_dispatch({"type" : "setbool", "value" : in_value}); 
+		}
+	};
+}
+
+const EditBool = window.ReactRedux.connect(EditBoolMapState, EditBoolMapDispatch)(function(in_props){
+	return e("div", null,
+		e("span", null, "EditBool:" + JSON.stringify(in_props.value)),
+		e(EditBoolInput, { "value" : in_props.value, "onChange" : in_props.onChange })
+		);
+});
+
+const EditBoolArrayMapState = function(in_state, in_props){
+	return { "value" : in_state.boolarray };
+}
+const EditBoolArrayMapDispatch = function(in_dispatch, in_props){
+	return {
+		"onChange" : function(in_value, in_index){ 
+			in_dispatch({"type" : "setboolarray", "value" : in_value, "index" : in_index}); 
+		}
+	};
+}
+
+const EditBoolArray = window.ReactRedux.connect(EditBoolArrayMapState, EditBoolArrayMapDispatch)(function(in_props){
+	return e("div", null,
+		e("span", null, "EditBoolArray:" + JSON.stringify(in_props.value)),
+		e(EditBoolInput, { "value" : in_props.value[0], "onChange" : function(in_value){ in_props.onChange(in_value, 0); } }),
+		e(EditBoolInput, { "value" : in_props.value[1], "onChange" : function(in_value){ in_props.onChange(in_value, 1); } }),
+		e(EditBoolInput, { "value" : in_props.value[2], "onChange" : function(in_value){ in_props.onChange(in_value, 2); } })
+		);
+});
+
+const EditBoolArray2MapDispatch = function(in_dispatch, in_props){
+	return {
+		"onChange" : function(in_value){ 
+			in_dispatch({"type" : "setboolarray2", "value" : in_value}); 
+		}
+	};
+}
+
+class GenericEditArray extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+	onChangeIndex(event){
+		var index = parseInt(event.target.value);
+		this.props.onChangeIndex(index);
+	}
+	onChangeCount(event){
+		var count = parseInt(event.target.value);
+		this.props.onChangeCount(count);
+	}
+	render() {
+		var newPropsIndex = {
+				"className": "interact",
+				"type":"number",
+				"onChange" : this.onChangeIndex,
+				"value" : this.props.index,
+				"style": {
+					"width":"4em",
+					"height":"1.333em"
+				}};
+		if ((0 == this.props.count) || (true === this.props.locked)){
+			newPropsIndex["disabled"] = "disabled";
+		}		
+		var newPropsCount = {
+			"className": "interact",
+			"type":"number",
+			"onChange" : this.onChangeCount,
+			"value" : this.props.count,
+			"style": {
+				"width":"4em",
+				"height":"1.333em"
+			}
+		}
+		if (true === this.props.locked){
+			newPropsCount["disabled"] = "disabled";
+		}		
+		return e("div", null, 
+			e("p", null, this.props.name),
+			e("input", newPropsIndex),
+			e("span", null, " of "),
+			e("input", newPropsCount)
+		);
+	}
+}
+
+const EditBoolArray2 = window.ReactRedux.connect(EditBoolArrayMapState, EditBoolArray2MapDispatch)(class extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			"index" : 0
+		};
+		this.onChange = this.onChange.bind(this);
+		this.onChangeIndex = this.onChangeIndex.bind(this);
+		this.onChangeCount = this.onChangeCount.bind(this);
+	}
+
+	onChange(in_value){
+		var valueArray = this.props.value;
+		if ((valueArray != undefined) && (0 <= this.state.index) && (this.state.index < valueArray.length)){
+			valueArray[this.state.index] = in_value;
+			this.props.onChange(valueArray);
+		}
+	}
+
+	onChangeIndex(in_index){
+		var valueArray = this.props.value;
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= in_index) && (in_index < count)){
+			this.setState({"index": in_index});
+		}
+	}
+	onChangeCount(in_count){
+		var valueArray = this.props.value;
+		if (valueArray == undefined){
+			valueArray = [];
+		}
+		if (0 <= in_count){
+			valueArray.length = in_count;
+			if (in_count <= this.state.index){
+				var newIndex = Math.max(0, in_count - 1);
+				this.setState({"index": newIndex});
+			}
+			this.props.onChange(valueArray);
+		}
+	}
+	render() {
+		console.log("EditBoolArray2.render value:" + JSON.stringify(this.props.value));
+		var valueArray = this.props.value;
+		var value = false;
+		var count = 0;
+		if (valueArray != undefined){
+			count = valueArray.length;
+		};
+		if ((0 <= this.state.index) && (this.state.index < count)){
+			value = valueArray[this.state.index];
+			if (value === undefined){
+				console.log("undefined in array:" + JSON.stringify(valueArray) + " index:" + this.state.index + " count:" + count);
+				value = false; //wtf? 
+			}
+		}
+		return e("div", null, 
+			e("span", null, "EditBoolArray2:" + JSON.stringify(valueArray)),
+			e(EditBoolInput, { "value" : value, "onChange" : this.onChange, "log" : true}),
+			e(GenericEditArray, {
+				"index" : this.state.index,
+				"count" : count,
+				"onChangeIndex" : this.onChangeIndex,
+				"onChangeCount" : this.onChangeCount
+			})
+		);
+	}
+});
+
+const App = function(in_props){
+	return e("div", 
+		null, 
+		e(EditBool), 
+		e(EditBoolArray),
+		e(EditBoolArray2)
+		);
+}
+
+ReactDOM.render(
+	e(window.ReactRedux.Provider, {"store" : gReduxStore}, e(App)), 
+	document.getElementById("root")
+);
+		</script>
+	</body>
+</html>

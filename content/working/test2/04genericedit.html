@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" style="height:100%;">
+	<head>
+		<link rel="stylesheet" href="css/reset.css" />
+		<title>04genericedit</title>
+		<script>
+			function allowDrop(event){
+			event.preventDefault();
+			}
+		</script>
+		<style>
+			/*
+			top right bottom left
+			*/
+			.backwrapper {
+			position: absolute;
+			width: 100%;
+			z-index: -1;
+			padding: 0.6em;
+			top:-1.5em;
+			bottom:-0.75em;
+			}
+			.back {
+			position:relative;
+			background: #ff00ff;
+			width: 100%;
+			height: 100%;
+			box-shadow: 2px 2px 4px #080820;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 2px;
+			}
+
+
+			.hidden {
+			visibility:hidden;
+			}
+			.removed {
+			display:none;
+			}
+
+			button {
+			pointer-events: auto;
+			margin: 0.1em 0.25em 0.1em 0.25em;
+			padding: 0 0.25em 0 0.25em;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 2px;
+			position: relative;
+			overflow: hidden;
+			}
+			.big {
+			min-width: 5em;
+			}
+
+			/*
+			*/
+			button:focus, textarea:focus, input:focus, select:focus {
+			outline:0;
+			}
+			button:before {
+			position: absolute;
+			content: "";
+			width: 200%;
+			height: 200%;
+			background-image: linear-gradient(135deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
+			top: -200%;
+			left: -200%;
+			}
+
+			.small {
+			margin: 0;
+			padding: 0;
+			margin: 0 0.25em 0 0;
+			padding: 0 0.25em 0 0.25em;
+			min-width: 1.5em;
+			}
+
+			button:hover:before {
+			transition: all 0.5s ease-out;
+			top: 100%;
+			left: 100%;
+			}
+
+			button.disabled {
+			pointer-events: none;
+			}
+			button.disabled:before {
+			display: none;
+			}
+
+			/*
+			==========================================
+			COLOUR SCHEMES
+			==========================================
+			*/
+			html {
+			background: linear-gradient(0deg, #808080, #787993);
+			background-attachment: fixed;
+			}
+
+			.back, .disabled {
+			background: #c0c0c0;
+			border-color: #404040;
+			}
+
+			.interact {
+			background: #A8C8E8;
+			border-color: #486888;
+			}
+			.interact:hover {
+			background: #C0E0FF;
+			}
+			.interact:focus {
+			background: #90B0D0;
+			}
+			.interact:active {
+			background: #7898B8;
+			}
+
+			.call {
+			background: #98D8B8;
+			border-color: #387858;
+			}
+			.call:hover {
+			background: #B0F0D0;
+			}
+			.call:focus {
+			background: #80C0A0;
+			}
+			.call:active {
+			background: #68A888;
+			}
+
+			.destruct {
+			background: #C888A8;
+			border-color: #682848;
+			}
+			.destruct:hover {
+			background: #E0A0C0;
+			}
+			.destruct:focus {
+			background: #B07090;
+			}
+			.destruct:active {
+			background: #985878;
+			}
+
+			.wash {
+			background-color: rgba(8, 8, 32, 0.75);
+			}
+
+		</style>
+	</head>
+	<body style="height:100%;">
+		<div style="display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;height:100%;">
+			<div id="top_menu_bar" style="flex-grow:0;flex-shrink:0;;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;padding:0 1.0em 0 1.0em;">
+				<span style="flex-grow:1;flex-shrink:0;"></span>
+				<button class="big call thing" style="flex-grow:0;flex-shrink:0;">hello</button>
+				<button class="big destruct" style="flex-grow:0;flex-shrink:0;">hello</button>
+				<button class="big disabled" style="flex-grow:0;flex-shrink:0;">hello</button>
+			</div>
+			<div id="sub_content" style="flex-grow:1;flex-shrink:0;position:relative;">
+				<div class="backwrapper" style="">
+					<div class="back">
+					</div>
+				</div>
+				<div style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;align-content: flex-start;padding:0.25em 1em 0 1.5em;">
+
+					<div style="width:15em;height:4em;background:#FF0000;background:transparent;">
+						<textarea class="interact" rows="1" placeholder="1" style="width:100%;resize:none;vertical-align:top;">Hello g</textarea>
+						<p>generic text edit</p>
+					</div>
+
+					<div style="width:15em;height:4em;background:#FF0000;background:transparent;">
+						<select class="interact" style="width:100%;height:1.5em;">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+						<p>generic dropdown</p>
+					</div>
+
+					<div style="width:15em;height:4em;background:#FF0000;background:transparent;" >
+						<input class="interact" type="checkbox" style="height:1.5em;"></input>
+						<p>checkbox</p>
+					</div>
+
+					<div style="width:15em;height:4em;background:#FF0000;background:transparent;" >
+						<input class="interact" type="checkbox" style="height:1.5em;"></input>
+						<div style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:no-wrap;">
+							<button class="interact small" style="">+</button>
+							<button class="interact small" style="">-</button>
+							<input class="interact" style="height:1.5em;width:4em;margin: 0 0.25em 0 0;padding-left:0.25em;" value="0"></input>
+							<button class="interact small" style="">&#9667;</button>
+							<button class="interact small" style="">&#9657;</button>
+							<p>of 6</p>
+						</div>
+					</div>
+
+					<div ondragover="allowDrop(event)" style="width:15em;height:4em;overflow-y:scroll;display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;align-content: flex-start;border-style:groove;border-width: 1px;border-radius: 2px;" >
+						<div draggable="true" style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+							<div class="interact" style="width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+							<div style="flex-grow:0;flex-shrink:0;text-align:center;">add</div>
+						</div>
+						<div draggable="true" style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+							<div class="interact" style="width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+							<div style="flex-grow:0;flex-shrink:0;text-align:center;">trash</div>
+						</div>
+						<div draggable="true" style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+							<div class="interact" style="width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+							<div style="flex-grow:0;flex-shrink:0;text-align:center;">a realy long name to see overrunrunrunrun</div>
+						</div>
+						<div draggable="true" style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+							<div class="interact" style="width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+							<div style="flex-grow:0;flex-shrink:0;text-align:center;">a realy long name to see overrunrunrunrun</div>
+						</div>
+					</div>
+
+					<div style="width:15em;height:4em;background:#FF0000;background:transparent;" >
+						<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+							<div class="interact" style="width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+							<div style="flex-grow:0;flex-shrink:0;text-align:center;">child</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottom_footer" style="flex-grow:0;flex-shrink:0;align-self:center;">
+				<p style="font-size:0.7em;margin-top:0.2em;">0123456789 data page served 0123456789 data version copywrite blurb</p>
+			</div>
+		</div>
+
+	</body>
+</html>

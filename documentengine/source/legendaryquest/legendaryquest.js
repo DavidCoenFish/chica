@@ -1,0 +1,4 @@
+/**
+ * @preserve
+//@ sourceMappingURL=legendaryquest.map
+ */

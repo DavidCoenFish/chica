@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" style="background:#888888;height:100%;">
+<head>
+	<link rel="stylesheet" href="css/reset.css" />
+	<style>
+		.menu{
+		float:none;
+		display:block;
+		}
+		.menu ul{
+		position:relative;
+		float:left;
+		background-color:#ff0;
+		padding:1em;
+		}
+		.menu ul a{
+		display:block;
+		}
+		/*
+		background-color:#fff;
+		*/
+		.menu ul li{
+		position:relative;
+		float:left;
+		}
+		/*
+		*/
+		.menu ul ul{
+		display:none;
+		position:absolute;
+		}
+		.menu ul ul li{
+		float:none;
+		width:5em;
+		}
+		.menu ul ul ul{
+		top:0;
+		left:100%;
+		}
+		.menu ul li:hover> ul{
+		display:block;
+		}
+
+	</style>
+</head>
+<body style="background:#888888;height:100%;">
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="#">menu 0</a>
+			</li>
+			<li>
+				<a href="#">menu 1</a>
+				<ul>
+					<li>
+						<a href="#">sub menu 0</a>
+					</li>
+					<li>
+						<a href="#">sub menu 1</a>
+					</li>
+					<li>
+						<a href="#">sub menu 2</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">menu 2</a>
+				<ul>
+					<li>
+						<a href="#">sub menu 0</a>
+						<ul>
+							<li>
+								<a href="#">sub sub menu 0</a>
+							</li>
+							<li>
+								<a href="#">sub sub menu 1</a>
+							</li>
+							<li>
+								<a href="#">sub sub menu 2</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">sub menu 1</a>
+					</li>
+					<li>
+						<a href="#">sub menu 2</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<p>bottom</p>
+	<br/>
+	<p>bottomMMMMMMMMMMMMMMMMMMMMM</p>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/angular.min.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+	<body ng-app="LoginApp" ng-controller="LoginContoller">
+		<div class="flexcontainervertical fullheight">
+			<div class="modal">
+				<button class="gemback" ng-click="onTab('guest')" ng-class="{'tabbutton': !isSelected('guest'), 'tabbuttonfocus': isSelected('guest')}"><div class ="gemfront"></div><div class ="highlight"></div><p>Guest</p></button>
+				<button class="gemback" ng-click="onTab('login')" ng-class="{'tabbutton': !isSelected('login'), 'tabbuttonfocus': isSelected('login')}"><div class ="gemfront"></div><div class ="highlight"></div><p>Login</p></button>
+				<button class="gemback" ng-click="onTab('new')" ng-class="{'tabbutton': !isSelected('new'), 'tabbuttonfocus': isSelected('new')}"><div class ="gemfront"></div><div class ="highlight"></div><p>New</p></button>
+				<button class="gemback" ng-click="onTab('recover')"  ng-class="{'tabbutton': !isSelected('recover'), 'tabbuttonfocus': isSelected('recover')}"><div class ="gemfront"></div><div class ="highlight"></div><p>Recover</p></button>
+				<br />
+				<div class="frame solidfront">
+					<div ng-class="{'hidden': !isSelected('guest')}">
+						<div class="flexcontainervertical fullheight">
+							<div class="flexitemgrow">
+								<h1>Create guest account</h1>
+								<p>Guest accounts allow access to full game but will be deleted after 24hours.</p>
+								<p>Progress will be preserve if a new account is created.</p>
+								<p>Progress can be merged with existing account by logging in.</p>
+								<p>&nbsp;</p>
+							</div>
+							<div class="flexitemalignend padend">
+								<button class="callaction gemback" ng-click="onGuest()"><div class ="gemfront"></div><div class ="highlight"></div><p>Begin</p></button>
+							</div>
+						</div>
+					</div>
+
+					<div ng-class="{'hidden': !isSelected('login')}">
+						<div class="flexcontainervertical fullheight">
+							<div class="flexitemgrow">
+								<h1>Access existing account</h1>
+								<p>Please enter your email address</p>
+								<input type="text" ng-model="email" ng-class="{'invalid': !isEmailValid()}"/>
+								<p>password</p>
+								<input type="password" ng-model="password" ng-class="{'invalid': !isPasswordValid()}"/>
+								<p>&nbsp;</p>
+							</div>
+							<div class="flexitemalignend padend">
+								<button class="callaction gemback" ng-click="onLogin()"><div class ="gemfront"></div><div class ="highlight"></div><p>Login</p></button>
+							</div>
+						</div>
+					</div>
+
+					<div ng-class="{'hidden': !isSelected('new')}">
+						<div class="flexcontainervertical fullheight">
+							<div class="flexitemgrow">
+								<h1>Create new account</h1>
+								<p>name, whitespace at beginning or end will be trimmed</p>
+								<input type="text" ng-model="name" ng-class="{'invalid': !isNameValid()}" ng-trim="false" />
+								<p>email, will only be used for account recovery</p>
+								<input type="text" ng-model="email" ng-class="{'invalid': !isEmailValid()}" />
+								<p>password, minimum 8 characters long</p>
+								<input type="password" ng-model="password" ng-class="{'invalid': !isPasswordValid()}"/>
+								<p>&nbsp;</p>
+							</div>
+							<div class="flexitemalignend padend">
+								<button class="callaction gemback" ng-click="onNew()"><div class ="gemfront"></div><div class ="highlight"></div><p>Create</p></button>
+							</div>
+						</div>
+					</div>
+
+					<div ng-class="{'hidden': !isSelected('recover')}">
+						<div class="flexcontainervertical fullheight">
+							<div class="flexitemgrow">
+								<h1>Recover existing account</h1>
+								<p>Please enter your email address</p>
+								<input type="text" ng-model="email" ng-class="{'invalid': !isEmailValid()}"/>
+								<p>&nbsp;</p>
+							</div>
+							<div class="flexitemalignend padend">
+								<button class="callaction gemback" ng-click="onRecover()"><div class ="gemfront"></div><div class ="highlight"></div><p>Recover</p></button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<small class="footer small">&copy; {date} Website content and images protected by Australian Copyright Law</small>
+		</div> 
+		<div ng-class="{'hidden': !showMessage}" >
+			<div class ="modalbackground flexcontainervertical" ng-click="onDismissMessage($event);">
+				<div class ="modal" ng-click="stopPropagation($event);">
+					<div class ="frame solidfront flexcontainervertical">
+						<div class="flexitemgrow">
+							<h1>{\{messageType}}</h1>
+							<p>{\{message}}</p>
+							<p>&nbsp;</p>
+						</div>
+						<div class="flexitemalignend padend">
+							<button class="callaction gemback" ng-click="onDismissMessage($event)"><div class ="gemfront"></div><div class ="highlight"></div><p>Dismiss</p></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "notes", "notes.vcxproj", "{1774AD70-C963-4CFD-9FB2-72CC79BEB1E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		build|x64 = build|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1774AD70-C963-4CFD-9FB2-72CC79BEB1E8}.build|x64.ActiveCfg = build|x64
+		{1774AD70-C963-4CFD-9FB2-72CC79BEB1E8}.build|x64.Build.0 = build|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

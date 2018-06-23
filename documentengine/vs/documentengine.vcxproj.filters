@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{a5a8a059-a213-49ba-8c25-905ae2792d43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\build">
+      <UniqueIdentifier>{034798a1-5ca7-4181-8a7a-5651e67a1132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\source">
+      <UniqueIdentifier>{030f1100-aa27-4c45-8f49-2df3f77a25ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\source\legendaryquest">
+      <UniqueIdentifier>{d25f5aa9-b7d5-4197-8dad-fd781ce48154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\source\system">
+      <UniqueIdentifier>{8bb08c14-842e-44b7-9415-9b6f8e59e5e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\modules">
+      <UniqueIdentifier>{dc877607-629d-4295-ae2d-1efe247527a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\tool">
+      <UniqueIdentifier>{f88393da-5524-4ed7-b3b7-14f4c1f8df29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\tool\closure">
+      <UniqueIdentifier>{92fae04a-54e5-4ee6-8122-239caf7dcb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\notes">
+      <UniqueIdentifier>{689c0880-7e15-4c11-bffa-416129578d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\node_modules">
+      <UniqueIdentifier>{2c609581-0d9c-4438-b5d6-d308642cf5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\node_modules\vm">
+      <UniqueIdentifier>{f0b86a77-de15-402c-a038-2ee7bfeb7432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\unittests">
+      <UniqueIdentifier>{9fb242f7-673d-4b8b-9fcb-0b5e38c301a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\source\common">
+      <UniqueIdentifier>{6297fd77-b904-4d57-a6f7-4136ae786733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\node_modules\q">
+      <UniqueIdentifier>{6a7e7d19-85ba-451d-b91b-ab7fa18a30db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\output">
+      <UniqueIdentifier>{9538ef4b-faff-4b1b-ac67-13e186931452}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\build\common.js">
+      <Filter>source\build</Filter>
+    </None>
+    <None Include="..\build\legendaryquest.js">
+      <Filter>source\build</Filter>
+    </None>
+    <None Include="..\build\system.js">
+      <Filter>source\build</Filter>
+    </None>
+    <None Include="..\source\legendaryquest\instructioncontext.js">
+      <Filter>source\source\legendaryquest</Filter>
+    </None>
+    <None Include="..\source\legendaryquest\legendaryquest.js">
+      <Filter>source\source\legendaryquest</Filter>
+    </None>
+    <None Include="..\source\system\instructioncontext.js">
+      <Filter>source\source\system</Filter>
+    </None>
+    <None Include="..\source\system\system.js">
+      <Filter>source\source\system</Filter>
+    </None>
+    <None Include="..\modules\test.js">
+      <Filter>source\modules</Filter>
+    </None>
+    <None Include="..\modules\wrapjavascript.js">
+      <Filter>source\modules</Filter>
+    </None>
+    <None Include="..\source\build_common.bat">
+      <Filter>source\source</Filter>
+    </None>
+    <None Include="..\source\build_legendaryquest.bat">
+      <Filter>source\source</Filter>
+    </None>
+    <None Include="..\source\build_system.bat">
+      <Filter>source\source</Filter>
+    </None>
+    <None Include="..\tool\closure\compiler.jar">
+      <Filter>source\tool\closure</Filter>
+    </None>
+    <None Include="..\tool\closure\COPYING">
+      <Filter>source\tool\closure</Filter>
+    </None>
+    <None Include="..\tool\closure\README.md">
+      <Filter>source\tool\closure</Filter>
+    </None>
+    <None Include="..\notes\notes.txt">
+      <Filter>source\notes</Filter>
+    </None>
+    <None Include="..\node_modules\vm\.npmignore">
+      <Filter>source\node_modules\vm</Filter>
+    </None>
+    <None Include="..\node_modules\vm\index.js">
+      <Filter>source\node_modules\vm</Filter>
+    </None>
+    <None Include="..\node_modules\vm\LICENSE">
+      <Filter>source\node_modules\vm</Filter>
+    </None>
+    <None Include="..\node_modules\vm\package.json">
+      <Filter>source\node_modules\vm</Filter>
+    </None>
+    <None Include="..\node_modules\vm\README.md">
+      <Filter>source\node_modules\vm</Filter>
+    </None>
+    <None Include="..\.\common.bat">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\commonunittest.bat">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\install.bat">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\legendaryquestdev.bat">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\package-lock.json">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\package.json">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\systemdev.bat">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\.\unittest.js">
+      <Filter>source</Filter>
+    </None>
+    <None Include="..\unittests\core.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\dagnodevaluehelper.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\document.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\documentmanager.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\documentmanagerlocalehelper.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\language.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\objectdelta.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\unittests\randomsequence.js">
+      <Filter>source\unittests</Filter>
+    </None>
+    <None Include="..\source\common\common.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\core.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\dagnodecalculate.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\dagnodecalculatehelper.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\dagnodecollectionhelper.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\dagnodevalue.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\dagnodevaluehelper.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\document.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\documentmanager.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\documentmanagerlocalehelper.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\instructioncontext.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\objectdelta.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\randomsequence.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\schemadocument.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\schemaobjectdelta.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\schemastaticdata.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\schemastaticdatacalculate.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\common\schemastaticdatavalue.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\node_modules\q\CHANGES.md">
+      <Filter>source\node_modules\q</Filter>
+    </None>
+    <None Include="..\node_modules\q\LICENSE">
+      <Filter>source\node_modules\q</Filter>
+    </None>
+    <None Include="..\node_modules\q\package.json">
+      <Filter>source\node_modules\q</Filter>
+    </None>
+    <None Include="..\node_modules\q\q.js">
+      <Filter>source\node_modules\q</Filter>
+    </None>
+    <None Include="..\node_modules\q\queue.js">
+      <Filter>source\node_modules\q</Filter>
+    </None>
+    <None Include="..\node_modules\q\README.md">
+      <Filter>source\node_modules\q</Filter>
+    </None>
+    <None Include="..\output\common.js">
+      <Filter>source\output</Filter>
+    </None>
+    <None Include="..\output\common.map">
+      <Filter>source\output</Filter>
+    </None>
+    <None Include="..\source\common\actioncontext.js">
+      <Filter>source\source\common</Filter>
+    </None>
+    <None Include="..\source\legendaryquest\actioncontext.js">
+      <Filter>source\source\legendaryquest</Filter>
+    </None>
+    <None Include="..\unittests\actioncontext.js">
+      <Filter>source\unittests</Filter>
+    </None>
+  </ItemGroup>
+</Project>

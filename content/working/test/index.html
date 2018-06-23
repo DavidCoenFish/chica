@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Index</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ng-table.min.css" />
+		<script src="js/angular.min.js"></script>
+		<script src="js/ng-table.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body class="flexcontainervertical" ng-app="IndexApp" ng-controller="IndexContoller">
+
+		<div class="flexcontainerhorizontal margin">
+			<div>
+				<button class="gemback fullwidth" ng-click="onTab('mydocs')" ng-class="{'tabbutton': !isSelected('mydocs'), 'tabbuttonfocus': isSelected('mydocs')}"><div class="gemfront"></div><div class="highlight"></div><p>My Docs</p></button><br/>
+				<button class="gemback fullwidth" ng-click="onTab('shared')" ng-class="{'tabbutton': !isSelected('shared'), 'tabbuttonfocus': isSelected('shared')}"><div class="gemfront"></div><div class="highlight"></div><p>Shared Docs</p></button><br/>
+				<button class="gemback fullwidth" ng-click="onTab('account')" ng-class="{'tabbutton': !isSelected('account'), 'tabbuttonfocus': isSelected('account')}"><div class="gemfront"></div><div class="highlight"></div><p>Account</p></button><br/>
+			</div>
+			<div class="frame solidfront flexitemgrow" style="height:20em">
+				<table ng-table="tableParams" class="table" show-filter="true">
+					<tr ng-repeat="row in $data">
+						<td title="'Type'" sortable="'type'">
+							<img width="16" height="16" ng-src="{{row.icon}}" />
+						</td>
+						<td title="'Name'" sortable="'name'">
+							{{row.name}}
+						</td>
+						<td title="'Last Edit'" sortable="'lastedit'">
+							{{row.lastedit}}
+						</td>
+						<td title="'Creation'" sortable="'creation'">
+							{{row.creation}}
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div>
+			<p>foo</p><br />
+			<p>{{selected}}</p><br />
+			<p>bar</p><br/>
+			<button class="interactive gemback" ng-click="onLqre()"><div class="gemfront"></div><div class="highlight"></div><p>Lqre</p></button>
+		</div>
+
+		<small class="footer small">&copy; {|date|} Website content and images protected by Australian Copyright Law</small>
+	</body>
+</html>

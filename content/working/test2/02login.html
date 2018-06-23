@@ -1,0 +1,200 @@
+﻿<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+			<link rel="stylesheet" href="css/reset.css" />
+			<title>02login</title>
+
+			<style>
+				.hidden {
+				visibility:hidden;
+				}
+				.removed {
+				display:none;
+				}
+
+				button {
+				pointer-events: auto;
+				margin: 0.1em 0.25em 0.1em 0.25em;
+				padding: 0 0.25em 0 0.25em;
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 2px;
+				position: relative;
+				overflow: hidden;
+				min-width: 5em;
+				}
+				button:focus {
+				outline:0;
+				}
+				button:before {
+				position: absolute;
+				content: "";
+				width: 200%;
+				height: 200%;
+				background-image: linear-gradient(135deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
+				top: -200%;
+				left: -200%;
+				}
+
+				button:hover:before {
+				transition: all 0.5s ease-out;
+				top: 100%;
+				left: 100%;
+				}
+
+				button.disabled {
+				pointer-events: none;
+				}
+				button.disabled:before {
+				display: none;
+				}
+
+				.dialog {
+				position: relative;
+				}
+
+				.dialog .backgroundwrapper {
+				position: absolute;
+				padding: 0.75em;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				}
+
+				.dialog .background {
+				width: 100%;
+				height: 100%;
+				box-shadow: 2px 2px 4px #080820;
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 2px;
+				}
+
+				.heading {
+				font-weight: bold;
+				}
+
+				.dialog .heading {
+				text-align: center;
+				}
+
+				.dialog .text {
+				text-align: center;
+				}
+
+
+				.fullwidthheight {
+				width: 100%;
+				height: 100%;
+				}
+
+				.fixed {
+				position: fixed;
+				top: 0;
+				left: 0;
+				}
+
+
+				/*
+				==========================================
+				COLOUR SCHEMES
+				==========================================
+				*/
+				html {
+				background: linear-gradient(0deg, #808080, #787993);
+				background-attachment: fixed;
+				}
+
+				.foreground, .disabled {
+				background: #c0c0c0;
+				border-color: #404040;
+				}
+
+				.interact {
+				background: #A8C8E8;
+				border-color: #486888;
+				}
+				.interact:hover {
+				background: #C0E0FF;
+				}
+				.interact:focus {
+				background: #90B0D0;
+				}
+				.interact:active {
+				background: #7898B8;
+				}
+
+				.call {
+				background: #98D8B8;
+				border-color: #387858;
+				}
+				.call:hover {
+				background: #B0F0D0;
+				}
+				.call:focus {
+				background: #80C0A0;
+				}
+				.call:active {
+				background: #68A888;
+				}
+
+				.destruct {
+				background: #C888A8;
+				border-color: #682848;
+				}
+				.destruct:hover {
+				background: #E0A0C0;
+				}
+				.destruct:focus {
+				background: #B07090;
+				}
+				.destruct:active {
+				background: #985878;
+				}
+
+				.wash {
+				background-color: rgba(8, 8, 32, 0.75);
+				}
+			</style>
+		</head>
+	<body>
+
+		<div id="dialog_root" class="fixed fullwidthheight" style="display:flex;justify-content:center;">
+			<div class="dialog" style="width:500px;align-self:center;">
+				<div class="backgroundwrapper">
+					<div class="foreground background"></div>
+				</div>
+				<div class="fullwidthheight" style="display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:space-between;background-color:transparent;">
+					<div class="menubar" id="headingmenubar" style="background-color:transparent;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;margin-right:0.75em;margin-left:0.75em;">
+						<button class="disabled">login</button>
+					</div>
+					<div id="content" class="" style="background-color:transparent;padding:1em;">
+						<div style="display:flex;flex-direction:row;">
+							<div style="flex-grow:0;flex-shrink:0;width:5em;text-align:right;padding-right:0.25em;">
+								<p>ID or email</p>
+							</div>
+							<input style="flex-grow:1;flex-shrink:0;"></input>
+						</div>
+						<div style="display:flex;flex-direction:row;">
+							<div style="flex-grow:0;flex-shrink:0;width:5em;text-align:right;padding-right:0.25em;">
+								<p>Password</p>
+							</div>
+							<input style="flex-grow:1;flex-shrink:0;" type="password"></input>
+						</div>
+					</div>
+					<div class="menubar" id="fottermenubar" style="background-color:transparent;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;margin-right:0.75em;margin-left:0.75em;">
+						<button class="interact">recover</button>
+						<button class="interact">login</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

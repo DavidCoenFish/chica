@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Common|x64">
+      <Configuration>Common</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CommonUnitTest|x64">
+      <Configuration>CommonUnitTest</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SystemDev|x64">
+      <Configuration>SystemDev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="LegendaryQuestDev|x64">
+      <Configuration>LegendaryQuestDev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2beb1d63-265f-493b-a3fd-cf6515385749}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Common|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CommonUnitTest|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SystemDev|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LegendaryQuestDev|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Common|x64'">
+    <NMakeBuildCommandLine>cd.. &amp; common.bat</NMakeBuildCommandLine>
+    <NMakeOutput />
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CommonUnitTest|x64'">
+    <NMakeBuildCommandLine>cd.. &amp; commonunittest.bat</NMakeBuildCommandLine>
+    <NMakeOutput />
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SystemDev|x64'">
+    <NMakeBuildCommandLine>cd.. &amp; systemdev.bat</NMakeBuildCommandLine>
+    <NMakeOutput />
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LegendaryQuestDev|x64'">
+    <NMakeBuildCommandLine>cd.. &amp; legendaryquestdev.bat</NMakeBuildCommandLine>
+    <NMakeOutput />
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Common|x64'">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CommonUnitTest|x64'">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SystemDev|x64'">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='LegendaryQuestDev|x64'">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="..\build\common.js" />
+    <None Include="..\build\legendaryquest.js" />
+    <None Include="..\build\system.js" />
+    <None Include="..\source\common\actioncontext.js" />
+    <None Include="..\source\legendaryquest\actioncontext.js" />
+    <None Include="..\source\legendaryquest\instructioncontext.js" />
+    <None Include="..\source\legendaryquest\legendaryquest.js" />
+    <None Include="..\source\system\instructioncontext.js" />
+    <None Include="..\source\system\system.js" />
+    <None Include="..\modules\test.js" />
+    <None Include="..\modules\wrapjavascript.js" />
+    <None Include="..\source\build_common.bat" />
+    <None Include="..\source\build_legendaryquest.bat" />
+    <None Include="..\source\build_system.bat" />
+    <None Include="..\tool\closure\compiler.jar" />
+    <None Include="..\tool\closure\COPYING" />
+    <None Include="..\tool\closure\README.md" />
+    <None Include="..\notes\notes.txt" />
+    <None Include="..\node_modules\vm\.npmignore" />
+    <None Include="..\node_modules\vm\index.js" />
+    <None Include="..\node_modules\vm\LICENSE" />
+    <None Include="..\node_modules\vm\package.json" />
+    <None Include="..\node_modules\vm\README.md" />
+    <None Include="..\.\common.bat" />
+    <None Include="..\.\commonunittest.bat" />
+    <None Include="..\.\install.bat" />
+    <None Include="..\.\legendaryquestdev.bat" />
+    <None Include="..\.\package-lock.json" />
+    <None Include="..\.\package.json" />
+    <None Include="..\.\systemdev.bat" />
+    <None Include="..\.\unittest.js" />
+    <None Include="..\unittests\actioncontext.js" />
+    <None Include="..\unittests\core.js" />
+    <None Include="..\unittests\dagnodevaluehelper.js" />
+    <None Include="..\unittests\document.js" />
+    <None Include="..\unittests\documentmanager.js" />
+    <None Include="..\unittests\documentmanagerlocalehelper.js" />
+    <None Include="..\unittests\language.js" />
+    <None Include="..\unittests\objectdelta.js" />
+    <None Include="..\unittests\randomsequence.js" />
+    <None Include="..\source\common\common.js" />
+    <None Include="..\source\common\core.js" />
+    <None Include="..\source\common\dagnodecalculate.js" />
+    <None Include="..\source\common\dagnodecalculatehelper.js" />
+    <None Include="..\source\common\dagnodecollectionhelper.js" />
+    <None Include="..\source\common\dagnodevalue.js" />
+    <None Include="..\source\common\dagnodevaluehelper.js" />
+    <None Include="..\source\common\document.js" />
+    <None Include="..\source\common\documentmanager.js" />
+    <None Include="..\source\common\documentmanagerlocalehelper.js" />
+    <None Include="..\source\common\instructioncontext.js" />
+    <None Include="..\source\common\objectdelta.js" />
+    <None Include="..\source\common\randomsequence.js" />
+    <None Include="..\source\common\schemadocument.js" />
+    <None Include="..\source\common\schemaobjectdelta.js" />
+    <None Include="..\source\common\schemastaticdata.js" />
+    <None Include="..\source\common\schemastaticdatacalculate.js" />
+    <None Include="..\source\common\schemastaticdatavalue.js" />
+    <None Include="..\node_modules\q\CHANGES.md" />
+    <None Include="..\node_modules\q\LICENSE" />
+    <None Include="..\node_modules\q\package.json" />
+    <None Include="..\node_modules\q\q.js" />
+    <None Include="..\node_modules\q\queue.js" />
+    <None Include="..\node_modules\q\README.md" />
+    <None Include="..\output\common.js" />
+    <None Include="..\output\common.map" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,574 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" style="height:100%;">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/react.js"></script>
+		<script src="js/react-dom.js"></script>
+
+	</head>
+
+	<body style="height:100%;">
+		<div id="root" style="height:100%;"/>
+
+		<script type="text/javascript">
+const e = React.createElement;
+
+// ReactDOM.render(
+// 	e('H1', null, 'Hello world 2!'), 
+// 	document.getElementById("root")
+// );
+
+const Menu = function(props) {
+	var childContents = props.data.map((item, index) => {
+		var subMenu = undefined;
+		var childProps = (true === props.toplevel) ? { className:"standard interact" } : { className:"wide interact"};
+		if ("data" in item){
+			subMenu = e(Menu, item);
+			if (true !== props.toplevel){
+				childProps["className"] += " expand";
+			}
+		}
+		if ("method" in item){
+			childProps["onClick"] = item.method;
+		}
+		return e("li", {key:index}, e("a", childProps, item.name ), subMenu);
+	});
+
+	var newProps = {};
+	if (true === props.toplevel){
+		newProps["className"] = "menu";
+		newProps["style"] = {display:"flex", "paddingLeft":props.left};
+	}
+
+	return e("ul", newProps, childContents);
+}
+
+const SubMenu0Method = function(event){
+	event.preventDefault();
+	console.log("SubMenu0Method");
+}
+
+const SubMenu1Method = function(event){
+	event.preventDefault();
+	console.log("SubMenu1Method");
+	RenderMenu(menuData0);
+}
+
+const SubMenu2Method = function(event){
+	event.preventDefault();
+	console.log("SubMenu2Method");
+	RenderMenu(menuData1);
+}
+
+const menuData0 = {
+	data : [
+		{ 
+			name : "menu0", 
+			data : [
+				{ 
+					name: "sub menu 0",
+					method: SubMenu0Method
+				},
+				{ 
+					name: "sub menu 1",
+					data : [
+						{ name: "sub sub menu 0" },
+						{ name: "sub sub menu 1" }
+					]
+				},
+				{ 
+					name: "render menu 2",
+					method: SubMenu2Method
+				 }
+			]
+		},
+		{ name : "menu1" },
+		{ name : "menu2" }
+	],
+	toplevel : true,
+	left : "6.5em"
+};
+
+const menuData1 = {
+	data : [
+		{ 
+			name : "menu0", 
+			data : [
+				{ 
+					name: "sub menu 0",
+					method: SubMenu0Method
+				},
+				{ name : "render menu 0", method : SubMenu1Method }
+			]
+		}
+	],
+	toplevel : true,
+	left : "6.5em"
+};
+
+const RenderMenu = function(in_menuData){
+	ReactDOM.render(
+		e(Menu, in_menuData),
+		document.getElementById("menuroot")
+	);
+}
+
+class MyCheckBox extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);
+	}
+	onChange(event){
+		//event.preventDefault();
+		this.props.onChange(event.target.checked);
+		//console.log("MyCheckBox onChange value:" + event.target.value + " checked:" + event.target.checked);
+	}
+
+	render() {
+		var newProps = {
+			"className" : "interact",
+			"type":"checkbox",
+			"style":{"height":"1.333em"},
+			"onChange":this.onChange,
+			"checked":this.props.checked
+		};
+		return e("label", {"style":{"userSelect": "none"}}, 
+			e("input", newProps),
+			this.props.name
+		);
+	}
+}
+
+class MyButton extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		var newProps = {
+			"className" : "button standard " + this.props.action
+		};
+		return e("a", newProps, this.props.name);
+	}
+}
+
+const DriveSideBar = function(props){
+	const newProps = {"style" : {
+		"flexGrow":0,
+		"flexShrink":0,
+		"flexBasis":"6em",
+		"display":"flex",
+		"flexDirection":"column",
+		"justifyContent":"flex-start",
+		"paddingLeft":"0.5em",
+		"paddingTop":"1em"
+	}};
+	return e(
+		"div", 
+		newProps, 
+		e(MyCheckBox, {"name":"Owned", "checked":props.owned, "onChange":props.onOwnedChange}),
+		e(MyCheckBox, {"name":"Write", "checked":props.write, "onChange":props.onWriteChange}),
+		e(MyCheckBox, {"name":"Read", "checked":props.read, "onChange":props.onReadChange}),
+		e(MyButton, {"name":"Create", "action":"call"})
+		);
+}
+
+const FrameWrapper = function(props){
+	return e("div", {
+		"className":"framewrapper",
+		"style":props
+	}, e("div", {"className":"frame"}))
+}
+
+/*
+	<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+		<div style="background: #FFFFFF;width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+		<div style="flex-grow:0;flex-shrink:0;text-align:center;">..</div>
+	</div>
+*/
+const DriveIcon = function(props){
+	var newProps = {
+		"name" : props.name,
+		//"key" : props["id"],
+		//"data-key" : props.id,
+		"style":{
+			"width":"4em",
+			"height":"4em",
+			"display":"flex",
+			"flexDirection":"column",
+			"alignItems":"center",
+			"paddingTop":"0.5em",
+			"overflow":"hidden"
+		}
+	};
+	//console.log("DriveIcon id:" + props.id + " newProps:" + JSON.stringify(newProps));
+	//props.onClick();
+	//return 	e("a", { "id":props.id, onClick:function(event){ event.preventDefault(); console.log("event.target.id:" + event.target.id);}}, 
+	return 	e("a", { "name" : props.name, onClick:function(event){ event.preventDefault(); props.onClick(event.target.name);}}, 
+		e("div", newProps, 
+			e("div", {"name" : props.name, "style":{"background":"#FFFFFF","width":"2em","height":"2em","flexGrow":0,"flexShrink":0}}),
+			e("span", {"name" : props.name, "style":{"flexGrow":0,"flexShrink":0}}, props.name)
+		)
+	);
+}
+
+const FilterCurrentFolder = function(in_fileData, in_location, in_owned, in_write, in_read){
+	if ((in_location === undefined) || (in_location === "") || ((typeof in_location) !== "string")){
+		return undefined;
+	}
+
+	const tokenArray = in_location.split(["/"]);
+	var arrayVisibleFolders = [];
+	if ((true === in_owned) || (true === in_write) || (true === in_read)){
+		in_fileData.owned.map(item => {
+			if (item.isParent === true){
+				arrayVisibleFolders.push(item);
+			}
+		});
+	}
+	if (true === in_write){
+		in_fileData.write.map(item => {
+			if (item.isParent === true){
+				arrayVisibleFolders.push(item);
+			}
+		});
+	}
+	if (true === in_read){
+		in_fileData.read.map(item => {
+			if (item.isParent === true){
+				arrayVisibleFolders.push(item);
+			}
+		});
+	}
+
+	var currentFolderID = undefined;
+	for (var index = 0, total = tokenArray.length; index < total; index++) {
+		const token = tokenArray[index];
+		if (token === ""){
+			continue;
+		}
+		var found = false;
+		for (var subIndex = 0, subTotal = arrayVisibleFolders.length; subIndex < subTotal; subIndex++) {
+			const item = arrayVisibleFolders[subIndex];
+			if (true === FilterDriveFileParent(currentFolderID, item.parent)){
+				if (token === item.name){
+					found = true;
+					currentFolderID = item.id;
+					break;
+				}
+			}
+		}
+
+		if (false === found){
+			break;
+		}
+	}
+
+	return currentFolderID;
+}
+
+const FilterDriveFileParent = function(in_currentFolderID, in_itemParentArray){
+	if ((in_currentFolderID === undefined) && (in_itemParentArray === null)){
+		return true;
+	}
+	if ((in_itemParentArray !== null) && (in_currentFolderID !== undefined)){
+		if (-1 !== in_itemParentArray.indexOf(in_currentFolderID)){
+			return true;
+		}
+	}
+
+	return false;
+}
+
+/*
+	fileData,
+	location,
+	owned,
+	write,
+	read
+
+const gFileData = {
+	"owned" : [
+		{ "name" : "file0", "id":"0000", "parent" : null, "isParent" : false },
+		{ "name" : "folder0", "id":"0001", "parent" : null, "isParent" : true },
+		{ "name" : "file1", "id":"0002", "parent" : ["0001"], "isParent" : false },
+		{ "name" : "file2", "id":"0003", "parent" : ["0001"], "isParent" : false },
+		{ "name" : "folder1", "id":"0004", "parent" : null, "isParent" : true }
+	],
+	"write" : [
+		{ "name" : "write file3", "id":"0010", "parent" : ["0004"], "isParent" : false },
+		{ "name" : "write file5", "id":"0011", "parent" : null, "isParent" : false }
+	],
+	"read" : [
+		{ "name" : "read folder2", "id":"0020", "parent" : ["0004"], "isParent" : true },
+		{ "name" : "read file4", "id":"0021", "parent" : ["0020"], "isParent" : false },
+		{ "name" : "read file6", "id":"0022", "parent" : null, "isParent" : false }
+	]
+};
+*/
+const FilterDriveFiles = function(inout_arrayDriveFiles, in_fileData, in_location, in_owned, in_write, in_read, in_onClickUp, in_onClickDown){
+	//get current folder
+	var currentFolderID = FilterCurrentFolder(in_fileData, in_location, in_owned, in_write, in_read);
+
+	if (currentFolderID != undefined){
+		inout_arrayDriveFiles.push({"name":"..", "id":"_navup", "onClick" : in_onClickUp});
+	}
+
+	const showOwnedFolders = ((true === in_write) || (true === in_read) || (true === in_owned));
+	//of the owned files,
+	if ((true === in_owned) || (true === showOwnedFolders)){
+		in_fileData.owned.map(item => {
+			if (true === FilterDriveFileParent(currentFolderID, item.parent)){
+				if (item.isParent === true){ //folder
+					if (showOwnedFolders){
+						item["onClick"] = in_onClickDown;
+						inout_arrayDriveFiles.push(item);
+					}
+				} else { //file
+					if (true === in_owned){
+						item["onClick"] = in_onClickDown;
+						inout_arrayDriveFiles.push(item);
+					}
+				}
+			}
+		});
+	}
+
+	if (true === in_write){
+		in_fileData.write.map(item => {
+			if (true === FilterDriveFileParent(currentFolderID, item.parent)){
+				item["onClick"] = in_onClickDown;
+				inout_arrayDriveFiles.push(item);
+			}
+		});
+	}
+
+	if (true === in_read){
+		in_fileData.read.map(item => {
+			if (true === FilterDriveFileParent(currentFolderID, item.parent)){
+				item["onClick"] = in_onClickDown;
+				inout_arrayDriveFiles.push(item);
+			}
+		});
+	}
+}
+
+class DriveFiles extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onClickUp = this.onClickUp.bind(this);
+		this.onClickDown = this.onClickDown.bind(this);
+	}
+	onClickUp(){
+		console.log("onClickUp");
+	}
+	onClickDown(in_name){
+		console.log("onClickDown in_name:" + in_name);
+	}
+
+	render() {
+		var arrayDriveFiles = [];
+		FilterDriveFiles(arrayDriveFiles, this.props.fileData, this.props.location, this.props.owned, this.props.write, this.props.read, this.onClickUp, this.onClickDown);
+
+		var newProps = {
+			"style":{
+				"display":"flex",
+				"flexDirection":"row",
+				"justifyContent":"flex-start",
+				"flexWrap":"wrap",
+				"alignContent": "flex-start"
+			}
+		};
+		var params = ["div", newProps];
+		arrayDriveFiles.map(item => {
+			params.push(e(DriveIcon, item));
+		});
+
+		return e.apply(this, params);
+	}
+}
+
+class MyTextArea extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);
+	}
+	onChange(event){
+		//event.preventDefault();
+		this.props.onChange(event.target.value);
+		//console.log("MyTextArea onChange value:" + event.target.value);
+	}
+
+	render() {
+		var newProps = {
+			"className" : "interact",
+			"rows":"1", 
+			"placeholder":this.props.placeholder,
+			"style":{"width":"100%"},
+			"value":this.props.value,
+			"onChange":this.onChange
+		};
+		return e("textarea", newProps);
+	}
+}
+
+const DriveContent = function(props){
+	const newProps = {
+		"style" : { "padding":"0.25em 1em 0 0.5em" }
+	};
+	return e("div", newProps,
+		e(MyTextArea, {"placeholder":"location", "value" : props.location, "onChange" : props.onLocationChange}),
+		e(DriveFiles, props)
+	);
+}
+
+const DriveContentOuter = function(props){
+	const newProps = {
+		"className" : "framewrapperparent",
+		"style" : {
+			"flexGrow":0,
+			"flexShrink":0,
+			"flexBasis":"calc(100% - 6em)"
+		}
+	};
+	return e("div", newProps, 
+		e(FrameWrapper, {"top":"-0.75em", "right":"0.5em"}), 
+		e(DriveContent, props)
+	);
+}
+
+const gFileData = {
+	"owned" : [
+		{ "name" : "file0", "id":"0000", "parent" : null, "isParent" : false },
+		{ "name" : "folder0", "id":"0001", "parent" : null, "isParent" : true },
+		{ "name" : "file1", "id":"0002", "parent" : ["0001"], "isParent" : false },
+		{ "name" : "file2", "id":"0003", "parent" : ["0001"], "isParent" : false },
+		{ "name" : "folder1", "id":"0004", "parent" : null, "isParent" : true }
+	],
+	"write" : [
+		{ "name" : "write file3", "id":"0010", "parent" : ["0004"], "isParent" : false },
+		{ "name" : "write file5", "id":"0011", "parent" : null, "isParent" : false }
+	],
+	"read" : [
+		{ "name" : "read folder2", "id":"0020", "parent" : ["0004"], "isParent" : true },
+		{ "name" : "read file4", "id":"0021", "parent" : ["0020"], "isParent" : false },
+		{ "name" : "read file6", "id":"0022", "parent" : null, "isParent" : false }
+	]
+};
+
+class Drive extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			location : "",
+			owned : true,
+			write : true,
+			read : true,
+			fileData : gFileData
+		}
+		this.HandelLocationChange = this.HandelLocationChange.bind(this);
+		this.HandelOwnedChange = this.HandelOwnedChange.bind(this);
+		this.HandelWriteChange = this.HandelWriteChange.bind(this);
+		this.HandelReadChange = this.HandelReadChange.bind(this);
+	}
+
+	HandelLocationChange(in_location){
+		this.setState({location: in_location});
+	}
+	HandelOwnedChange(in_owned){
+		this.setState({owned: in_owned});
+	}
+	HandelWriteChange(in_write){
+		this.setState({write: in_write});
+	}
+	HandelReadChange(in_read){
+		this.setState({read: in_read});
+	}
+
+	render() {
+		//console.log("Drive render owned:" + this.state.owned);
+		const propertiesSideBar = {
+			owned:this.state.owned,
+			onOwnedChange:this.HandelOwnedChange,
+			write:this.state.write,
+			onWriteChange:this.HandelWriteChange,
+			read:this.state.read,
+			onReadChange:this.HandelReadChange
+		};
+		const propertiesContent = {
+			fileData:this.state.fileData,
+			location:this.state.location,
+			onLocationChange:this.HandelLocationChange,
+			owned:this.state.owned,
+			write:this.state.write,
+			read:this.state.read
+		};
+		//div id="content" style="display:flex;flex-direction:row;justify-content:space-between;background-color:#FFFF00;background-color:transparent;">
+
+		const properties = { 
+			style:{
+				"flexGrow":1,
+				"flexShrink":0,
+				"display":"flex",
+				"flexDirection":"row",
+				"justifyContent":"spaceBetween"
+			}
+		};
+		return e("div", properties, 
+			e(DriveSideBar, propertiesSideBar),
+			e(DriveContentOuter, propertiesContent)
+		);
+	}
+}
+
+const Footer = function(){
+	const newProps = {
+		"style":{
+			"flexGrow":0,
+			"flexShrink":0,
+			"alignSelf":"center"
+		}
+	};
+	const newChildProps = {
+		"style":{
+			"fontSize":"0.7em"
+		}
+	};
+	return e("div", newProps,
+			e("p", newChildProps, "0123456789 data page served 0123456789 data version copywrite blurb")
+	);
+}
+
+//change to class and have menudata as state?
+const App = function(){
+	const newProps = {
+		"style":{
+			"display":"flex",
+			"flexDirection":"column",
+			"justifyContent":"space-between",
+			"alignItems":"stretch",
+			"height":"100%"
+		}
+	};
+	return e("div", newProps,
+		e(Menu, menuData0),
+		e(Drive),
+		e(Footer)
+	);
+}
+
+ReactDOM.render(
+	e(App), 
+	document.getElementById("root")
+);
+		</script>
+	</body>
+</html>

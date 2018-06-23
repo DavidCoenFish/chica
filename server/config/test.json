@@ -1,0 +1,5 @@
+{
+	"databaseConnectUrl": "mongodb://localhost:27017/chicatest",
+	"environment": "test",
+	"port": 3001
+}

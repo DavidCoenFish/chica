@@ -1,0 +1,7 @@
+	for (var index = 0, total = this.m_exclusiveArray.length; index < total; index++) {
+		var node = this.m_exclusiveArray[index];
+
+	for (key in in_baseDocumentData) {
+		if (false === in_baseDocumentData.hasOwnProperty(key)) {
+			continue;
+		}

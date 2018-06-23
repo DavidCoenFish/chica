@@ -1,0 +1,12 @@
+{
+	"contentPublicDir": "./../content/dev/public",
+	"environment": "default",
+	"guestAccountLifespan": 86400000,
+	"paginationLimit": 100,
+	"port": 3000,
+	"sessionCookieName": "chica",
+	"sessionDurationMS": 14400000,
+	"sessionEncodePassword": "d0P80enVU3SELads15+FSNebwbd3N9ml",
+	"sessionSecret": "W9SRQrULf02XegQSGUEcDCV41Jo5h5kO",
+	"userEncodePassword": "jjfl949OzLxJ39GbSIpG9l2PjA6Cg4RZ"
+}

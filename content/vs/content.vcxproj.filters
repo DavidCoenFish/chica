@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="source">
+			<UniqueIdentifier>{cb9df7be-c044-4ac1-b84d-5b69fa2d7c67}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\dev">
+			<UniqueIdentifier>{4cb00b0d-1bcf-4e15-962b-ba26a52ff640}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\dev\public">
+			<UniqueIdentifier>{3364fbaf-b991-491f-ab28-32c4b4b1e6fa}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\dev\public\icon">
+			<UniqueIdentifier>{e30bd9f9-39a9-4658-aeb2-d8197dcb21fe}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working">
+			<UniqueIdentifier>{86123290-fa33-42de-9ab8-83d235ef9417}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test2">
+			<UniqueIdentifier>{6a6059ac-7b5d-45d7-bdf4-11bf1492cd17}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test2\css">
+			<UniqueIdentifier>{9b725866-e682-4675-a262-054da319aa78}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\dev\public\js">
+			<UniqueIdentifier>{49fed616-520d-4f82-bd4a-0d8d7842748f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test">
+			<UniqueIdentifier>{5f53c43f-3f2e-45d7-94d6-bce6b907cc1f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test\graphics">
+			<UniqueIdentifier>{28cf3f1b-9489-4344-ac02-e40bc127626d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test\css">
+			<UniqueIdentifier>{7bed2aa4-588b-4b5c-8c0f-a6070c28a6c5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test2\js">
+			<UniqueIdentifier>{c5d4cad1-8b84-4c28-a42b-aca7a387ae5a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\working\test\js">
+			<UniqueIdentifier>{d8bd0ae2-6199-4170-820c-d68f19002c52}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\templates">
+			<UniqueIdentifier>{045f17ab-2425-4651-bdee-6ac57447bcfc}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\dev\public\icon\legendaryquest.png">
+			<Filter>source\dev\public\icon</Filter>
+		</None>
+		<None Include="..\dev\public\icon\system.png">
+			<Filter>source\dev\public\icon</Filter>
+		</None>
+		<None Include="..\.\install.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\working\test2\css\reset.css">
+			<Filter>source\working\test2\css</Filter>
+		</None>
+		<None Include="..\working\test2\css\style00.css">
+			<Filter>source\working\test2\css</Filter>
+		</None>
+		<None Include="..\working\icons.xcf">
+			<Filter>source\working</Filter>
+		</None>
+		<None Include="..\dev\public\js\legendaryquest.js">
+			<Filter>source\dev\public\js</Filter>
+		</None>
+		<None Include="..\dev\public\js\legendaryquest.json">
+			<Filter>source\dev\public\js</Filter>
+		</None>
+		<None Include="..\dev\public\js\legendaryquest.map">
+			<Filter>source\dev\public\js</Filter>
+		</None>
+		<None Include="..\dev\public\js\system.js">
+			<Filter>source\dev\public\js</Filter>
+		</None>
+		<None Include="..\dev\public\js\system.json">
+			<Filter>source\dev\public\js</Filter>
+		</None>
+		<None Include="..\dev\public\js\system.map">
+			<Filter>source\dev\public\js</Filter>
+		</None>
+		<None Include="..\working\test\graphics\icons_folder.png">
+			<Filter>source\working\test\graphics</Filter>
+		</None>
+		<None Include="..\working\test\graphics\icons_lqre.png">
+			<Filter>source\working\test\graphics</Filter>
+		</None>
+		<None Include="..\working\test\graphics\icons_lqre_charactersheet.png">
+			<Filter>source\working\test\graphics</Filter>
+		</None>
+		<None Include="..\working\test\graphics\icons_movie.png">
+			<Filter>source\working\test\graphics</Filter>
+		</None>
+		<None Include="..\working\test\css\blank.css">
+			<Filter>source\working\test\css</Filter>
+		</None>
+		<None Include="..\working\test\css\ng-table.min.css">
+			<Filter>source\working\test\css</Filter>
+		</None>
+		<None Include="..\working\test\css\reset.css">
+			<Filter>source\working\test\css</Filter>
+		</None>
+		<None Include="..\working\test\css\style.css">
+			<Filter>source\working\test\css</Filter>
+		</None>
+		<None Include="..\working\test2\js\angular.min.js">
+			<Filter>source\working\test2\js</Filter>
+		</None>
+		<None Include="..\working\test2\js\login.js">
+			<Filter>source\working\test2\js</Filter>
+		</None>
+		<None Include="..\working\test2\00dialog.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\01index.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\02login.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\03drive.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\04genericedit.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\05characteredit.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\notes.txt">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\style.html">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test2\style.xcf">
+			<Filter>source\working\test2</Filter>
+		</None>
+		<None Include="..\working\test\js\angular.min.js">
+			<Filter>source\working\test\js</Filter>
+		</None>
+		<None Include="..\working\test\js\index.js">
+			<Filter>source\working\test\js</Filter>
+		</None>
+		<None Include="..\working\test\js\login.js">
+			<Filter>source\working\test\js</Filter>
+		</None>
+		<None Include="..\working\test\js\lqre.js">
+			<Filter>source\working\test\js</Filter>
+		</None>
+		<None Include="..\working\test\js\ng-table.min.js">
+			<Filter>source\working\test\js</Filter>
+		</None>
+		<None Include="..\templates\index.html">
+			<Filter>source\templates</Filter>
+		</None>
+		<None Include="..\templates\login.html">
+			<Filter>source\templates</Filter>
+		</None>
+		<None Include="..\templates\lqre.html">
+			<Filter>source\templates</Filter>
+		</None>
+		<None Include="..\working\test\flex.html">
+			<Filter>source\working\test</Filter>
+		</None>
+		<None Include="..\working\test\index.html">
+			<Filter>source\working\test</Filter>
+		</None>
+		<None Include="..\working\test\login.html">
+			<Filter>source\working\test</Filter>
+		</None>
+		<None Include="..\working\test\lqre.html">
+			<Filter>source\working\test</Filter>
+		</None>
+		<None Include="..\working\test\style.html">
+			<Filter>source\working\test</Filter>
+		</None>
+		<None Include="..\working\test\table.html">
+			<Filter>source\working\test</Filter>
+		</None>
+		<None Include="..\working\test\template.html">
+			<Filter>source\working\test</Filter>
+		</None>
+	</ItemGroup>
+</Project>

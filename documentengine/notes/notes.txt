@@ -1,0 +1,59 @@
+https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System
+
+null, undefined, boolean, number, string
+Object, Function, EventTarget
+@enum {number}
+?Array<string> //nullable
+!Object<string, number> //non-null
+
+{myNum: number, myObject} //record
+
+function(string, boolean): number
+	(number|boolean) //union
+@param {number=}  //optional arg
+* //all
+? //unknown
+//cast
+const document = /** @type {!c.Document} */ (in_valueOrUndefined);
+
+/** @type {!string} */
+var valueName = in_calculationStack.pop();
+
+
+	for (var index = 0, total = this.m_exclusiveArray.length; index < total; index++) {
+		var node = this.m_exclusiveArray[index];
+
+	for (var key in in_baseDocumentData) {
+		if (false === in_baseDocumentData.hasOwnProperty(key)) {
+			continue;
+		}
+
+
+staticdata
+	documenttypes
+
+
+
+dagNodeMember
+dagNodeMethod
+
+
+if a value in a document under a node value changes, want to mark that node value as dirty
+want to be able to references to documents (have map in root document?)
+
+move towards value or undefined (not value or null?)
+
+if we want documents to hold onto dirty? then how do they go undirty?
+since they can not, we can not cache dirty flag at document level, just hand on the 'setDirty' command to the owning node, which will marh dependants as dirty
+
+
+
+
+dagNode values for just json primitives (bool, string, number, object, array, null)
+use case: shader variables
+
+
+value:    {"text":"4","tooltip":["Level(4) = (1 + Ceiling(Log((1 + Floor((Experence points(100) / 25))))))"]} 
+expected:[{"text":"4","tooltip":["Level(4) = (1 + Ceiling(Log((1 + Floor((Experence points(100) / 25))))))"]}]
+
+

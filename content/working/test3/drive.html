@@ -1,0 +1,130 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" style="height:100%;">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body style="height:100%;">
+
+		<div style="display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;height:100%;">
+
+
+			<ul class="menu" style="display:flex;margin:0 10em 0 10em;">
+				<li>
+					<a class="standard interact">menu0</a>
+					<ul>
+						<li>
+							<a class="wide interact">sub menu0</a>
+						</li>
+						<li>
+							<a class="wide interact expand">sub menu1</a>
+							<ul>
+								<li>
+									<a class="wide interact">sub sub menu0</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu1</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="wide interact expand">sub menu2</a>
+							<ul>
+								<li>
+									<a class="wide interact">sub sub menu0</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu1</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<span style="flex-grow:1;flex-shrink:0;"></span>
+				<li>
+					<a class="standard interact">menu1</a>
+					<ul>
+						<li>
+							<a class="wide interact">sub menu0</a>
+						</li>
+						<li>
+							<a class="wide interact">sub menu1</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="standard interact">menu2</a>
+					<ul>
+						<li>
+							<a class="wide interact">sub menu0</a>
+						</li>
+						<li>
+							<a class="wide interact">sub menu1</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div id="content" style="flex-grow:1;flex-shrink:0;display:flex;flex-direction:row;justify-content:space-between;background-color:#FFFF00;background-color:transparent;">
+				<div id="side_menu" style="flex-grow:0;flex-shrink:0;flex-basis:5em;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0.5em;padding-top:1em;">
+					<label><input class="interact" type="checkbox" style="height:1.333em;"/>Owned</label>
+					<label><input class="interact" type="checkbox" style="height:1.333em;"/>Write</label>
+					<label><input class="interact" type="checkbox" style="height:1.333em;"/>Read</label>
+				</div>
+				<div id="sub_content" class="framewrapperparent" style="flex-grow:0;flex-shrink:0;flex-basis:calc(100% - 5em);position:relative;">
+					<div class="framewrapper" style="">
+						<div class="frame">
+						</div>
+					</div>
+					<div style="padding:0.25em 1em 0 1.5em;">
+						<textarea class="interact" rows="1" placeholder="location" style="width:100%;"></textarea>
+
+						<div style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;align-content: flex-start;">
+							<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+								<div style="background: #FFFFFF;width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+								<div style="flex-grow:0;flex-shrink:0;text-align:center;">..</div>
+							</div>
+							<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+								<div style="background: #FFFFFF;width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+								<div style="flex-grow:0;flex-shrink:0;text-align:center;">a realy long name to see overrunrunrunrun</div>
+							</div>
+							<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+								<div style="background: #FFFFFF;width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+								<div style="flex-grow:0;flex-shrink:0;text-align:center;">a realy long name to see overrunrunrunrun</div>
+							</div>
+							<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+								<div style="background: #FFFFFF;width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+								<div style="flex-grow:0;flex-shrink:0;text-align:center;">a realy long name to see overrunrunrunrun</div>
+							</div>
+							<div style="width:4em;height:4em;display:flex;flex-direction:column;align-items:center;padding-top:0.5em;background: #FFFF00;background:transparent;overflow:hidden;">
+								<div style="background: #FFFFFF;width:2em;height:2em;flex-grow:0;flex-shrink:0;"></div>
+								<div style="flex-grow:0;flex-shrink:0;text-align:center;">a realy long name to see overrunrunrunrun</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottom_footer" style="flex-grow:0;flex-shrink:0;align-self:center;">
+				<p style="font-size:0.7em;margin-top:0.75em;">0123456789 data page served 0123456789 data version copywrite blurb</p>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>

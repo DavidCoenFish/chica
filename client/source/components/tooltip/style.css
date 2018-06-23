@@ -1,0 +1,27 @@
+.tooltip{
+	position: relative;
+}
+.tooltip:hover>.toolpop{
+	display:inline-block;
+}
+.toolpop{
+	display:none;
+	position:absolute;
+	left:-0.5em;
+	top:75%;
+	width:15em;
+	z-index:1;
+	text-align:center;
+	border-style: solid;
+	border-width: 1px;
+	padding:0.5em;
+}
+.toolpop>.tooltip>.toolpop{
+	top:0.5em;
+	left:0.5em;
+}
+.toolpop>.tooltip{
+	position: static;
+}
+
+/*	//top:75%; */

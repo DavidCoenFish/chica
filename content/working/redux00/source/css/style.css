@@ -1,0 +1,297 @@
+/*
+==========================================
+	STYLE 
+	top right bottom left
+==========================================
+*/
+.hidden {
+	visibility:hidden;
+}
+.removed {
+	display:none;
+}
+
+.button {
+	position: relative;
+	padding: 0 0.25em 0 0.25em;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	overflow: hidden;
+	user-select:none;
+}
+
+.button + .button {
+	margin-left: 0.25em;
+}
+
+.button:before {
+	position: absolute;
+	content: "";
+	width: 200%;
+	height: 200%;
+	background-image: linear-gradient(135deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
+	top: -200%;
+	left: -200%;
+}
+.button:hover:before {
+	transition: all 0.5s ease-out;
+	top: 100%;
+	left: 100%;
+}
+.button.disable {
+	cursor: default;
+}
+	/* cursor: not-allowed; */
+
+.button.disable:before {
+	display: none;
+}
+
+.standard {
+	display: inline-block;
+	min-width: 5em;
+}
+.tinybutton  {
+	display: inline-block;
+	width: 1em;
+	height:0.66em;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	user-select:none;	
+}
+
+.wide {
+	display: inline-block;
+	min-width: 10em;
+}
+
+.menu>li>a{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+}
+
+.menu li{
+	cursor:pointer;
+	position:relative;
+	display:inline-block;
+}
+
+.menu a, .menu label{
+	padding: 0 0.25em 0 0.25em;
+	user-select: none;
+}
+
+.menu>li + li {
+	margin-left: 0.25em;
+}
+
+.menu ul{
+	display:none;
+	position:absolute;
+	left:0;
+	top:100%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	z-index:1;
+}
+.menu ul ul{
+	top:0;
+	left:1em;
+	left:100%;
+}
+.menu li:hover> ul{
+	display:inline-block;
+}
+.expand:after {
+	position: absolute;
+	content: "\25BA";
+	right:0;
+	font-size:0.7em;
+	margin-top:0.2em;
+}
+
+.tooltip{
+	position: relative;
+}
+.tooltip:hover>.toolpop{
+	display:inline-block;
+}
+.toolpop{
+	position:absolute;
+	display:none;
+	left:0em;
+	bottom:75%;
+	width:10em;
+	z-index:1;
+	text-align:center;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.container{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-content: flex-start;
+}
+.iconwrapper{
+	width:3.45em;
+	height:4em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-top:0.5em;
+	overflow:hidden;
+}
+
+.icon{
+	background: #FFFFFF;
+	width:2em;
+	height:2em;
+	flex-grow:0;
+	flex-shrink:0;
+}
+.icontext{
+	flex-grow:0;
+	flex-shrink:0;
+	text-align:center;
+}
+
+textarea{
+	resize:none;
+	vertical-align:top;
+	padding:0 0.25em 0 0.25em;
+	margin:0;
+	white-space: nowrap;
+}
+input{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.gedit{
+	width:15em;
+	height:5em;
+}
+.gedit>p{
+	height:1em;
+}
+.wash {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.framewrapperparent {
+	position: relative;
+}
+.framewrapper {
+	position: absolute;
+	z-index:-1;
+
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+/*
+	top:-0.75em;
+	right:0.5em;
+	bottom:-0.75em;
+	left:0;
+*/
+
+.frame {
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+}
+
+/*
+==========================================
+	COLOUR SCHEMES
+==========================================
+*/
+html {
+	background: linear-gradient(0deg, #808080, #787993);
+	background-attachment: fixed;
+}
+
+.disable, .toolpop{
+	background: #c0c0c0;
+	border-color: #404040;
+	color:#404040;
+}
+
+.interact {
+	background: #A8C8E8;
+	border-color: #486888;
+}
+.interact:hover {
+	background: #C0E0FF;
+}
+.interact:focus {
+	background: #90B0D0;
+}
+.interact:active {
+	background: #7898B8;
+}
+
+.call {
+	background: #98D8B8;
+	border-color: #387858;
+}
+.call:hover {
+	background: #B0F0D0;
+}
+.call:focus {
+	background: #80C0A0;
+}
+.call:active {
+	background: #68A888;
+}
+
+.destruct {
+	background: #C888A8;
+	border-color: #682848;
+}
+.destruct:hover {
+	background: #E0A0C0;
+}
+.destruct:focus {
+	background: #B07090;
+}
+.destruct:active {
+	background: #985878;
+}
+
+.foreground{
+	background: #c0c0c0;
+	border-color: #486888;
+}
+
+.menu ul, .toolpop, .frame {
+	background: #c0c0c0;
+	border-color: #486888;
+	box-shadow: 2px 2px 4px #080820;
+}
+
+.wash {
+	background-color: rgba(8, 8, 32, 0.75);
+}
+
+.tooltext{
+	color: #284868;
+}
+

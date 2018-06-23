@@ -1,0 +1,24 @@
+{
+	"author": "David Coen",
+	"dependencies": {
+		"body-parser": "1.17.1",
+		"config": "1.25.1",
+		"cookie-parser": "1.4.3",
+		"express": "4.15.2",
+		"helmet": "3.5.0",
+		"mongodb": "2.2.25",
+		"q": "1.5.0",
+		"vm": "0.1.0",
+		"whiskers": "0.4.0"
+	},
+	"description": "",
+	"devDependencies": {
+		"requestify": "0.2.5"
+	},
+	"keywords": [],
+	"license": "UNLICENSED",
+	"main": "server.js",
+	"name": "chica",
+	"private": true,
+	"version": "1.0.0"
+}

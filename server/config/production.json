@@ -1,0 +1,7 @@
+{
+	"contentPublicDir": "./../content/prod/public",
+	"databaseConnectUrl": "mongodb://localhost:27017/chica",
+	"environment": "production",
+	"sessionEncodePassword": "uzhcbDNs1C9mJUo3SsHhdi0vP+KmVXlj",
+	"userEncodePassword": "SqRhWpfbGMJzgCdsTHWkYpxJN1MaZZgc"
+}

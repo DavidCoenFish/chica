@@ -1,0 +1,3979 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="source">
+			<UniqueIdentifier>{5d376983-a976-4207-a500-d1b275c5048b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\unittests">
+			<UniqueIdentifier>{b1101bb5-4774-4714-ba63-a18b2212197f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules">
+			<UniqueIdentifier>{e0d1a7db-f736-47eb-9aa0-d36f68059de2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mime-types">
+			<UniqueIdentifier>{f8ed53ef-2a42-4915-a03b-b6617b5880ff}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\media-typer">
+			<UniqueIdentifier>{95d1b10b-b17b-4e3d-99dd-90c6dcc29a83}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\config">
+			<UniqueIdentifier>{314fb93b-3a15-4919-8ef5-c6750d411bed}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery">
+			<UniqueIdentifier>{94baadba-ae73-4521-b58f-c1c7824701ba}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src">
+			<UniqueIdentifier>{45d251c6-afe6-4bf8-9e91-e56e6170198a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\css">
+			<UniqueIdentifier>{babdfb47-089e-44cb-9878-41dbfbd07461}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\css\var">
+			<UniqueIdentifier>{e7257b9b-f638-45ea-8362-009c1ccadaf2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\frameguard">
+			<UniqueIdentifier>{6b2afa93-7ab2-45b8-924c-ebd2179f1f01}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\encodeurl">
+			<UniqueIdentifier>{1722eb96-7b29-416d-9c6f-0bed11540112}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\raw-body">
+			<UniqueIdentifier>{cb4b387f-76d1-4910-aa1a-11dbee118880}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs">
+			<UniqueIdentifier>{467f5845-d7d1-4a47-af45-5f9f8180a3cf}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs\lib">
+			<UniqueIdentifier>{fc187289-7727-4e91-8d84-8e769a1e89e2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\core-util-is">
+			<UniqueIdentifier>{1b313c7c-08c4-4ed0-abcb-910235339196}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bson">
+			<UniqueIdentifier>{92bbc8a8-30c6-4d3a-b723-405ac8551a7a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bson\lib">
+			<UniqueIdentifier>{e74952bb-8525-4d6e-b3f5-49bf7ce7c571}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bson\lib\bson">
+			<UniqueIdentifier>{e45c9a47-dfa5-4ceb-ac7b-c61adae6960c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bson\lib\bson\parser">
+			<UniqueIdentifier>{36a02c7d-e290-40da-b482-4b45e6a478e0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\manipulation">
+			<UniqueIdentifier>{95c77725-11dd-4fb6-b794-a035231d6973}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\manipulation\var">
+			<UniqueIdentifier>{eaa503c6-4cf2-4f75-9daa-46cc6d51b124}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers">
+			<UniqueIdentifier>{e1b4eee8-ae9a-4777-a185-facb3452f2fa}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\test">
+			<UniqueIdentifier>{612e2fed-478d-435f-9a34-ab1b3e55f099}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\test\server">
+			<UniqueIdentifier>{1abaad2a-22aa-4614-b04d-d23b05c66c1a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\test\server\contexts">
+			<UniqueIdentifier>{6bc357b0-adcf-4c96-b1f1-48a39f5e3649}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\referrer-policy">
+			<UniqueIdentifier>{c2cb9dd2-4eb0-4fbb-914d-1363a9f5810e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\es6-promise">
+			<UniqueIdentifier>{5a7cc0b2-abdb-401d-8a39-986fe68306f3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\platform">
+			<UniqueIdentifier>{165de830-b795-4e2e-9750-1d1b56fbee04}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\merge-descriptors">
+			<UniqueIdentifier>{b51a457a-bb33-4f3c-8c35-81a6cb84660c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\benchmark">
+			<UniqueIdentifier>{b5898f6c-40f5-4890-8ac9-3551f6db4659}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\benchmark\suites">
+			<UniqueIdentifier>{3a99316e-9921-4f1d-8935-5f9b7ad579cf}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5">
+			<UniqueIdentifier>{5b9a652a-ca69-48dd-942e-20547cd72e8b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test">
+			<UniqueIdentifier>{23d85961-22f9-4a98-9205-8a8a2700bda9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases">
+			<UniqueIdentifier>{b1fc8ca5-0cad-4c61-bb98-78c195d44060}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\todo">
+			<UniqueIdentifier>{4ca83543-5fb0-436d-a399-ccc7929a09e8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\nocache">
+			<UniqueIdentifier>{bad9bd89-69d1-4706-a7ce-e07a008218db}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bytes">
+			<UniqueIdentifier>{a98b5f66-6044-497e-b2f7-36b985483e19}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\test\server\templates">
+			<UniqueIdentifier>{ad2babe1-e717-4641-9cee-2e82e395d0db}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\proxy-addr">
+			<UniqueIdentifier>{d270e39c-41b4-4639-b4d7-d65f5c3a403e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\data">
+			<UniqueIdentifier>{aecc2eb1-d952-494e-ade8-a09dcac36693}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\negotiator">
+			<UniqueIdentifier>{352f18ba-ddf9-4c00-9977-9ab55249a6c2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hide-powered-by">
+			<UniqueIdentifier>{a3e40f61-3541-48b0-bbea-535ebc8d2b0f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hide-powered-by\test">
+			<UniqueIdentifier>{1b57c4b9-0850-4fca-adbf-be7bb50bcb52}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\ajax">
+			<UniqueIdentifier>{97ec0ebd-c583-4587-9b9e-67afacef539d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\ajax\var">
+			<UniqueIdentifier>{2b1b2585-90f9-4a23-86b2-449135a9c90b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\numbers">
+			<UniqueIdentifier>{d559cbec-aa34-4b33-bf46-711c3e63fa29}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify">
+			<UniqueIdentifier>{5e149458-1a02-4490-abe7-3dca775ecef3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\test">
+			<UniqueIdentifier>{628a6771-ee97-481c-b1fd-9e98b019b8de}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\test\logger-adapters">
+			<UniqueIdentifier>{ac0e8485-28fc-43d0-b478-0640b263c42c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\x-xss-protection">
+			<UniqueIdentifier>{4d2209f8-68c4-4dd9-9ac8-a8a43b7bdb43}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\x-xss-protection\test">
+			<UniqueIdentifier>{627b8c00-756b-4d71-8697-62111602ec09}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\lib">
+			<UniqueIdentifier>{f2088b4f-4fa3-440d-9fe6-66969f1ee172}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\lib\cache-transporters">
+			<UniqueIdentifier>{ce697d81-d4c5-4557-af1a-6f248c16d5b5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\attributes">
+			<UniqueIdentifier>{a70f13e7-5c99-4a5d-88ee-a5c3e6c50028}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\frameguard\lib">
+			<UniqueIdentifier>{af20ab00-6458-469b-bcd0-7191bf20872c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\core">
+			<UniqueIdentifier>{3f078947-b0a0-4689-b015-aa61a9d46b75}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\core\var">
+			<UniqueIdentifier>{e764a6b5-1ca2-4831-9d41-f6363bcc88fd}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\setprototypeof">
+			<UniqueIdentifier>{aced7dcd-ac0d-43ac-92b0-4aa8295e14fe}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\effects">
+			<UniqueIdentifier>{ec6c1725-14de-4728-8e64-2b304146c222}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\q">
+			<UniqueIdentifier>{3dcbb518-26e2-4364-b32a-b60e7f23254a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mime">
+			<UniqueIdentifier>{66c62fe3-18e5-476e-a0ca-c5f847293e6a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\path-to-regexp">
+			<UniqueIdentifier>{88dc53bd-a91e-4940-bf24-40dbbb290662}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\applications">
+			<UniqueIdentifier>{65cbf079-1658-40c6-a5d8-7046e9d13432}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\applications\legendaryquest">
+			<UniqueIdentifier>{1620b89d-8ae1-493d-b64e-b3e79841e79e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\data\var">
+			<UniqueIdentifier>{0396271a-c0cd-42fa-a891-199fc232107b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\vm">
+			<UniqueIdentifier>{25d266ae-f7cf-4bc2-ad59-7e072c46a5a4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\body-parser">
+			<UniqueIdentifier>{fb99623c-1e17-47af-a1d8-887db1c656f6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\body-parser\lib">
+			<UniqueIdentifier>{d05c6f48-2871-4228-9bd5-01064e4b7f4c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\body-parser\lib\types">
+			<UniqueIdentifier>{fdb97381-2cf7-416a-a523-b6e2448f8d1a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\connect">
+			<UniqueIdentifier>{4ced1a73-ce78-4a7c-86dc-9910e42dcfc1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\connect\node_modules">
+			<UniqueIdentifier>{93ebd6eb-9a50-49f2-9e50-647e7fd8a6b3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\connect\node_modules\finalhandler">
+			<UniqueIdentifier>{316dbc0e-82ae-4571-9242-eaa213dde8fb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hsts">
+			<UniqueIdentifier>{2f6f2111-68d2-4112-9ec4-17760d437e5c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\event">
+			<UniqueIdentifier>{0f412955-fac4-4416-95a8-321a96d47d18}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core">
+			<UniqueIdentifier>{b3a2f8f7-d941-4e6f-94cb-8dabfa29b95a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core\lib">
+			<UniqueIdentifier>{84a3c268-59ca-483a-a858-f67f0517e57e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core\lib\connection">
+			<UniqueIdentifier>{bea6ea97-b7ae-4942-9cf1-4fea8aa7dadc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\require_optional">
+			<UniqueIdentifier>{8881cdb0-77ad-499b-ac0b-315362eba519}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\require_optional\test">
+			<UniqueIdentifier>{e0ed7400-9246-4860-a41b-1d216bd52ba0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\require_optional\test\nestedTest">
+			<UniqueIdentifier>{fa2aa025-84b4-4adb-8daa-8d0ebd2f1489}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\debug">
+			<UniqueIdentifier>{7e6427ab-b81c-4102-91a4-5cb37f574a33}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\test\server\rendered">
+			<UniqueIdentifier>{95a33010-dd00-4d77-aa43-101cdf5ae2bd}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\helmet">
+			<UniqueIdentifier>{3ca04503-0037-4236-acca-0678f0e9a1aa}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\notes">
+			<UniqueIdentifier>{daf106cc-9ddb-41d4-bcad-2be0f1c9b072}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\external">
+			<UniqueIdentifier>{217d5075-1b1d-416b-b1bd-42a147496846}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\external\sizzle">
+			<UniqueIdentifier>{e6b5547b-3365-408d-bb56-85e8aa8b27f2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\external\sizzle\dist">
+			<UniqueIdentifier>{009c85f7-f207-40d4-af99-49d7fae8127f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\cookie-parser">
+			<UniqueIdentifier>{cc508b6b-4d56-47da-9847-4c923451d8af}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\readable-stream">
+			<UniqueIdentifier>{c0400286-55d0-482b-879c-deedd26bbd07}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\readable-stream\doc">
+			<UniqueIdentifier>{dfb249e4-8690-45ee-966b-da4437f87fbd}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dasherize">
+			<UniqueIdentifier>{cd2d453c-beab-4f58-b382-ba3cb90f32f1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dasherize\test">
+			<UniqueIdentifier>{8885918e-10cd-4d40-9d7e-121d79651352}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\content-security-policy-builder">
+			<UniqueIdentifier>{e34985c8-9319-4689-b006-38f224c7d18a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\etag">
+			<UniqueIdentifier>{f0c1000a-2dee-406d-bd90-53e6e1775bdc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\helmet-csp">
+			<UniqueIdentifier>{197c95db-5076-45fc-9ed0-28e9ffde6ca4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\helmet-csp\lib">
+			<UniqueIdentifier>{71fbed58-5b8d-4ffe-8253-87662ba6aff3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\helmet-csp\lib\check-options">
+			<UniqueIdentifier>{170aeb56-989c-4b6f-9e34-8f6b326cf999}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\helmet-csp\lib\check-options\check-directive">
+			<UniqueIdentifier>{33b569aa-39a2-4c8b-b0c7-43a31a30f779}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\destroy">
+			<UniqueIdentifier>{da8556fa-f8e9-4743-82a8-91d285762117}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\arrays">
+			<UniqueIdentifier>{425d7957-6e22-4898-bff8-4427c2dc9e20}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\config\lib">
+			<UniqueIdentifier>{604edb79-64ef-40aa-8946-261c44d67586}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\type-is">
+			<UniqueIdentifier>{be245d2d-c08a-45ee-ba78-a7c4175b14e0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\iconv-lite">
+			<UniqueIdentifier>{52c605df-7b5c-4aac-a7be-823964b30e0d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs\test">
+			<UniqueIdentifier>{aac0308f-66dc-43b6-866b-7136454aa77c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\statuses">
+			<UniqueIdentifier>{0181cc58-ee3a-41d8-96d3-56ee23c71fd7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\iconv-lite\encodings">
+			<UniqueIdentifier>{e0a11cfb-efac-4558-a581-4c4ff03272d9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\iconv-lite\encodings\tables">
+			<UniqueIdentifier>{e19d95e4-a309-4de0-8f6b-a2e3033877dc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\examples">
+			<UniqueIdentifier>{10f8e0d4-8729-45f3-92f2-d484d6d87c5c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\examples\express">
+			<UniqueIdentifier>{c406f64d-c0fb-4da7-a197-05e4f4398db8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\examples\express\views">
+			<UniqueIdentifier>{2d53afd7-f0be-48ef-857d-8200f3b8b66e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\dist">
+			<UniqueIdentifier>{3aae928b-693a-418a-aba1-f451f6aa72c2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\es6-promise\lib">
+			<UniqueIdentifier>{ed357aca-c4d7-4160-a74f-0bfa5053142a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\es6-promise\lib\es6-promise">
+			<UniqueIdentifier>{d78e03ab-b212-4e69-89eb-42960a209333}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\es6-promise\lib\es6-promise\promise">
+			<UniqueIdentifier>{90aced61-0d18-439f-9c5b-376a5c01cea6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\applications\system">
+			<UniqueIdentifier>{8b0343d4-e6ea-41f9-b4df-4c3d8b40bb5c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\readable-stream\lib">
+			<UniqueIdentifier>{1434dfb6-df16-4420-91fc-1fbf44490bcc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb">
+			<UniqueIdentifier>{ac421d5e-387d-4009-b486-73f077cccc41}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\express">
+			<UniqueIdentifier>{866db0c8-f5fb-410f-a1e0-41e77050fd61}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\express\lib">
+			<UniqueIdentifier>{767e75c6-1773-4353-86f5-737e95d46f5e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\express\lib\router">
+			<UniqueIdentifier>{b649844e-d9cd-4fcf-977f-0c6d21fd11e4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\node_modules">
+			<UniqueIdentifier>{ebf7609a-85fd-49c1-b420-9a44c006bdef}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\node_modules\q">
+			<UniqueIdentifier>{30717b97-3b8f-4a4e-b556-1986ad827115}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\node_modules\q\benchmark">
+			<UniqueIdentifier>{ba4fa7ee-efa6-4844-bf56-817f140efa09}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\process-nextick-args">
+			<UniqueIdentifier>{44ad28f0-a3b6-40a9-8814-dd220ab7caf1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\vary">
+			<UniqueIdentifier>{dfd9ad32-fa54-41ce-bb40-e20010ef8a10}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\test\cache-transporters">
+			<UniqueIdentifier>{c2be5486-f570-49ab-a73b-58df679e84a2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ienoopen">
+			<UniqueIdentifier>{0817670d-bb99-4958-8b36-e42aff11807c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\comments">
+			<UniqueIdentifier>{c0649b3e-a533-489e-83ae-3301b0e26983}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\serve-static">
+			<UniqueIdentifier>{57fcc7c5-5a57-4f7b-9a25-65b59589b9cb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\schema">
+			<UniqueIdentifier>{a4dc3ea5-ab2c-4fb2-ba9e-877999c45f63}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\negotiator\lib">
+			<UniqueIdentifier>{0f2bf7ce-e0d5-445b-b8f0-860bbd92a87d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\objects">
+			<UniqueIdentifier>{23347542-fa32-4e16-a1ff-652691d950f0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\content-security-policy-builder\test">
+			<UniqueIdentifier>{dc53f30d-cdc0-4780-a049-31ac82ed21e6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\depd">
+			<UniqueIdentifier>{4d4041fe-3970-4e7e-8330-f37130457e5b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\depd\lib">
+			<UniqueIdentifier>{309e6b97-e075-4796-8562-03e3da9f6916}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\depd\lib\browser">
+			<UniqueIdentifier>{55812c00-203d-40e1-9750-959639e20188}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bson\browser_build">
+			<UniqueIdentifier>{e339374e-7bbc-4f90-8b61-74bb23451d42}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\exports">
+			<UniqueIdentifier>{1881a805-d1ec-4c63-b3f9-9e34dd38f2e2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\modules">
+			<UniqueIdentifier>{2b83768f-bca9-4a19-839b-6269cb07cfaa}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\range-parser">
+			<UniqueIdentifier>{10920bf6-472e-42f0-ab05-d282ecce8b68}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\var">
+			<UniqueIdentifier>{f7762a3a-100a-48ed-bca4-b4a2623c3f73}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\lib">
+			<UniqueIdentifier>{edcda27b-033c-4123-b92f-7ab7b158d54f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\config\tools">
+			<UniqueIdentifier>{27f94185-eb73-438e-9141-c6c52050516d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb\lib">
+			<UniqueIdentifier>{aa8cd823-2fd5-41d5-afd6-3162b8116108}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ipaddr.js">
+			<UniqueIdentifier>{699de025-4dbc-4b16-a79f-63bac2d4b317}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ipaddr.js\lib">
+			<UniqueIdentifier>{63f5fa1c-6639-4c70-9361-eea3802f2a86}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mime-db">
+			<UniqueIdentifier>{1345fc70-8541-4287-85ed-2c23060cac15}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\queue">
+			<UniqueIdentifier>{8af50d37-93fc-421c-af1b-617536425664}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core\lib\wireprotocol">
+			<UniqueIdentifier>{2d57170f-ec9e-4faf-9bec-d7eeea83068e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\finalhandler">
+			<UniqueIdentifier>{6bfe5a6b-1eba-420e-90c2-160a20c67df3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\finalhandler\node_modules">
+			<UniqueIdentifier>{e3858ee7-a1f1-4b9c-9898-b53d05dc8873}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\finalhandler\node_modules\ms">
+			<UniqueIdentifier>{b6e8404c-2285-42ee-a29b-204f177fb548}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\buffer-shims">
+			<UniqueIdentifier>{a05f726d-f2aa-4af8-b0e7-9a745509804f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\fresh">
+			<UniqueIdentifier>{8ffb483c-1c84-40ac-86b4-37b44bc944ba}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\lib\logger-adapters">
+			<UniqueIdentifier>{3ea67383-585e-4e4f-8413-ceab899d7eac}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dashify">
+			<UniqueIdentifier>{149a6238-f65e-4386-b173-2ae6242e091b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\underscore">
+			<UniqueIdentifier>{67b044be-149c-4b42-869f-d458714200b9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\readable-stream\lib\internal">
+			<UniqueIdentifier>{a84c3d46-b692-4ba6-850b-fbd10a85091d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\readable-stream\lib\internal\streams">
+			<UniqueIdentifier>{710b2957-a91f-4051-9b5a-be66deab5141}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\on-finished">
+			<UniqueIdentifier>{b4a1bb6a-f773-489c-b203-b25a3830ad39}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dns-prefetch-control">
+			<UniqueIdentifier>{fe0ce87b-de20-4455-893b-2e413cb8f24f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\.bin">
+			<UniqueIdentifier>{3a0d6fe2-e59e-45ba-ac66-4580461f6d73}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\depd\lib\compat">
+			<UniqueIdentifier>{a3791d1d-97c9-4a7c-9585-2163378e2b69}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\cookie-signature">
+			<UniqueIdentifier>{7f339ce2-4b16-4514-a865-1625df21ee62}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb\lib\bulk">
+			<UniqueIdentifier>{1abeec3e-c5a8-4241-bd41-4772d2b76f2d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ms">
+			<UniqueIdentifier>{72c5b2f6-9b17-44f5-8f91-533c2b411ade}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dns-prefetch-control\test">
+			<UniqueIdentifier>{5ea6d106-f495-4fe1-b9d3-864808b0e0d4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\array-flatten">
+			<UniqueIdentifier>{42743bda-d5c8-43ed-80b1-a1120a6561bc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\camelize">
+			<UniqueIdentifier>{350c5a34-8886-49a1-9617-a6e5155ca879}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\camelize\example">
+			<UniqueIdentifier>{47444cad-e6b1-4e5e-9209-face00da3f53}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\resolve-from">
+			<UniqueIdentifier>{0bb9c168-3ead-4fce-8a43-dd40d410c87f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\util-deprecate">
+			<UniqueIdentifier>{879f8039-25da-4f95-878e-67c7ebc915ba}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\readable-stream\doc\wg-meetings">
+			<UniqueIdentifier>{788fd8f9-a28a-4091-ae70-c1d4ea673a8d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dont-sniff-mimetype">
+			<UniqueIdentifier>{f25157ec-d60c-4ce8-a6ac-106f9f5017e2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dont-sniff-mimetype\test">
+			<UniqueIdentifier>{4dee9ff7-501e-4da3-a6ca-0ae3637a326f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\semver">
+			<UniqueIdentifier>{a772fe8c-1902-49b2-bfd0-10f923b7c55b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\controllers">
+			<UniqueIdentifier>{3405a754-9e22-44ed-a2d4-46142fcb9266}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hpkp">
+			<UniqueIdentifier>{1a5cdb47-7bfc-453b-8754-1f42c56402d4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\parseurl">
+			<UniqueIdentifier>{2cc28268-dce5-4a47-b89d-05f8a153c5fb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\inherits">
+			<UniqueIdentifier>{5a8827d1-c69b-442f-b014-a997f8dcc9d8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\finalhandler\node_modules\debug">
+			<UniqueIdentifier>{77eda4ab-6ca4-4cf1-9f9d-c288aa599841}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\finalhandler\node_modules\debug\src">
+			<UniqueIdentifier>{f9ffddb8-7e4e-46d4-beb3-b2645ab7164a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\content-type">
+			<UniqueIdentifier>{78bcadce-7ea1-4af7-91cf-71c57ca44045}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\misc">
+			<UniqueIdentifier>{4ce17af4-aeba-4fea-abd2-0ddf083ec31a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\forwarded">
+			<UniqueIdentifier>{f07ec913-a9f0-476b-8c45-b27826114211}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\config">
+			<UniqueIdentifier>{2be69a34-c894-41b8-b859-e30b3613a951}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\cookie">
+			<UniqueIdentifier>{f2303a6b-09d2-4dc6-93e8-0ea992c50f93}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\accepts">
+			<UniqueIdentifier>{566652ae-c051-4a28-a07a-2216f98eb49c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core\lib\topologies">
+			<UniqueIdentifier>{f8746a37-d986-4e8c-90b2-b60cda3405e5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb\lib\gridfs-stream">
+			<UniqueIdentifier>{a3efae7a-74f7-4b70-aef0-14a0fb8c1a6c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\lib">
+			<UniqueIdentifier>{24840f95-c533-4233-b25e-a2da56082e69}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\core-util-is\lib">
+			<UniqueIdentifier>{d4a2e36b-3519-4a34-b04a-18d28875aa26}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ienoopen\test">
+			<UniqueIdentifier>{f3a52822-4bb4-46b6-87b2-d10696567d97}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\content-disposition">
+			<UniqueIdentifier>{5e63fbe3-0ecc-47b3-a55b-038b2525411a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\methods">
+			<UniqueIdentifier>{f82ecb46-33f8-4ee9-86ac-6528c89ecfed}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\send">
+			<UniqueIdentifier>{767f8434-341d-475f-9a7d-9f8f13468651}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mime\build">
+			<UniqueIdentifier>{7e71f8a4-dd9c-464f-bdf7-b9d95bfed2f4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\deferred">
+			<UniqueIdentifier>{cea80b19-46c3-4099-af3a-84534f5f7db2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ipaddr.js\test">
+			<UniqueIdentifier>{7ecd4ebb-90f6-4626-9e35-1a44bbed145a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\http-errors">
+			<UniqueIdentifier>{0280f06c-cf9d-4a39-a0eb-371e72e06578}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\whiskers\test\browser">
+			<UniqueIdentifier>{7a6b26ea-d81a-4067-afd5-b355b05af870}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\strings">
+			<UniqueIdentifier>{11f52941-eb22-4781-ad8e-c7e3c4df87e4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\utils-merge">
+			<UniqueIdentifier>{ec8c4237-7305-423b-ae39-8ce7cbbbad09}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs\dist">
+			<UniqueIdentifier>{d28cd9a0-b592-422b-8700-cf471088e55a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\express\lib\middleware">
+			<UniqueIdentifier>{e6af2004-18e5-40d8-981b-54a93c4817de}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core\lib\auth">
+			<UniqueIdentifier>{bc819ed7-fc23-474b-8179-e86d6482aa08}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\traversing">
+			<UniqueIdentifier>{04c9116c-cd5e-4e4e-836a-5855e1f9fbdc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\lodash.reduce">
+			<UniqueIdentifier>{72937656-b3ca-461b-84f4-449f54f32465}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ipaddr.js\src">
+			<UniqueIdentifier>{6332f1cd-f266-4338-b950-234af661b412}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\isarray">
+			<UniqueIdentifier>{e2147768-3049-480b-aff8-7772bb6f60d9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\string_decoder">
+			<UniqueIdentifier>{d12db81c-2bb8-431c-b471-47949557522c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dasherize\example">
+			<UniqueIdentifier>{4aa9df7e-bdb9-4f75-9370-0f9a94502af3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json5\test\parse-cases\new-lines">
+			<UniqueIdentifier>{830e31d1-30e4-463b-ac02-470cd8a53ec3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\semver\bin">
+			<UniqueIdentifier>{a7994947-b40e-4c3d-833a-4d82eed6d44c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb\lib\gridfs">
+			<UniqueIdentifier>{d3858d08-5c51-4331-b57d-e5fbc0f7c856}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\es6-promise\dist">
+			<UniqueIdentifier>{977588cb-1890-4b4d-948b-8255d05560b2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\unpipe">
+			<UniqueIdentifier>{551561d4-f9da-421f-8256-5154f0ae116a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\traversing\var">
+			<UniqueIdentifier>{c45ddbc8-c3b0-4444-aab7-4762be7abf42}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\camelize\test">
+			<UniqueIdentifier>{18fcd90e-3146-4f60-97b8-7ebc08357a50}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\dist">
+			<UniqueIdentifier>{78a915bd-0b55-4dcb-81ca-e9458514c0d7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\debug\src">
+			<UniqueIdentifier>{f0166fa7-ca8c-4ed3-8959-3170565ecd66}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mongodb-core\lib\tools">
+			<UniqueIdentifier>{310f4f50-2315-4250-81bd-dbdbd10c06e5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ee-first">
+			<UniqueIdentifier>{ddd57168-2f64-48d5-a39e-2fbd592c4e0a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\escape-html">
+			<UniqueIdentifier>{5699b936-8266-4567-8040-435e84ae785b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\iconv-lite\lib">
+			<UniqueIdentifier>{b820f0cf-da75-45e9-b9c0-07fa601850bc}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\unittests\accounts.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\database.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\encript.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\folder.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\legendaryquest.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\server.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\session.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\util.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\HISTORY.md">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\index.js">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\LICENSE">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\package.json">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\README.md">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\media-typer\HISTORY.md">
+			<Filter>source\node_modules\media-typer</Filter>
+		</None>
+		<None Include="..\node_modules\media-typer\index.js">
+			<Filter>source\node_modules\media-typer</Filter>
+		</None>
+		<None Include="..\node_modules\media-typer\LICENSE">
+			<Filter>source\node_modules\media-typer</Filter>
+		</None>
+		<None Include="..\node_modules\media-typer\package.json">
+			<Filter>source\node_modules\media-typer</Filter>
+		</None>
+		<None Include="..\node_modules\media-typer\README.md">
+			<Filter>source\node_modules\media-typer</Filter>
+		</None>
+		<None Include="..\node_modules\config\.npmignore">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\.travis.yml">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\defer.js">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\History.md">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\LICENSE">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\package.json">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\raw.js">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\config\README.md">
+			<Filter>source\node_modules\config</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\cssExpand.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\getStyles.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\isHiddenWithinTree.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\rmargin.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\rnumnonpx.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\swap.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\frameguard\.npmignore">
+			<Filter>source\node_modules\frameguard</Filter>
+		</None>
+		<None Include="..\node_modules\frameguard\index.js">
+			<Filter>source\node_modules\frameguard</Filter>
+		</None>
+		<None Include="..\node_modules\frameguard\LICENSE">
+			<Filter>source\node_modules\frameguard</Filter>
+		</None>
+		<None Include="..\node_modules\frameguard\package.json">
+			<Filter>source\node_modules\frameguard</Filter>
+		</None>
+		<None Include="..\node_modules\frameguard\README.md">
+			<Filter>source\node_modules\frameguard</Filter>
+		</None>
+		<None Include="..\node_modules\encodeurl\HISTORY.md">
+			<Filter>source\node_modules\encodeurl</Filter>
+		</None>
+		<None Include="..\node_modules\encodeurl\index.js">
+			<Filter>source\node_modules\encodeurl</Filter>
+		</None>
+		<None Include="..\node_modules\encodeurl\LICENSE">
+			<Filter>source\node_modules\encodeurl</Filter>
+		</None>
+		<None Include="..\node_modules\encodeurl\package.json">
+			<Filter>source\node_modules\encodeurl</Filter>
+		</None>
+		<None Include="..\node_modules\encodeurl\README.md">
+			<Filter>source\node_modules\encodeurl</Filter>
+		</None>
+		<None Include="..\node_modules\raw-body\HISTORY.md">
+			<Filter>source\node_modules\raw-body</Filter>
+		</None>
+		<None Include="..\node_modules\raw-body\index.js">
+			<Filter>source\node_modules\raw-body</Filter>
+		</None>
+		<None Include="..\node_modules\raw-body\LICENSE">
+			<Filter>source\node_modules\raw-body</Filter>
+		</None>
+		<None Include="..\node_modules\raw-body\package.json">
+			<Filter>source\node_modules\raw-body</Filter>
+		</None>
+		<None Include="..\node_modules\raw-body\README.md">
+			<Filter>source\node_modules\raw-body</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\formats.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\index.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\parse.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\stringify.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\utils.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\core-util-is\float.patch">
+			<Filter>source\node_modules\core-util-is</Filter>
+		</None>
+		<None Include="..\node_modules\core-util-is\LICENSE">
+			<Filter>source\node_modules\core-util-is</Filter>
+		</None>
+		<None Include="..\node_modules\core-util-is\package.json">
+			<Filter>source\node_modules\core-util-is</Filter>
+		</None>
+		<None Include="..\node_modules\core-util-is\README.md">
+			<Filter>source\node_modules\core-util-is</Filter>
+		</None>
+		<None Include="..\node_modules\core-util-is\test.js">
+			<Filter>source\node_modules\core-util-is</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\parser\calculate_size.js">
+			<Filter>source\node_modules\bson\lib\bson\parser</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\parser\deserializer.js">
+			<Filter>source\node_modules\bson\lib\bson\parser</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\parser\serializer.js">
+			<Filter>source\node_modules\bson\lib\bson\parser</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\var\rcheckableType.js">
+			<Filter>source\node_modules\jquery\src\manipulation\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\var\rscriptType.js">
+			<Filter>source\node_modules\jquery\src\manipulation\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\var\rtagName.js">
+			<Filter>source\node_modules\jquery\src\manipulation\var</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\contexts\blog.json">
+			<Filter>source\node_modules\whiskers\test\server\contexts</Filter>
+		</None>
+		<None Include="..\node_modules\referrer-policy\.npmignore">
+			<Filter>source\node_modules\referrer-policy</Filter>
+		</None>
+		<None Include="..\node_modules\referrer-policy\index.js">
+			<Filter>source\node_modules\referrer-policy</Filter>
+		</None>
+		<None Include="..\node_modules\referrer-policy\LICENSE">
+			<Filter>source\node_modules\referrer-policy</Filter>
+		</None>
+		<None Include="..\node_modules\referrer-policy\package.json">
+			<Filter>source\node_modules\referrer-policy</Filter>
+		</None>
+		<None Include="..\node_modules\referrer-policy\README.md">
+			<Filter>source\node_modules\referrer-policy</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\CHANGELOG.md">
+			<Filter>source\node_modules\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\LICENSE">
+			<Filter>source\node_modules\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\package.json">
+			<Filter>source\node_modules\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\README.md">
+			<Filter>source\node_modules\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\platform\LICENSE">
+			<Filter>source\node_modules\platform</Filter>
+		</None>
+		<None Include="..\node_modules\platform\package.json">
+			<Filter>source\node_modules\platform</Filter>
+		</None>
+		<None Include="..\node_modules\platform\platform.js">
+			<Filter>source\node_modules\platform</Filter>
+		</None>
+		<None Include="..\node_modules\platform\README.md">
+			<Filter>source\node_modules\platform</Filter>
+		</None>
+		<None Include="..\node_modules\merge-descriptors\HISTORY.md">
+			<Filter>source\node_modules\merge-descriptors</Filter>
+		</None>
+		<None Include="..\node_modules\merge-descriptors\index.js">
+			<Filter>source\node_modules\merge-descriptors</Filter>
+		</None>
+		<None Include="..\node_modules\merge-descriptors\LICENSE">
+			<Filter>source\node_modules\merge-descriptors</Filter>
+		</None>
+		<None Include="..\node_modules\merge-descriptors\package.json">
+			<Filter>source\node_modules\merge-descriptors</Filter>
+		</None>
+		<None Include="..\node_modules\merge-descriptors\README.md">
+			<Filter>source\node_modules\merge-descriptors</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\benchmark\suites\whiskers_suite.js">
+			<Filter>source\node_modules\whiskers\benchmark\suites</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\todo\unicode-escaped-unquoted-key.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\todo</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\todo\unicode-unquoted-key.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\todo</Filter>
+		</None>
+		<None Include="..\node_modules\json5\.editorconfig">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\json5\.npmignore">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\json5\.travis.yml">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\json5\CHANGELOG.md">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\json5\package.json">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\json5\package.json5">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\json5\README.md">
+			<Filter>source\node_modules\json5</Filter>
+		</None>
+		<None Include="..\node_modules\nocache\.npmignore">
+			<Filter>source\node_modules\nocache</Filter>
+		</None>
+		<None Include="..\node_modules\nocache\index.js">
+			<Filter>source\node_modules\nocache</Filter>
+		</None>
+		<None Include="..\node_modules\nocache\LICENSE">
+			<Filter>source\node_modules\nocache</Filter>
+		</None>
+		<None Include="..\node_modules\nocache\package.json">
+			<Filter>source\node_modules\nocache</Filter>
+		</None>
+		<None Include="..\node_modules\nocache\README.md">
+			<Filter>source\node_modules\nocache</Filter>
+		</None>
+		<None Include="..\node_modules\bytes\History.md">
+			<Filter>source\node_modules\bytes</Filter>
+		</None>
+		<None Include="..\node_modules\bytes\index.js">
+			<Filter>source\node_modules\bytes</Filter>
+		</None>
+		<None Include="..\node_modules\bytes\LICENSE">
+			<Filter>source\node_modules\bytes</Filter>
+		</None>
+		<None Include="..\node_modules\bytes\package.json">
+			<Filter>source\node_modules\bytes</Filter>
+		</None>
+		<None Include="..\node_modules\bytes\Readme.md">
+			<Filter>source\node_modules\bytes</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\templates\addcomment.html">
+			<Filter>source\node_modules\whiskers\test\server\templates</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\templates\blog.html">
+			<Filter>source\node_modules\whiskers\test\server\templates</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\templates\comment.html">
+			<Filter>source\node_modules\whiskers\test\server\templates</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\templates\layout.html">
+			<Filter>source\node_modules\whiskers\test\server\templates</Filter>
+		</None>
+		<None Include="..\node_modules\proxy-addr\HISTORY.md">
+			<Filter>source\node_modules\proxy-addr</Filter>
+		</None>
+		<None Include="..\node_modules\proxy-addr\index.js">
+			<Filter>source\node_modules\proxy-addr</Filter>
+		</None>
+		<None Include="..\node_modules\proxy-addr\LICENSE">
+			<Filter>source\node_modules\proxy-addr</Filter>
+		</None>
+		<None Include="..\node_modules\proxy-addr\package.json">
+			<Filter>source\node_modules\proxy-addr</Filter>
+		</None>
+		<None Include="..\node_modules\proxy-addr\README.md">
+			<Filter>source\node_modules\proxy-addr</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\Data.js">
+			<Filter>source\node_modules\jquery\src\data</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\HISTORY.md">
+			<Filter>source\node_modules\negotiator</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\index.js">
+			<Filter>source\node_modules\negotiator</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\LICENSE">
+			<Filter>source\node_modules\negotiator</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\package.json">
+			<Filter>source\node_modules\negotiator</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\README.md">
+			<Filter>source\node_modules\negotiator</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\test\index.js">
+			<Filter>source\node_modules\hide-powered-by\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\var\location.js">
+			<Filter>source\node_modules\jquery\src\ajax\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\var\nonce.js">
+			<Filter>source\node_modules\jquery\src\ajax\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\var\rquery.js">
+			<Filter>source\node_modules\jquery\src\ajax\var</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\binary-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\float-leading-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\float-leading-zero.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\float-trailing-decimal-point-with-integer-exponent.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\float-trailing-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\float-with-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\float.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\hexadecimal-empty.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\hexadecimal-lowercase-letter.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\hexadecimal-uppercase-x.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\hexadecimal-with-integer-exponent.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\hexadecimal.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\infinity.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-float-exponent.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-hexadecimal-exponent.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-negative-float-exponent.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-negative-hexadecimal-exponent.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-negative-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-negative-zero-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-positive-float-exponent.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-positive-hexadecimal-exponent.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-positive-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-positive-zero-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer-with-zero-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\integer.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\lone-decimal-point.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\nan.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-binary-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-float-leading-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-float-leading-zero.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-float-trailing-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-float.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-hexadecimal.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-infinity.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-integer.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-noctal.js">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-octal-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-octal.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-binary-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-float-leading-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-float-trailing-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-float.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-hexadecimal.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-integer.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-octal-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\negative-zero-octal.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\noctal-with-leading-octal-digit.js">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\noctal.js">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\octal-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\octal.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-binary-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-float-leading-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-float-leading-zero.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-float-trailing-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-float.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-hexadecimal.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-infinity.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-integer.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-noctal.js">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-octal-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-octal.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-binary-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-float-leading-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-float-trailing-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-float.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-hexadecimal.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-integer.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-octal-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\positive-zero-octal.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-binary-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-float-leading-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-float-trailing-decimal-point.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-float.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-hexadecimal.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-integer-with-integer-exponent.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-integer.json">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-octal-coffeescript.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\numbers\zero-octal.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\numbers</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\logger-adapters\console-adapter-spec.js">
+			<Filter>source\node_modules\requestify\test\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\logger-adapters\winston-adapter-spec.js">
+			<Filter>source\node_modules\requestify\test\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\test\disabled_browser_list.txt">
+			<Filter>source\node_modules\x-xss-protection\test</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\test\enabled_browser_list.txt">
+			<Filter>source\node_modules\x-xss-protection\test</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\test\index.js">
+			<Filter>source\node_modules\x-xss-protection\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache-transporters\in-memory-transporter.js">
+			<Filter>source\node_modules\requestify\lib\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache-transporters\mongo-transporter.js">
+			<Filter>source\node_modules\requestify\lib\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache-transporters\redis-transporter.js">
+			<Filter>source\node_modules\requestify\lib\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\attr.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\classes.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\prop.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\support.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\val.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\frameguard\lib\isstring.js">
+			<Filter>source\node_modules\frameguard\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\var\rsingleTag.js">
+			<Filter>source\node_modules\jquery\src\core\var</Filter>
+		</None>
+		<None Include="..\node_modules\setprototypeof\index.js">
+			<Filter>source\node_modules\setprototypeof</Filter>
+		</None>
+		<None Include="..\node_modules\setprototypeof\LICENSE">
+			<Filter>source\node_modules\setprototypeof</Filter>
+		</None>
+		<None Include="..\node_modules\setprototypeof\package.json">
+			<Filter>source\node_modules\setprototypeof</Filter>
+		</None>
+		<None Include="..\node_modules\setprototypeof\README.md">
+			<Filter>source\node_modules\setprototypeof</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\effects\animatedSelector.js">
+			<Filter>source\node_modules\jquery\src\effects</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\effects\Tween.js">
+			<Filter>source\node_modules\jquery\src\effects</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\interface-validator.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\logger.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\request.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\requestify.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\response.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\q\CHANGES.md">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\LICENSE">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\package.json">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\q.js">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\queue.js">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\README.md">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\mime\.npmignore">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\mime\cli.js">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\mime\LICENSE">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\mime\mime.js">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\mime\package.json">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\mime\README.md">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\mime\types.json">
+			<Filter>source\node_modules\mime</Filter>
+		</None>
+		<None Include="..\node_modules\path-to-regexp\History.md">
+			<Filter>source\node_modules\path-to-regexp</Filter>
+		</None>
+		<None Include="..\node_modules\path-to-regexp\index.js">
+			<Filter>source\node_modules\path-to-regexp</Filter>
+		</None>
+		<None Include="..\node_modules\path-to-regexp\LICENSE">
+			<Filter>source\node_modules\path-to-regexp</Filter>
+		</None>
+		<None Include="..\node_modules\path-to-regexp\package.json">
+			<Filter>source\node_modules\path-to-regexp</Filter>
+		</None>
+		<None Include="..\node_modules\path-to-regexp\Readme.md">
+			<Filter>source\node_modules\path-to-regexp</Filter>
+		</None>
+		<None Include="..\applications\legendaryquest\application.js">
+			<Filter>source\applications\legendaryquest</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\var\acceptData.js">
+			<Filter>source\node_modules\jquery\src\data\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\var\dataPriv.js">
+			<Filter>source\node_modules\jquery\src\data\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\var\dataUser.js">
+			<Filter>source\node_modules\jquery\src\data\var</Filter>
+		</None>
+		<None Include="..\node_modules\vm\.npmignore">
+			<Filter>source\node_modules\vm</Filter>
+		</None>
+		<None Include="..\node_modules\vm\index.js">
+			<Filter>source\node_modules\vm</Filter>
+		</None>
+		<None Include="..\node_modules\vm\LICENSE">
+			<Filter>source\node_modules\vm</Filter>
+		</None>
+		<None Include="..\node_modules\vm\package.json">
+			<Filter>source\node_modules\vm</Filter>
+		</None>
+		<None Include="..\node_modules\vm\README.md">
+			<Filter>source\node_modules\vm</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\lib\types\json.js">
+			<Filter>source\node_modules\body-parser\lib\types</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\lib\types\raw.js">
+			<Filter>source\node_modules\body-parser\lib\types</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\lib\types\text.js">
+			<Filter>source\node_modules\body-parser\lib\types</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\lib\types\urlencoded.js">
+			<Filter>source\node_modules\body-parser\lib\types</Filter>
+		</None>
+		<None Include="..\node_modules\connect\node_modules\finalhandler\HISTORY.md">
+			<Filter>source\node_modules\connect\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\connect\node_modules\finalhandler\index.js">
+			<Filter>source\node_modules\connect\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\connect\node_modules\finalhandler\LICENSE">
+			<Filter>source\node_modules\connect\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\connect\node_modules\finalhandler\package.json">
+			<Filter>source\node_modules\connect\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\connect\node_modules\finalhandler\README.md">
+			<Filter>source\node_modules\connect\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\hsts\.npmignore">
+			<Filter>source\node_modules\hsts</Filter>
+		</None>
+		<None Include="..\node_modules\hsts\index.js">
+			<Filter>source\node_modules\hsts</Filter>
+		</None>
+		<None Include="..\node_modules\hsts\LICENSE">
+			<Filter>source\node_modules\hsts</Filter>
+		</None>
+		<None Include="..\node_modules\hsts\package.json">
+			<Filter>source\node_modules\hsts</Filter>
+		</None>
+		<None Include="..\node_modules\hsts\README.md">
+			<Filter>source\node_modules\hsts</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\ajax.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\alias.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\focusin.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\support.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\trigger.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\connection\commands.js">
+			<Filter>source\node_modules\mongodb-core\lib\connection</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\connection\command_result.js">
+			<Filter>source\node_modules\mongodb-core\lib\connection</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\connection\connection.js">
+			<Filter>source\node_modules\mongodb-core\lib\connection</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\connection\logger.js">
+			<Filter>source\node_modules\mongodb-core\lib\connection</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\connection\pool.js">
+			<Filter>source\node_modules\mongodb-core\lib\connection</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\connection\utils.js">
+			<Filter>source\node_modules\mongodb-core\lib\connection</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\interface-validator-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\logger-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\request-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\requestify-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\response-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\test\nestedTest\index.js">
+			<Filter>source\node_modules\require_optional\test\nestedTest</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\test\nestedTest\package.json">
+			<Filter>source\node_modules\require_optional\test\nestedTest</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.coveralls.yml">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.eslintrc">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.npmignore">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.travis.yml">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\bower.json">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\CHANGELOG.md">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\component.json">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\karma.conf.js">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\LICENSE">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\Makefile">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\node.js">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\package.json">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\README.md">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\rendered\blog.html">
+			<Filter>source\node_modules\whiskers\test\server\rendered</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\.npmignore">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\CODE_OF_CONDUCT.md">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\config.json">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\CONTRIBUTING.md">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\HISTORY.md">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\index.js">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\LICENSE">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\package.json">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\README.md">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\node_modules\helmet\security.md">
+			<Filter>source\node_modules\helmet</Filter>
+		</None>
+		<None Include="..\notes\design.txt">
+			<Filter>source\notes</Filter>
+		</None>
+		<None Include="..\notes\notes.txt">
+			<Filter>source\notes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\dist\sizzle.js">
+			<Filter>source\node_modules\jquery\external\sizzle\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\dist\sizzle.min.js">
+			<Filter>source\node_modules\jquery\external\sizzle\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\dist\sizzle.min.map">
+			<Filter>source\node_modules\jquery\external\sizzle\dist</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-parser\HISTORY.md">
+			<Filter>source\node_modules\cookie-parser</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-parser\index.js">
+			<Filter>source\node_modules\cookie-parser</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-parser\LICENSE">
+			<Filter>source\node_modules\cookie-parser</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-parser\package.json">
+			<Filter>source\node_modules\cookie-parser</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-parser\README.md">
+			<Filter>source\node_modules\cookie-parser</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\doc\stream.md">
+			<Filter>source\node_modules\readable-stream\doc</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\test\dash.js">
+			<Filter>source\node_modules\dasherize\test</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\.npmignore">
+			<Filter>source\node_modules\content-security-policy-builder</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\.travis.yml">
+			<Filter>source\node_modules\content-security-policy-builder</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\index.js">
+			<Filter>source\node_modules\content-security-policy-builder</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\LICENSE">
+			<Filter>source\node_modules\content-security-policy-builder</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\package.json">
+			<Filter>source\node_modules\content-security-policy-builder</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\README.md">
+			<Filter>source\node_modules\content-security-policy-builder</Filter>
+		</None>
+		<None Include="..\node_modules\etag\HISTORY.md">
+			<Filter>source\node_modules\etag</Filter>
+		</None>
+		<None Include="..\node_modules\etag\index.js">
+			<Filter>source\node_modules\etag</Filter>
+		</None>
+		<None Include="..\node_modules\etag\LICENSE">
+			<Filter>source\node_modules\etag</Filter>
+		</None>
+		<None Include="..\node_modules\etag\package.json">
+			<Filter>source\node_modules\etag</Filter>
+		</None>
+		<None Include="..\node_modules\etag\README.md">
+			<Filter>source\node_modules\etag</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\check-directive\boolean.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options\check-directive</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\check-directive\index.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options\check-directive</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\check-directive\plugin-types.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options\check-directive</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\check-directive\report-uri.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options\check-directive</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\check-directive\sandbox.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options\check-directive</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\check-directive\source-list.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options\check-directive</Filter>
+		</None>
+		<None Include="..\node_modules\destroy\index.js">
+			<Filter>source\node_modules\destroy</Filter>
+		</None>
+		<None Include="..\node_modules\destroy\LICENSE">
+			<Filter>source\node_modules\destroy</Filter>
+		</None>
+		<None Include="..\node_modules\destroy\package.json">
+			<Filter>source\node_modules\destroy</Filter>
+		</None>
+		<None Include="..\node_modules\destroy\README.md">
+			<Filter>source\node_modules\destroy</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\arrays\empty-array.json">
+			<Filter>source\node_modules\json5\test\parse-cases\arrays</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\arrays\leading-comma-array.js">
+			<Filter>source\node_modules\json5\test\parse-cases\arrays</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\arrays\lone-trailing-comma-array.js">
+			<Filter>source\node_modules\json5\test\parse-cases\arrays</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\arrays\no-comma-array.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\arrays</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\arrays\regular-array.json">
+			<Filter>source\node_modules\json5\test\parse-cases\arrays</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\arrays\trailing-comma-array.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\arrays</Filter>
+		</None>
+		<None Include="..\node_modules\config\lib\config.js">
+			<Filter>source\node_modules\config\lib</Filter>
+		</None>
+		<None Include="..\node_modules\type-is\HISTORY.md">
+			<Filter>source\node_modules\type-is</Filter>
+		</None>
+		<None Include="..\node_modules\type-is\index.js">
+			<Filter>source\node_modules\type-is</Filter>
+		</None>
+		<None Include="..\node_modules\type-is\LICENSE">
+			<Filter>source\node_modules\type-is</Filter>
+		</None>
+		<None Include="..\node_modules\type-is\package.json">
+			<Filter>source\node_modules\type-is</Filter>
+		</None>
+		<None Include="..\node_modules\type-is\README.md">
+			<Filter>source\node_modules\type-is</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\.npmignore">
+			<Filter>source\node_modules\iconv-lite</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\.travis.yml">
+			<Filter>source\node_modules\iconv-lite</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\Changelog.md">
+			<Filter>source\node_modules\iconv-lite</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\LICENSE">
+			<Filter>source\node_modules\iconv-lite</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\package.json">
+			<Filter>source\node_modules\iconv-lite</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\README.md">
+			<Filter>source\node_modules\iconv-lite</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\LICENSE.txt">
+			<Filter>source\node_modules\jquery\external\sizzle</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\check-options\index.js">
+			<Filter>source\node_modules\helmet-csp\lib\check-options</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\.eslintrc">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\index.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\parse.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\stringify.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\utils.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\.npmignore">
+			<Filter>source\node_modules\hide-powered-by</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\.travis.yml">
+			<Filter>source\node_modules\hide-powered-by</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\index.js">
+			<Filter>source\node_modules\hide-powered-by</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\LICENSE">
+			<Filter>source\node_modules\hide-powered-by</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\package.json">
+			<Filter>source\node_modules\hide-powered-by</Filter>
+		</None>
+		<None Include="..\node_modules\hide-powered-by\README.md">
+			<Filter>source\node_modules\hide-powered-by</Filter>
+		</None>
+		<None Include="..\node_modules\bson\bower.json">
+			<Filter>source\node_modules\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\HISTORY.md">
+			<Filter>source\node_modules\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\index.js">
+			<Filter>source\node_modules\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\LICENSE.md">
+			<Filter>source\node_modules\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\package.json">
+			<Filter>source\node_modules\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\README.md">
+			<Filter>source\node_modules\bson</Filter>
+		</None>
+		<None Include="..\node_modules\statuses\codes.json">
+			<Filter>source\node_modules\statuses</Filter>
+		</None>
+		<None Include="..\node_modules\statuses\HISTORY.md">
+			<Filter>source\node_modules\statuses</Filter>
+		</None>
+		<None Include="..\node_modules\statuses\index.js">
+			<Filter>source\node_modules\statuses</Filter>
+		</None>
+		<None Include="..\node_modules\statuses\LICENSE">
+			<Filter>source\node_modules\statuses</Filter>
+		</None>
+		<None Include="..\node_modules\statuses\package.json">
+			<Filter>source\node_modules\statuses</Filter>
+		</None>
+		<None Include="..\node_modules\statuses\README.md">
+			<Filter>source\node_modules\statuses</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\big5-added.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\cp936.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\cp949.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\cp950.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\eucjp.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\gb18030-ranges.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\gbk-added.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\tables\shiftjis.json">
+			<Filter>source\node_modules\iconv-lite\encodings\tables</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\examples\express\views\footer.html">
+			<Filter>source\node_modules\whiskers\examples\express\views</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\examples\express\views\index.html">
+			<Filter>source\node_modules\whiskers\examples\express\views</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\examples\express\views\layout.html">
+			<Filter>source\node_modules\whiskers\examples\express\views</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\dbcs-codec.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\dbcs-data.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\index.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\internal.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\sbcs-codec.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\sbcs-data-generated.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\sbcs-data.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\utf16.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\encodings\utf7.js">
+			<Filter>source\node_modules\iconv-lite\encodings</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\dist\whiskers.min.js">
+			<Filter>source\node_modules\whiskers\dist</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\promise\all.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise\promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\promise\race.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise\promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\promise\reject.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise\promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\promise\resolve.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise\promise</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\.npmignore">
+			<Filter>source\node_modules\helmet-csp</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\index.js">
+			<Filter>source\node_modules\helmet-csp</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\LICENSE">
+			<Filter>source\node_modules\helmet-csp</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\package.json">
+			<Filter>source\node_modules\helmet-csp</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\README.md">
+			<Filter>source\node_modules\helmet-csp</Filter>
+		</None>
+		<None Include="..\applications\system\application.js">
+			<Filter>source\applications\system</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\lib\_stream_duplex.js">
+			<Filter>source\node_modules\readable-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\lib\_stream_passthrough.js">
+			<Filter>source\node_modules\readable-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\lib\_stream_readable.js">
+			<Filter>source\node_modules\readable-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\lib\_stream_transform.js">
+			<Filter>source\node_modules\readable-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\lib\_stream_writable.js">
+			<Filter>source\node_modules\readable-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\.coveralls.yml">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\.eslintrc">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\boot_auth.js">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\conf.json">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\HISTORY.md">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\index.js">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\insert_bench.js">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\LICENSE">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\Makefile">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\package.json">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\README.md">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\THIRD-PARTY-NOTICES">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\yarn.lock">
+			<Filter>source\node_modules\mongodb</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\router\index.js">
+			<Filter>source\node_modules\express\lib\router</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\router\layer.js">
+			<Filter>source\node_modules\express\lib\router</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\router\route.js">
+			<Filter>source\node_modules\express\lib\router</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\benchmark\compare-with-callbacks.js">
+			<Filter>source\node_modules\requestify\node_modules\q\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\benchmark\scenarios.js">
+			<Filter>source\node_modules\requestify\node_modules\q\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\process-nextick-args\.travis.yml">
+			<Filter>source\node_modules\process-nextick-args</Filter>
+		</None>
+		<None Include="..\node_modules\process-nextick-args\index.js">
+			<Filter>source\node_modules\process-nextick-args</Filter>
+		</None>
+		<None Include="..\node_modules\process-nextick-args\license.md">
+			<Filter>source\node_modules\process-nextick-args</Filter>
+		</None>
+		<None Include="..\node_modules\process-nextick-args\package.json">
+			<Filter>source\node_modules\process-nextick-args</Filter>
+		</None>
+		<None Include="..\node_modules\process-nextick-args\readme.md">
+			<Filter>source\node_modules\process-nextick-args</Filter>
+		</None>
+		<None Include="..\node_modules\process-nextick-args\test.js">
+			<Filter>source\node_modules\process-nextick-args</Filter>
+		</None>
+		<None Include="..\node_modules\vary\HISTORY.md">
+			<Filter>source\node_modules\vary</Filter>
+		</None>
+		<None Include="..\node_modules\vary\index.js">
+			<Filter>source\node_modules\vary</Filter>
+		</None>
+		<None Include="..\node_modules\vary\LICENSE">
+			<Filter>source\node_modules\vary</Filter>
+		</None>
+		<None Include="..\node_modules\vary\package.json">
+			<Filter>source\node_modules\vary</Filter>
+		</None>
+		<None Include="..\node_modules\vary\README.md">
+			<Filter>source\node_modules\vary</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-transporters\in-memory-transporter-spec.js">
+			<Filter>source\node_modules\requestify\test\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-transporters\mongo-transporter-spec.js">
+			<Filter>source\node_modules\requestify\test\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-transporters\redis-trasporter-spec.js">
+			<Filter>source\node_modules\requestify\test\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\.npmignore">
+			<Filter>source\node_modules\ienoopen</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\.travis.yml">
+			<Filter>source\node_modules\ienoopen</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\index.js">
+			<Filter>source\node_modules\ienoopen</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\LICENSE">
+			<Filter>source\node_modules\ienoopen</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\package.json">
+			<Filter>source\node_modules\ienoopen</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\README.md">
+			<Filter>source\node_modules\ienoopen</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\.jshintrc">
+			<Filter>source\node_modules\dasherize</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\.travis.yml">
+			<Filter>source\node_modules\dasherize</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\index.js">
+			<Filter>source\node_modules\dasherize</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\LICENSE">
+			<Filter>source\node_modules\dasherize</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\package.json">
+			<Filter>source\node_modules\dasherize</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\readme.markdown">
+			<Filter>source\node_modules\dasherize</Filter>
+		</None>
+		<None Include="..\node_modules\qs\.eslintignore">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\.eslintrc">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\.jscs.json">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\CHANGELOG.md">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\LICENSE">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\package.json">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\README.md">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\block-comment-following-array-element.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\block-comment-following-top-level-value.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\block-comment-in-string.json">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\block-comment-preceding-top-level-value.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\block-comment-with-asterisks.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\inline-comment-following-array-element.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\inline-comment-following-top-level-value.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\inline-comment-in-string.json">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\inline-comment-preceding-top-level-value.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\top-level-block-comment.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\top-level-inline-comment.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\comments\unterminated-block-comment.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\comments</Filter>
+		</None>
+		<None Include="..\node_modules\serve-static\HISTORY.md">
+			<Filter>source\node_modules\serve-static</Filter>
+		</None>
+		<None Include="..\node_modules\serve-static\index.js">
+			<Filter>source\node_modules\serve-static</Filter>
+		</None>
+		<None Include="..\node_modules\serve-static\LICENSE">
+			<Filter>source\node_modules\serve-static</Filter>
+		</None>
+		<None Include="..\node_modules\serve-static\package.json">
+			<Filter>source\node_modules\serve-static</Filter>
+		</None>
+		<None Include="..\node_modules\serve-static\README.md">
+			<Filter>source\node_modules\serve-static</Filter>
+		</None>
+		<None Include="..\schema\documents.js">
+			<Filter>source\schema</Filter>
+		</None>
+		<None Include="..\schema\guests.js">
+			<Filter>source\schema</Filter>
+		</None>
+		<None Include="..\schema\users.js">
+			<Filter>source\schema</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\lib\charset.js">
+			<Filter>source\node_modules\negotiator\lib</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\lib\encoding.js">
+			<Filter>source\node_modules\negotiator\lib</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\lib\language.js">
+			<Filter>source\node_modules\negotiator\lib</Filter>
+		</None>
+		<None Include="..\node_modules\negotiator\lib\mediaType.js">
+			<Filter>source\node_modules\negotiator\lib</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\duplicate-keys.json">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\empty-object.json">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\illegal-unquoted-key-number.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\illegal-unquoted-key-symbol.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\leading-comma-object.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\lone-trailing-comma-object.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\no-comma-object.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\reserved-unquoted-key.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\single-quoted-key.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\trailing-comma-object.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\objects\unquoted-keys.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\objects</Filter>
+		</None>
+		<None Include="..\node_modules\content-security-policy-builder\test\index.js">
+			<Filter>source\node_modules\content-security-policy-builder\test</Filter>
+		</None>
+		<None Include="..\node_modules\depd\lib\browser\index.js">
+			<Filter>source\node_modules\depd\lib\browser</Filter>
+		</None>
+		<None Include="..\node_modules\bson\browser_build\bson.js">
+			<Filter>source\node_modules\bson\browser_build</Filter>
+		</None>
+		<None Include="..\node_modules\bson\browser_build\package.json">
+			<Filter>source\node_modules\bson\browser_build</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse.js">
+			<Filter>source\node_modules\json5\test</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\readme.md">
+			<Filter>source\node_modules\json5\test</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\require.js">
+			<Filter>source\node_modules\json5\test</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\stringify.js">
+			<Filter>source\node_modules\json5\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\exports\amd.js">
+			<Filter>source\node_modules\jquery\src\exports</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\exports\global.js">
+			<Filter>source\node_modules\jquery\src\exports</Filter>
+		</None>
+		<None Include="..\modules\application.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\applicationmanager.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\checkuser.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\database.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\document.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\encript.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\initdatabase.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\restapplicationwrapper.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\restlistresponse.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\session.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\test.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\util.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\wrapjavascript.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\node_modules\range-parser\HISTORY.md">
+			<Filter>source\node_modules\range-parser</Filter>
+		</None>
+		<None Include="..\node_modules\range-parser\index.js">
+			<Filter>source\node_modules\range-parser</Filter>
+		</None>
+		<None Include="..\node_modules\range-parser\LICENSE">
+			<Filter>source\node_modules\range-parser</Filter>
+		</None>
+		<None Include="..\node_modules\range-parser\package.json">
+			<Filter>source\node_modules\range-parser</Filter>
+		</None>
+		<None Include="..\node_modules\range-parser\README.md">
+			<Filter>source\node_modules\range-parser</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\arr.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\class2type.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\concat.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\document.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\documentElement.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\fnToString.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\getProto.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\hasOwn.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\indexOf.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\ObjectFunctionString.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\pnum.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\push.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\rcssNum.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\rnothtmlwhite.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\slice.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\support.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\toString.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\express\History.md">
+			<Filter>source\node_modules\express</Filter>
+		</None>
+		<None Include="..\node_modules\express\index.js">
+			<Filter>source\node_modules\express</Filter>
+		</None>
+		<None Include="..\node_modules\express\LICENSE">
+			<Filter>source\node_modules\express</Filter>
+		</None>
+		<None Include="..\node_modules\express\package.json">
+			<Filter>source\node_modules\express</Filter>
+		</None>
+		<None Include="..\node_modules\express\Readme.md">
+			<Filter>source\node_modules\express</Filter>
+		</None>
+		<None Include="..\node_modules\json5\lib\cli.js">
+			<Filter>source\node_modules\json5\lib</Filter>
+		</None>
+		<None Include="..\node_modules\json5\lib\json5.js">
+			<Filter>source\node_modules\json5\lib</Filter>
+		</None>
+		<None Include="..\node_modules\json5\lib\require.js">
+			<Filter>source\node_modules\json5\lib</Filter>
+		</None>
+		<None Include="..\node_modules\config\tools\contributors.js">
+			<Filter>source\node_modules\config\tools</Filter>
+		</None>
+		<None Include="..\node_modules\config\tools\gen-docs.sh">
+			<Filter>source\node_modules\config\tools</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\admin.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\aggregation_cursor.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\apm.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\collection.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\command_cursor.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\cursor.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\db.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\metadata.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\mongos.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\mongo_client.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\read_preference.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\replset.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\server.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\topology_base.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\url_parser.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\utils.js">
+			<Filter>source\node_modules\mongodb\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\lib\ipaddr.js">
+			<Filter>source\node_modules\ipaddr.js\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\db.json">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\HISTORY.md">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\index.js">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\LICENSE">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\package.json">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\README.md">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\queue\delay.js">
+			<Filter>source\node_modules\jquery\src\queue</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\wireprotocol\2_4_support.js">
+			<Filter>source\node_modules\mongodb-core\lib\wireprotocol</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\wireprotocol\2_6_support.js">
+			<Filter>source\node_modules\mongodb-core\lib\wireprotocol</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\wireprotocol\3_2_support.js">
+			<Filter>source\node_modules\mongodb-core\lib\wireprotocol</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\wireprotocol\commands.js">
+			<Filter>source\node_modules\mongodb-core\lib\wireprotocol</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\wireprotocol\shared.js">
+			<Filter>source\node_modules\mongodb-core\lib\wireprotocol</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\ms\index.js">
+			<Filter>source\node_modules\finalhandler\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\ms\license.md">
+			<Filter>source\node_modules\finalhandler\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\ms\package.json">
+			<Filter>source\node_modules\finalhandler\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\ms\readme.md">
+			<Filter>source\node_modules\finalhandler\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\binary.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\bson.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\code.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\db_ref.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\decimal128.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\double.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\float_parser.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\int_32.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\long.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\map.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\max_key.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\min_key.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\objectid.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\regexp.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\symbol.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\bson\lib\bson\timestamp.js">
+			<Filter>source\node_modules\bson\lib\bson</Filter>
+		</None>
+		<None Include="..\node_modules\buffer-shims\index.js">
+			<Filter>source\node_modules\buffer-shims</Filter>
+		</None>
+		<None Include="..\node_modules\buffer-shims\license.md">
+			<Filter>source\node_modules\buffer-shims</Filter>
+		</None>
+		<None Include="..\node_modules\buffer-shims\package.json">
+			<Filter>source\node_modules\buffer-shims</Filter>
+		</None>
+		<None Include="..\node_modules\buffer-shims\readme.md">
+			<Filter>source\node_modules\buffer-shims</Filter>
+		</None>
+		<None Include="..\node_modules\fresh\HISTORY.md">
+			<Filter>source\node_modules\fresh</Filter>
+		</None>
+		<None Include="..\node_modules\fresh\index.js">
+			<Filter>source\node_modules\fresh</Filter>
+		</None>
+		<None Include="..\node_modules\fresh\LICENSE">
+			<Filter>source\node_modules\fresh</Filter>
+		</None>
+		<None Include="..\node_modules\fresh\package.json">
+			<Filter>source\node_modules\fresh</Filter>
+		</None>
+		<None Include="..\node_modules\fresh\README.md">
+			<Filter>source\node_modules\fresh</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\logger-adapters\console-adapter.js">
+			<Filter>source\node_modules\requestify\lib\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\logger-adapters\winston-adapter.js">
+			<Filter>source\node_modules\requestify\lib\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\dashify\index.js">
+			<Filter>source\node_modules\dashify</Filter>
+		</None>
+		<None Include="..\node_modules\dashify\LICENSE">
+			<Filter>source\node_modules\dashify</Filter>
+		</None>
+		<None Include="..\node_modules\dashify\package.json">
+			<Filter>source\node_modules\dashify</Filter>
+		</None>
+		<None Include="..\node_modules\dashify\README.md">
+			<Filter>source\node_modules\dashify</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\LICENSE">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\package.json">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\README.md">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\underscore-min.js">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\underscore-min.map">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\underscore.js">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise.umd.js">
+			<Filter>source\node_modules\es6-promise\lib</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\lib\internal\streams\BufferList.js">
+			<Filter>source\node_modules\readable-stream\lib\internal\streams</Filter>
+		</None>
+		<None Include="..\node_modules\on-finished\HISTORY.md">
+			<Filter>source\node_modules\on-finished</Filter>
+		</None>
+		<None Include="..\node_modules\on-finished\index.js">
+			<Filter>source\node_modules\on-finished</Filter>
+		</None>
+		<None Include="..\node_modules\on-finished\LICENSE">
+			<Filter>source\node_modules\on-finished</Filter>
+		</None>
+		<None Include="..\node_modules\on-finished\package.json">
+			<Filter>source\node_modules\on-finished</Filter>
+		</None>
+		<None Include="..\node_modules\on-finished\README.md">
+			<Filter>source\node_modules\on-finished</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\.npmignore">
+			<Filter>source\node_modules\dns-prefetch-control</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\.travis.yml">
+			<Filter>source\node_modules\dns-prefetch-control</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\index.js">
+			<Filter>source\node_modules\dns-prefetch-control</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\LICENSE">
+			<Filter>source\node_modules\dns-prefetch-control</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\package.json">
+			<Filter>source\node_modules\dns-prefetch-control</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\README.md">
+			<Filter>source\node_modules\dns-prefetch-control</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\json5">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\json5.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\mime">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\mime.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\semver">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\semver.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\depd\lib\compat\buffer-concat.js">
+			<Filter>source\node_modules\depd\lib\compat</Filter>
+		</None>
+		<None Include="..\node_modules\depd\lib\compat\callsite-tostring.js">
+			<Filter>source\node_modules\depd\lib\compat</Filter>
+		</None>
+		<None Include="..\node_modules\depd\lib\compat\event-listener-count.js">
+			<Filter>source\node_modules\depd\lib\compat</Filter>
+		</None>
+		<None Include="..\node_modules\depd\lib\compat\index.js">
+			<Filter>source\node_modules\depd\lib\compat</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\HISTORY.md">
+			<Filter>source\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\index.js">
+			<Filter>source\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\LICENSE">
+			<Filter>source\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\package.json">
+			<Filter>source\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\README.md">
+			<Filter>source\node_modules\finalhandler</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\benchmark\index.html">
+			<Filter>source\node_modules\whiskers\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\benchmark\README">
+			<Filter>source\node_modules\whiskers\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\benchmark\uubench.js">
+			<Filter>source\node_modules\whiskers\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-signature\.npmignore">
+			<Filter>source\node_modules\cookie-signature</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-signature\History.md">
+			<Filter>source\node_modules\cookie-signature</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-signature\index.js">
+			<Filter>source\node_modules\cookie-signature</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-signature\package.json">
+			<Filter>source\node_modules\cookie-signature</Filter>
+		</None>
+		<None Include="..\node_modules\cookie-signature\Readme.md">
+			<Filter>source\node_modules\cookie-signature</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\.npmignore">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\.travis.yml">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\HISTORY.md">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\index.js">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\LICENSE">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\package.json">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\README.md">
+			<Filter>source\node_modules\require_optional</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\bulk\common.js">
+			<Filter>source\node_modules\mongodb\lib\bulk</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\bulk\ordered.js">
+			<Filter>source\node_modules\mongodb\lib\bulk</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\bulk\unordered.js">
+			<Filter>source\node_modules\mongodb\lib\bulk</Filter>
+		</None>
+		<None Include="..\node_modules\ms\index.js">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\ms\LICENSE.md">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\ms\package.json">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\ms\README.md">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\dns-prefetch-control\test\index.js">
+			<Filter>source\node_modules\dns-prefetch-control\test</Filter>
+		</None>
+		<None Include="..\node_modules\array-flatten\array-flatten.js">
+			<Filter>source\node_modules\array-flatten</Filter>
+		</None>
+		<None Include="..\node_modules\array-flatten\LICENSE">
+			<Filter>source\node_modules\array-flatten</Filter>
+		</None>
+		<None Include="..\node_modules\array-flatten\package.json">
+			<Filter>source\node_modules\array-flatten</Filter>
+		</None>
+		<None Include="..\node_modules\array-flatten\README.md">
+			<Filter>source\node_modules\array-flatten</Filter>
+		</None>
+		<None Include="..\node_modules\connect\HISTORY.md">
+			<Filter>source\node_modules\connect</Filter>
+		</None>
+		<None Include="..\node_modules\connect\index.js">
+			<Filter>source\node_modules\connect</Filter>
+		</None>
+		<None Include="..\node_modules\connect\LICENSE">
+			<Filter>source\node_modules\connect</Filter>
+		</None>
+		<None Include="..\node_modules\connect\package.json">
+			<Filter>source\node_modules\connect</Filter>
+		</None>
+		<None Include="..\node_modules\connect\README.md">
+			<Filter>source\node_modules\connect</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\example\camel.js">
+			<Filter>source\node_modules\camelize\example</Filter>
+		</None>
+		<None Include="..\node_modules\resolve-from\index.js">
+			<Filter>source\node_modules\resolve-from</Filter>
+		</None>
+		<None Include="..\node_modules\resolve-from\license">
+			<Filter>source\node_modules\resolve-from</Filter>
+		</None>
+		<None Include="..\node_modules\resolve-from\package.json">
+			<Filter>source\node_modules\resolve-from</Filter>
+		</None>
+		<None Include="..\node_modules\resolve-from\readme.md">
+			<Filter>source\node_modules\resolve-from</Filter>
+		</None>
+		<None Include="..\node_modules\util-deprecate\browser.js">
+			<Filter>source\node_modules\util-deprecate</Filter>
+		</None>
+		<None Include="..\node_modules\util-deprecate\History.md">
+			<Filter>source\node_modules\util-deprecate</Filter>
+		</None>
+		<None Include="..\node_modules\util-deprecate\LICENSE">
+			<Filter>source\node_modules\util-deprecate</Filter>
+		</None>
+		<None Include="..\node_modules\util-deprecate\node.js">
+			<Filter>source\node_modules\util-deprecate</Filter>
+		</None>
+		<None Include="..\node_modules\util-deprecate\package.json">
+			<Filter>source\node_modules\util-deprecate</Filter>
+		</None>
+		<None Include="..\node_modules\util-deprecate\README.md">
+			<Filter>source\node_modules\util-deprecate</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\examples\express\index.js">
+			<Filter>source\node_modules\whiskers\examples\express</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\examples\express\rendered.html">
+			<Filter>source\node_modules\whiskers\examples\express</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\doc\wg-meetings\2015-01-30.md">
+			<Filter>source\node_modules\readable-stream\doc\wg-meetings</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\test\index.js">
+			<Filter>source\node_modules\dont-sniff-mimetype\test</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\.npmignore">
+			<Filter>source\node_modules\dont-sniff-mimetype</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\.travis.yml">
+			<Filter>source\node_modules\dont-sniff-mimetype</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\index.js">
+			<Filter>source\node_modules\dont-sniff-mimetype</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\LICENSE">
+			<Filter>source\node_modules\dont-sniff-mimetype</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\package.json">
+			<Filter>source\node_modules\dont-sniff-mimetype</Filter>
+		</None>
+		<None Include="..\node_modules\dont-sniff-mimetype\README.md">
+			<Filter>source\node_modules\dont-sniff-mimetype</Filter>
+		</None>
+		<None Include="..\node_modules\semver\LICENSE">
+			<Filter>source\node_modules\semver</Filter>
+		</None>
+		<None Include="..\node_modules\semver\package.json">
+			<Filter>source\node_modules\semver</Filter>
+		</None>
+		<None Include="..\node_modules\semver\range.bnf">
+			<Filter>source\node_modules\semver</Filter>
+		</None>
+		<None Include="..\node_modules\semver\README.md">
+			<Filter>source\node_modules\semver</Filter>
+		</None>
+		<None Include="..\node_modules\semver\semver.js">
+			<Filter>source\node_modules\semver</Filter>
+		</None>
+		<None Include="..\controllers\accounts.js">
+			<Filter>source\controllers</Filter>
+		</None>
+		<None Include="..\controllers\applications.js">
+			<Filter>source\controllers</Filter>
+		</None>
+		<None Include="..\controllers\document.js">
+			<Filter>source\controllers</Filter>
+		</None>
+		<None Include="..\controllers\index.js">
+			<Filter>source\controllers</Filter>
+		</None>
+		<None Include="..\controllers\session.js">
+			<Filter>source\controllers</Filter>
+		</None>
+		<None Include="..\node_modules\require_optional\test\require_optional_tests.js">
+			<Filter>source\node_modules\require_optional\test</Filter>
+		</None>
+		<None Include="..\node_modules\hpkp\.npmignore">
+			<Filter>source\node_modules\hpkp</Filter>
+		</None>
+		<None Include="..\node_modules\hpkp\index.js">
+			<Filter>source\node_modules\hpkp</Filter>
+		</None>
+		<None Include="..\node_modules\hpkp\LICENSE">
+			<Filter>source\node_modules\hpkp</Filter>
+		</None>
+		<None Include="..\node_modules\hpkp\package.json">
+			<Filter>source\node_modules\hpkp</Filter>
+		</None>
+		<None Include="..\node_modules\hpkp\README.md">
+			<Filter>source\node_modules\hpkp</Filter>
+		</None>
+		<None Include="..\node_modules\parseurl\HISTORY.md">
+			<Filter>source\node_modules\parseurl</Filter>
+		</None>
+		<None Include="..\node_modules\parseurl\index.js">
+			<Filter>source\node_modules\parseurl</Filter>
+		</None>
+		<None Include="..\node_modules\parseurl\LICENSE">
+			<Filter>source\node_modules\parseurl</Filter>
+		</None>
+		<None Include="..\node_modules\parseurl\package.json">
+			<Filter>source\node_modules\parseurl</Filter>
+		</None>
+		<None Include="..\node_modules\parseurl\README.md">
+			<Filter>source\node_modules\parseurl</Filter>
+		</None>
+		<None Include="..\node_modules\inherits\inherits.js">
+			<Filter>source\node_modules\inherits</Filter>
+		</None>
+		<None Include="..\node_modules\inherits\inherits_browser.js">
+			<Filter>source\node_modules\inherits</Filter>
+		</None>
+		<None Include="..\node_modules\inherits\LICENSE">
+			<Filter>source\node_modules\inherits</Filter>
+		</None>
+		<None Include="..\node_modules\inherits\package.json">
+			<Filter>source\node_modules\inherits</Filter>
+		</None>
+		<None Include="..\node_modules\inherits\README.md">
+			<Filter>source\node_modules\inherits</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\cursor.js">
+			<Filter>source\node_modules\mongodb-core\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\error.js">
+			<Filter>source\node_modules\mongodb-core\lib</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\src\browser.js">
+			<Filter>source\node_modules\finalhandler\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\src\debug.js">
+			<Filter>source\node_modules\finalhandler\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\src\index.js">
+			<Filter>source\node_modules\finalhandler\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\src\node.js">
+			<Filter>source\node_modules\finalhandler\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\content-type\HISTORY.md">
+			<Filter>source\node_modules\content-type</Filter>
+		</None>
+		<None Include="..\node_modules\content-type\index.js">
+			<Filter>source\node_modules\content-type</Filter>
+		</None>
+		<None Include="..\node_modules\content-type\LICENSE">
+			<Filter>source\node_modules\content-type</Filter>
+		</None>
+		<None Include="..\node_modules\content-type\package.json">
+			<Filter>source\node_modules\content-type</Filter>
+		</None>
+		<None Include="..\node_modules\content-type\README.md">
+			<Filter>source\node_modules\content-type</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\.npmignore">
+			<Filter>source\node_modules\whiskers</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\LICENSE">
+			<Filter>source\node_modules\whiskers</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\minify.js">
+			<Filter>source\node_modules\whiskers</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\package.json">
+			<Filter>source\node_modules\whiskers</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\README.md">
+			<Filter>source\node_modules\whiskers</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\misc\empty.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\misc</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\misc\npm-package.json">
+			<Filter>source\node_modules\json5\test\parse-cases\misc</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\misc\npm-package.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\misc</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\misc\readme-example.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\misc</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\misc\valid-whitespace.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\misc</Filter>
+		</None>
+		<None Include="..\node_modules\forwarded\HISTORY.md">
+			<Filter>source\node_modules\forwarded</Filter>
+		</None>
+		<None Include="..\node_modules\forwarded\index.js">
+			<Filter>source\node_modules\forwarded</Filter>
+		</None>
+		<None Include="..\node_modules\forwarded\LICENSE">
+			<Filter>source\node_modules\forwarded</Filter>
+		</None>
+		<None Include="..\node_modules\forwarded\package.json">
+			<Filter>source\node_modules\forwarded</Filter>
+		</None>
+		<None Include="..\node_modules\forwarded\README.md">
+			<Filter>source\node_modules\forwarded</Filter>
+		</None>
+		<None Include="..\config\default.json">
+			<Filter>source\config</Filter>
+		</None>
+		<None Include="..\config\development.json">
+			<Filter>source\config</Filter>
+		</None>
+		<None Include="..\config\production.json">
+			<Filter>source\config</Filter>
+		</None>
+		<None Include="..\config\test.json">
+			<Filter>source\config</Filter>
+		</None>
+		<None Include="..\node_modules\cookie\HISTORY.md">
+			<Filter>source\node_modules\cookie</Filter>
+		</None>
+		<None Include="..\node_modules\cookie\index.js">
+			<Filter>source\node_modules\cookie</Filter>
+		</None>
+		<None Include="..\node_modules\cookie\LICENSE">
+			<Filter>source\node_modules\cookie</Filter>
+		</None>
+		<None Include="..\node_modules\cookie\package.json">
+			<Filter>source\node_modules\cookie</Filter>
+		</None>
+		<None Include="..\node_modules\cookie\README.md">
+			<Filter>source\node_modules\cookie</Filter>
+		</None>
+		<None Include="..\node_modules\depd\History.md">
+			<Filter>source\node_modules\depd</Filter>
+		</None>
+		<None Include="..\node_modules\depd\index.js">
+			<Filter>source\node_modules\depd</Filter>
+		</None>
+		<None Include="..\node_modules\depd\LICENSE">
+			<Filter>source\node_modules\depd</Filter>
+		</None>
+		<None Include="..\node_modules\depd\package.json">
+			<Filter>source\node_modules\depd</Filter>
+		</None>
+		<None Include="..\node_modules\depd\Readme.md">
+			<Filter>source\node_modules\depd</Filter>
+		</None>
+		<None Include="..\node_modules\accepts\HISTORY.md">
+			<Filter>source\node_modules\accepts</Filter>
+		</None>
+		<None Include="..\node_modules\accepts\index.js">
+			<Filter>source\node_modules\accepts</Filter>
+		</None>
+		<None Include="..\node_modules\accepts\LICENSE">
+			<Filter>source\node_modules\accepts</Filter>
+		</None>
+		<None Include="..\node_modules\accepts\package.json">
+			<Filter>source\node_modules\accepts</Filter>
+		</None>
+		<None Include="..\node_modules\accepts\README.md">
+			<Filter>source\node_modules\accepts</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\CONTRIBUTING.md">
+			<Filter>source\node_modules\requestify\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\LICENSE">
+			<Filter>source\node_modules\requestify\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\package.json">
+			<Filter>source\node_modules\requestify\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\q.js">
+			<Filter>source\node_modules\requestify\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\queue.js">
+			<Filter>source\node_modules\requestify\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\node_modules\q\README.md">
+			<Filter>source\node_modules\requestify\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\topologies\mongos.js">
+			<Filter>source\node_modules\mongodb-core\lib\topologies</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\topologies\read_preference.js">
+			<Filter>source\node_modules\mongodb-core\lib\topologies</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\topologies\replset.js">
+			<Filter>source\node_modules\mongodb-core\lib\topologies</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\topologies\replset_state.js">
+			<Filter>source\node_modules\mongodb-core\lib\topologies</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\topologies\server.js">
+			<Filter>source\node_modules\mongodb-core\lib\topologies</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\topologies\shared.js">
+			<Filter>source\node_modules\mongodb-core\lib\topologies</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\-internal.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\asap.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\enumerator.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\polyfill.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\promise.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\then.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\lib\es6-promise\utils.js">
+			<Filter>source\node_modules\es6-promise\lib\es6-promise</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\gridfs-stream\download.js">
+			<Filter>source\node_modules\mongodb\lib\gridfs-stream</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\gridfs-stream\index.js">
+			<Filter>source\node_modules\mongodb\lib\gridfs-stream</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\gridfs-stream\upload.js">
+			<Filter>source\node_modules\mongodb\lib\gridfs-stream</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\lib\whiskers.js">
+			<Filter>source\node_modules\whiskers\lib</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\lib\__express.js">
+			<Filter>source\node_modules\whiskers\lib</Filter>
+		</None>
+		<None Include="..\node_modules\core-util-is\lib\util.js">
+			<Filter>source\node_modules\core-util-is\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ienoopen\test\index.js">
+			<Filter>source\node_modules\ienoopen\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\buildFragment.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\getAll.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\setGlobalEval.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\support.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\wrapMap.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\_evalUrl.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\.travis.yml">
+			<Filter>source\node_modules\camelize</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\index.js">
+			<Filter>source\node_modules\camelize</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\LICENSE">
+			<Filter>source\node_modules\camelize</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\package.json">
+			<Filter>source\node_modules\camelize</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\readme.markdown">
+			<Filter>source\node_modules\camelize</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\access.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\DOMEval.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\init.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\nodeName.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\parseHTML.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\ready-no-deferred.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\ready.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\readyException.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\stripAndCollapse.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\support.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\AUTHORS.txt">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\bower.json">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\LICENSE.txt">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\package.json">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\README.md">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\.npmignore">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\.travis.yml">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\bower.json">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\Cakefile">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\ipaddr.min.js">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\LICENSE">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\package.json">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\README.md">
+			<Filter>source\node_modules\ipaddr.js</Filter>
+		</None>
+		<None Include="..\node_modules\content-disposition\HISTORY.md">
+			<Filter>source\node_modules\content-disposition</Filter>
+		</None>
+		<None Include="..\node_modules\content-disposition\index.js">
+			<Filter>source\node_modules\content-disposition</Filter>
+		</None>
+		<None Include="..\node_modules\content-disposition\LICENSE">
+			<Filter>source\node_modules\content-disposition</Filter>
+		</None>
+		<None Include="..\node_modules\content-disposition\package.json">
+			<Filter>source\node_modules\content-disposition</Filter>
+		</None>
+		<None Include="..\node_modules\content-disposition\README.md">
+			<Filter>source\node_modules\content-disposition</Filter>
+		</None>
+		<None Include="..\node_modules\methods\HISTORY.md">
+			<Filter>source\node_modules\methods</Filter>
+		</None>
+		<None Include="..\node_modules\methods\index.js">
+			<Filter>source\node_modules\methods</Filter>
+		</None>
+		<None Include="..\node_modules\methods\LICENSE">
+			<Filter>source\node_modules\methods</Filter>
+		</None>
+		<None Include="..\node_modules\methods\package.json">
+			<Filter>source\node_modules\methods</Filter>
+		</None>
+		<None Include="..\node_modules\methods\README.md">
+			<Filter>source\node_modules\methods</Filter>
+		</None>
+		<None Include="..\node_modules\send\HISTORY.md">
+			<Filter>source\node_modules\send</Filter>
+		</None>
+		<None Include="..\node_modules\send\index.js">
+			<Filter>source\node_modules\send</Filter>
+		</None>
+		<None Include="..\node_modules\send\LICENSE">
+			<Filter>source\node_modules\send</Filter>
+		</None>
+		<None Include="..\node_modules\send\package.json">
+			<Filter>source\node_modules\send</Filter>
+		</None>
+		<None Include="..\node_modules\send\README.md">
+			<Filter>source\node_modules\send</Filter>
+		</None>
+		<None Include="..\node_modules\mime\build\build.js">
+			<Filter>source\node_modules\mime\build</Filter>
+		</None>
+		<None Include="..\node_modules\mime\build\test.js">
+			<Filter>source\node_modules\mime\build</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\deferred\exceptionHook.js">
+			<Filter>source\node_modules\jquery\src\deferred</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\test\ipaddr.test.coffee">
+			<Filter>source\node_modules\ipaddr.js\test</Filter>
+		</None>
+		<None Include="..\node_modules\http-errors\HISTORY.md">
+			<Filter>source\node_modules\http-errors</Filter>
+		</None>
+		<None Include="..\node_modules\http-errors\index.js">
+			<Filter>source\node_modules\http-errors</Filter>
+		</None>
+		<None Include="..\node_modules\http-errors\LICENSE">
+			<Filter>source\node_modules\http-errors</Filter>
+		</None>
+		<None Include="..\node_modules\http-errors\package.json">
+			<Filter>source\node_modules\http-errors</Filter>
+		</None>
+		<None Include="..\node_modules\http-errors\README.md">
+			<Filter>source\node_modules\http-errors</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\index.html">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\qunit.css">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\qunit.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-blog.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-chars.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-comments.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-compile.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-escape.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-falsy.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-for.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-function.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-if.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-logic.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-partials.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\browser\test-templates.js">
+			<Filter>source\node_modules\whiskers\test\browser</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\strings\escaped-single-quoted-string.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\strings</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\strings\multi-line-string.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\strings</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\strings\single-quoted-string.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\strings</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\strings\unescaped-multi-line-string.txt">
+			<Filter>source\node_modules\json5\test\parse-cases\strings</Filter>
+		</None>
+		<None Include="..\node_modules\utils-merge\.travis.yml">
+			<Filter>source\node_modules\utils-merge</Filter>
+		</None>
+		<None Include="..\node_modules\utils-merge\index.js">
+			<Filter>source\node_modules\utils-merge</Filter>
+		</None>
+		<None Include="..\node_modules\utils-merge\LICENSE">
+			<Filter>source\node_modules\utils-merge</Filter>
+		</None>
+		<None Include="..\node_modules\utils-merge\package.json">
+			<Filter>source\node_modules\utils-merge</Filter>
+		</None>
+		<None Include="..\node_modules\utils-merge\README.md">
+			<Filter>source\node_modules\utils-merge</Filter>
+		</None>
+		<None Include="..\node_modules\qs\dist\qs.js">
+			<Filter>source\node_modules\qs\dist</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\HISTORY.md">
+			<Filter>source\node_modules\body-parser</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\index.js">
+			<Filter>source\node_modules\body-parser</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\LICENSE">
+			<Filter>source\node_modules\body-parser</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\package.json">
+			<Filter>source\node_modules\body-parser</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\README.md">
+			<Filter>source\node_modules\body-parser</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\middleware\init.js">
+			<Filter>source\node_modules\express\lib\middleware</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\middleware\query.js">
+			<Filter>source\node_modules\express\lib\middleware</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\auth\gssapi.js">
+			<Filter>source\node_modules\mongodb-core\lib\auth</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\auth\mongocr.js">
+			<Filter>source\node_modules\mongodb-core\lib\auth</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\auth\plain.js">
+			<Filter>source\node_modules\mongodb-core\lib\auth</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\auth\scram.js">
+			<Filter>source\node_modules\mongodb-core\lib\auth</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\auth\sspi.js">
+			<Filter>source\node_modules\mongodb-core\lib\auth</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\auth\x509.js">
+			<Filter>source\node_modules\mongodb-core\lib\auth</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\findFilter.js">
+			<Filter>source\node_modules\jquery\src\traversing</Filter>
+		</None>
+		<None Include="..\node_modules\lodash.reduce\index.js">
+			<Filter>source\node_modules\lodash.reduce</Filter>
+		</None>
+		<None Include="..\node_modules\lodash.reduce\LICENSE">
+			<Filter>source\node_modules\lodash.reduce</Filter>
+		</None>
+		<None Include="..\node_modules\lodash.reduce\package.json">
+			<Filter>source\node_modules\lodash.reduce</Filter>
+		</None>
+		<None Include="..\node_modules\lodash.reduce\README.md">
+			<Filter>source\node_modules\lodash.reduce</Filter>
+		</None>
+		<None Include="..\node_modules\ipaddr.js\src\ipaddr.coffee">
+			<Filter>source\node_modules\ipaddr.js\src</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\.jshintrc">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\.npmignore">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\.travis.yml">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\index.js">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\LICENSE.txt">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\package.json">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\README.md">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\.npmignore">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\.travis.yml">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\component.json">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\index.js">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\Makefile">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\package.json">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\README.md">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\isarray\test.js">
+			<Filter>source\node_modules\isarray</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\.coveralls.yml">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\.eslintrc">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\blocking_test.js">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\conf.json">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\connect_test.js">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\HISTORY.md">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\index.js">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\LICENSE">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\Makefile">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\package.json">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\README.md">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\simple_2_document_limit_toArray.dat">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\test.js">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\test1.js">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\TESTING.md">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\test_bug.js">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\THIRD-PARTY-NOTICES">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\yarn.lock">
+			<Filter>source\node_modules\mongodb-core</Filter>
+		</None>
+		<None Include="..\node_modules\string_decoder\.npmignore">
+			<Filter>source\node_modules\string_decoder</Filter>
+		</None>
+		<None Include="..\node_modules\string_decoder\index.js">
+			<Filter>source\node_modules\string_decoder</Filter>
+		</None>
+		<None Include="..\node_modules\string_decoder\LICENSE">
+			<Filter>source\node_modules\string_decoder</Filter>
+		</None>
+		<None Include="..\node_modules\string_decoder\package.json">
+			<Filter>source\node_modules\string_decoder</Filter>
+		</None>
+		<None Include="..\node_modules\string_decoder\README.md">
+			<Filter>source\node_modules\string_decoder</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\common.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-blog.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-chars.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-comments.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-compile.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-escape.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-falsy.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-for.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-function.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-if.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-logic.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-partials.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\whiskers\test\server\test-templates.js">
+			<Filter>source\node_modules\whiskers\test\server</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\.eslintrc.json">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\callbacks.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\deferred.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\deprecated.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\dimensions.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\effects.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\jquery.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\offset.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\queue.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\selector-native.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\selector-sizzle.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\selector.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\serialize.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\wrap.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\dasherize\example\dash.js">
+			<Filter>source\node_modules\dasherize\example</Filter>
+		</None>
+		<None Include="..\node_modules\body-parser\lib\read.js">
+			<Filter>source\node_modules\body-parser\lib</Filter>
+		</None>
+		<None Include="..\.\development.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\install.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\package-lock.json">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\package.json">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\production.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\README.md">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\server.js">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\unittest.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\unittest.js">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\.editorconfig">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\.gitattributes">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\comment-cr.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\comment-crlf.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\comment-lf.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\escaped-cr.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\escaped-crlf.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\json5\test\parse-cases\new-lines\escaped-lf.json5">
+			<Filter>source\node_modules\json5\test\parse-cases\new-lines</Filter>
+		</None>
+		<None Include="..\node_modules\semver\bin\semver">
+			<Filter>source\node_modules\semver\bin</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\gridfs\chunk.js">
+			<Filter>source\node_modules\mongodb\lib\gridfs</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb\lib\gridfs\grid_store.js">
+			<Filter>source\node_modules\mongodb\lib\gridfs</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\config.json">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\contains-function.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\get-header-keys-for-browser.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\is-boolean.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\is-function.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\is-string.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\parse-dynamic-directives.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\helmet-csp\lib\transform-directives-for-browser.js">
+			<Filter>source\node_modules\helmet-csp\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\jsonp.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\load.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\parseXML.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\script.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\xhr.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\dist\es6-promise.js">
+			<Filter>source\node_modules\es6-promise\dist</Filter>
+		</None>
+		<None Include="..\node_modules\es6-promise\dist\es6-promise.min.js">
+			<Filter>source\node_modules\es6-promise\dist</Filter>
+		</None>
+		<None Include="..\node_modules\unpipe\HISTORY.md">
+			<Filter>source\node_modules\unpipe</Filter>
+		</None>
+		<None Include="..\node_modules\unpipe\index.js">
+			<Filter>source\node_modules\unpipe</Filter>
+		</None>
+		<None Include="..\node_modules\unpipe\LICENSE">
+			<Filter>source\node_modules\unpipe</Filter>
+		</None>
+		<None Include="..\node_modules\unpipe\package.json">
+			<Filter>source\node_modules\unpipe</Filter>
+		</None>
+		<None Include="..\node_modules\unpipe\README.md">
+			<Filter>source\node_modules\unpipe</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\var\dir.js">
+			<Filter>source\node_modules\jquery\src\traversing\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\var\rneedsContext.js">
+			<Filter>source\node_modules\jquery\src\traversing\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\var\siblings.js">
+			<Filter>source\node_modules\jquery\src\traversing\var</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\.coveralls.yml">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\.eslintrc">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\.npmignore">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\.travis.yml">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\CHANGELOG.md">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\component.json">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\karma.conf.js">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\LICENSE">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\Makefile">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\node.js">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\package.json">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\finalhandler\node_modules\debug\README.md">
+			<Filter>source\node_modules\finalhandler\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\camelize\test\camel.js">
+			<Filter>source\node_modules\camelize\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\core.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.min.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.min.map">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.slim.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.slim.min.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.slim.min.map">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\browser.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\debug.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\index.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\node.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\mongodb-core\lib\tools\smoke_plugin.js">
+			<Filter>source\node_modules\mongodb-core\lib\tools</Filter>
+		</None>
+		<None Include="..\node_modules\ee-first\index.js">
+			<Filter>source\node_modules\ee-first</Filter>
+		</None>
+		<None Include="..\node_modules\ee-first\LICENSE">
+			<Filter>source\node_modules\ee-first</Filter>
+		</None>
+		<None Include="..\node_modules\ee-first\package.json">
+			<Filter>source\node_modules\ee-first</Filter>
+		</None>
+		<None Include="..\node_modules\ee-first\README.md">
+			<Filter>source\node_modules\ee-first</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\application.js">
+			<Filter>source\node_modules\express\lib</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\express.js">
+			<Filter>source\node_modules\express\lib</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\request.js">
+			<Filter>source\node_modules\express\lib</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\response.js">
+			<Filter>source\node_modules\express\lib</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\utils.js">
+			<Filter>source\node_modules\express\lib</Filter>
+		</None>
+		<None Include="..\node_modules\express\lib\view.js">
+			<Filter>source\node_modules\express\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\addGetHookIf.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\adjustCSS.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\curCSS.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\hiddenVisibleSelectors.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\showHide.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\support.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\.npmignore">
+			<Filter>source\node_modules\x-xss-protection</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\.travis.yml">
+			<Filter>source\node_modules\x-xss-protection</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\index.js">
+			<Filter>source\node_modules\x-xss-protection</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\LICENSE">
+			<Filter>source\node_modules\x-xss-protection</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\package.json">
+			<Filter>source\node_modules\x-xss-protection</Filter>
+		</None>
+		<None Include="..\node_modules\x-xss-protection\README.md">
+			<Filter>source\node_modules\x-xss-protection</Filter>
+		</None>
+		<None Include="..\node_modules\escape-html\index.js">
+			<Filter>source\node_modules\escape-html</Filter>
+		</None>
+		<None Include="..\node_modules\escape-html\LICENSE">
+			<Filter>source\node_modules\escape-html</Filter>
+		</None>
+		<None Include="..\node_modules\escape-html\package.json">
+			<Filter>source\node_modules\escape-html</Filter>
+		</None>
+		<None Include="..\node_modules\escape-html\Readme.md">
+			<Filter>source\node_modules\escape-html</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\lib\bom-handling.js">
+			<Filter>source\node_modules\iconv-lite\lib</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\lib\extend-node.js">
+			<Filter>source\node_modules\iconv-lite\lib</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\lib\index.d.ts">
+			<Filter>source\node_modules\iconv-lite\lib</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\lib\index.js">
+			<Filter>source\node_modules\iconv-lite\lib</Filter>
+		</None>
+		<None Include="..\node_modules\iconv-lite\lib\streams.js">
+			<Filter>source\node_modules\iconv-lite\lib</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\.npmignore">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\.travis.yml">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\duplex.js">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\LICENSE">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\package.json">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\passthrough.js">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\readable.js">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\README.md">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\transform.js">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+		<None Include="..\node_modules\readable-stream\writable.js">
+			<Filter>source\node_modules\readable-stream</Filter>
+		</None>
+	</ItemGroup>
+</Project>

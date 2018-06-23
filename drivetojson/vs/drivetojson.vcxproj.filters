@@ -1,0 +1,3160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="source">
+			<UniqueIdentifier>{3dbaf604-24e0-4dba-ab8f-42f3f325ab4a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules">
+			<UniqueIdentifier>{65140619-2d55-4b66-84ff-79e1e20fece4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\forever-agent">
+			<UniqueIdentifier>{cdd40d97-b7fe-4b90-b9cf-d7e5db2116ce}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mime-db">
+			<UniqueIdentifier>{15e5b29c-e0ab-4626-bed9-54c3c7f73c59}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs">
+			<UniqueIdentifier>{7d51b51f-ebef-4a4c-8fcd-95c49534f0ee}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs\lib">
+			<UniqueIdentifier>{37ece13b-2587-4ac0-9760-b74cd207dac5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema">
+			<UniqueIdentifier>{0b92e3fb-bb05-4819-891c-b325618c41b7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\draft-00">
+			<UniqueIdentifier>{6582c553-2c4e-46d1-8206-0cc5bd05a090}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\.bin">
+			<UniqueIdentifier>{42dc814e-85eb-4a6c-853b-bbe813f74572}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hawk">
+			<UniqueIdentifier>{1065215c-83e8-4989-add2-88f4394b5202}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery">
+			<UniqueIdentifier>{9b15482d-99c8-437e-87cb-f7f169dc2a24}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src">
+			<UniqueIdentifier>{6f8a4262-4e15-461c-a8c9-228e210fa5ff}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\var">
+			<UniqueIdentifier>{80d28b63-2efe-4533-8472-a28ba2a543dc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs">
+			<UniqueIdentifier>{2d4f184e-bca0-46d5-8de9-4a22aa0a29c5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64">
+			<UniqueIdentifier>{92bbb6d9-19e9-4ce9-bb3e-15b3c765b956}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\LegendaryQuestDev.en">
+			<UniqueIdentifier>{80cf7737-c4a7-498c-88a2-89aa9fee0f7b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsonify">
+			<UniqueIdentifier>{640223ae-67eb-480f-8f78-93e608bc58a8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\uuid">
+			<UniqueIdentifier>{9f22373a-290e-4a20-ade8-475600f89238}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\draft-04">
+			<UniqueIdentifier>{d9cfa2e0-6347-45dd-bae5-5becc498e1d0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asn1">
+			<UniqueIdentifier>{a96100ff-1966-4a66-89d8-f15d8e99ed11}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\debug">
+			<UniqueIdentifier>{8fbe424b-31ab-4710-8558-79ddebbf5836}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hoek">
+			<UniqueIdentifier>{b396fea1-df94-44ee-9d2c-d8c02ce02165}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hoek\images">
+			<UniqueIdentifier>{0131f3d4-d5d7-4ce6-ad5f-9d3e42ba89ae}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\lib">
+			<UniqueIdentifier>{e16888e5-989f-4c47-97db-286ece4a5010}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ecc-jsbn">
+			<UniqueIdentifier>{c084daa8-c0b1-486a-bff2-b8adf36e70db}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ecc-jsbn\lib">
+			<UniqueIdentifier>{5361ff0f-8488-4d6b-9c6e-b4b5d0704c79}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\attributes">
+			<UniqueIdentifier>{95eb2d52-d711-4229-b91c-1ca674f6bedc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\http-signature">
+			<UniqueIdentifier>{ee96a97d-0660-4b99-958d-db55f235cb75}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator">
+			<UniqueIdentifier>{45fbdd03-4ae7-4d2e-8bd0-611d6e620054}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator\lib">
+			<UniqueIdentifier>{3d49405e-b0ca-4bb7-8f36-15f4ebbac670}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator\lib\node4">
+			<UniqueIdentifier>{b692ec25-b167-4b0d-8879-e09eab3fa110}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\q">
+			<UniqueIdentifier>{d5037ad8-7166-45f4-b3e3-c46c5d4eb979}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsonify\lib">
+			<UniqueIdentifier>{718a364f-3c8f-4bab-8433-8da43ea33be6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\boom">
+			<UniqueIdentifier>{fb66c930-34a2-472a-926d-39e049ac16a6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\getpass">
+			<UniqueIdentifier>{75b70a5d-8fcc-4b25-9df6-2777a2ab5ea5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\getpass\lib">
+			<UniqueIdentifier>{12ca8571-e149-406e-9170-e045f0233389}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk">
+			<UniqueIdentifier>{e7ab1043-6358-4c9a-a6d8-52e46adc68da}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\bin">
+			<UniqueIdentifier>{fd8abdec-ae5a-442e-ae4a-ffb91045622d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\UnitTest">
+			<UniqueIdentifier>{c2874827-de0a-4551-aa35-f752b506bafd}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asynckit">
+			<UniqueIdentifier>{28efe6b9-f48d-40a1-8ddd-3c64e36d1609}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asynckit\lib">
+			<UniqueIdentifier>{47b249e1-a66b-4f59-82b9-45f228fdaa8d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\form-data">
+			<UniqueIdentifier>{01d6773e-5b6c-4b76-9e0f-28481a2a6807}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator\lib\node6">
+			<UniqueIdentifier>{b2bdd595-1ced-4cce-827e-994c0d5df0ad}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\verror">
+			<UniqueIdentifier>{3b686b06-6028-4e35-8f35-d24e613f715c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\verror\lib">
+			<UniqueIdentifier>{d4fe7fc1-c961-47ca-9587-43ba38176906}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\extsprintf">
+			<UniqueIdentifier>{e0f2e3ad-a2e9-4afe-9fbd-848aba677736}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\extsprintf\lib">
+			<UniqueIdentifier>{b01d19ef-f771-45eb-987d-636dfc62e358}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\q\benchmark">
+			<UniqueIdentifier>{5793d87c-ef28-45d6-83bc-20be261f8b1a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-schema">
+			<UniqueIdentifier>{365b0443-c2bf-4b73-b656-271b984a3562}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ms">
+			<UniqueIdentifier>{17914ea8-9330-469c-b718-9ff3f8062abd}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator\lib\node7">
+			<UniqueIdentifier>{77a5b044-803c-4821-84dd-b4b38b2d6a46}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\extsprintf\examples">
+			<UniqueIdentifier>{d8fd062d-be33-4ed0-81a5-39b04af05e27}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\co">
+			<UniqueIdentifier>{cbe6647c-4cce-42a0-99df-4cd301669e8b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify">
+			<UniqueIdentifier>{66c2bc48-5310-4419-8360-6a6d414efd64}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\test">
+			<UniqueIdentifier>{71f86ef0-bf9b-4ed6-aead-8adae4f211c4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\test\cache-transporters">
+			<UniqueIdentifier>{653f63cc-eac6-4e10-a287-7c9573297ecc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\tough-cookie">
+			<UniqueIdentifier>{1ce76382-40fd-4b17-8789-fb79dc9381a9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\tough-cookie\lib">
+			<UniqueIdentifier>{f7676d93-d3cc-4f03-8698-7e763276b0ff}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\isstream">
+			<UniqueIdentifier>{05843b23-8380-470a-8ac3-f319c4ea607a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\bcrypt-pbkdf">
+			<UniqueIdentifier>{0d462954-5b49-4745-a76c-cd53e2b7dfeb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\lib">
+			<UniqueIdentifier>{aa0b5d56-9b7d-4bc6-8e0d-989f5e6cc2df}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\lib\logger-adapters">
+			<UniqueIdentifier>{fa49b42c-eb6a-4a84-a586-d9583e86c7e3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-stable-stringify">
+			<UniqueIdentifier>{c3f74606-f71d-4a2b-9b3d-f47738f061de}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-stable-stringify\test">
+			<UniqueIdentifier>{f2eb4c9f-8b3b-4aa6-aa3d-46d78116e7b6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\lib">
+			<UniqueIdentifier>{73010854-0de6-4016-bd3e-c3b3a7f30af4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\lib\formats">
+			<UniqueIdentifier>{852aaf2c-fa7a-4a6f-b5a0-8f24addccb7b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv">
+			<UniqueIdentifier>{b58eeef0-b60e-4306-bf61-6dafb23d421f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\dist">
+			<UniqueIdentifier>{ce29eb29-7d2c-4406-8105-78fde0ed35ba}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\boom\test">
+			<UniqueIdentifier>{2f1feb7b-a2ee-4252-bf19-4f1cc28c7c95}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\css">
+			<UniqueIdentifier>{9e48072e-8021-47b8-88ed-81d8bf2b0e02}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\performance-now">
+			<UniqueIdentifier>{267df29d-7db6-4dad-91e8-e78d890e0a43}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\performance-now\test">
+			<UniqueIdentifier>{7adbb4e1-afd6-4084-8ba3-b90bf1046d9d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-schema\lib">
+			<UniqueIdentifier>{45f42ee0-08e8-4068-8d0e-0a3c802527cc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsprim">
+			<UniqueIdentifier>{d6dcdc2f-a155-40b9-9b83-fc3ea9d6bfe4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsprim\lib">
+			<UniqueIdentifier>{3479e907-8ce5-4f91-a0eb-b5b9c6f725d3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hawk\test">
+			<UniqueIdentifier>{1f6a14be-e0f9-42f4-867e-aa910ea101a6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\output">
+			<UniqueIdentifier>{a336a4f6-b4c6-413d-a517-ae27d1c9fbb4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hoek\lib">
+			<UniqueIdentifier>{e276c42e-3f80-4b97-9e08-2e8cba69637c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\getpass\node_modules">
+			<UniqueIdentifier>{02b6ce3e-3dae-4f73-801f-446c00fe16a6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\getpass\node_modules\assert-plus">
+			<UniqueIdentifier>{09e7b310-2e6a-49a2-8e27-466a90ed3b49}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\uuid\lib">
+			<UniqueIdentifier>{a7224d5d-9f75-4f3b-acb8-f5b2d54b71be}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asn1\lib">
+			<UniqueIdentifier>{96c3d8d6-7ba9-4b71-87d3-7ff4627770b3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asn1\lib\ber">
+			<UniqueIdentifier>{cc074b63-e81d-4bb9-9e2d-55703c09113b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\test">
+			<UniqueIdentifier>{6fd82a78-4b4b-4ba1-8e6d-3ca2628e3529}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-stringify-safe">
+			<UniqueIdentifier>{aac746eb-f9b7-4b16-a0b5-8f8198435204}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-stringify-safe\test">
+			<UniqueIdentifier>{f0c7b4b1-ef93-463d-adf7-6e24320d124f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\lib">
+			<UniqueIdentifier>{f062d0bd-869c-4d23-a01c-4c2c0a65ab41}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\lib\compile">
+			<UniqueIdentifier>{82b346e6-d816-4015-aa8b-9db00b2c93d4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\uuid\bin">
+			<UniqueIdentifier>{6b5718fd-a36d-40bb-99d0-221de21fa734}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\lib\refs">
+			<UniqueIdentifier>{b35d9f3b-f43d-4702-944e-5b340b929520}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\lib\cache-transporters">
+			<UniqueIdentifier>{11156a2d-488e-4083-a745-6b1c8017db16}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\requestify\test\logger-adapters">
+			<UniqueIdentifier>{d27b6328-47e9-40c6-b514-e011ec238729}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\SystemDev">
+			<UniqueIdentifier>{c8dd8897-3f3d-46cf-bf0c-89752651afec}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\.vs">
+			<UniqueIdentifier>{f55ebdcf-2cda-441b-b929-8a3557b7576e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\.vs\drivetojson">
+			<UniqueIdentifier>{a7ca482e-e8d3-4771-916d-71956e635ff7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\.vs\drivetojson\v15">
+			<UniqueIdentifier>{7aa30a69-1e81-4157-a4c5-8baefe23c6a3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sntp">
+			<UniqueIdentifier>{88cccc8b-9719-4725-aa21-f3751aa3b287}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sntp\test">
+			<UniqueIdentifier>{e4b31b0e-49e6-45fb-a1f0-8d7489c93f97}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsonify\test">
+			<UniqueIdentifier>{be8656e4-c11b-4d16-938e-4169713b1438}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\traversing">
+			<UniqueIdentifier>{0414b7c2-f366-4a15-a481-71fa2d10b5de}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\traversing\var">
+			<UniqueIdentifier>{7be48b4b-d5b8-44bb-8f1c-2f1f49c5b1ba}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\google-oauth-jwt">
+			<UniqueIdentifier>{8e892a29-6570-4aa7-8360-dc50e72d8057}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\google-oauth-jwt\lib">
+			<UniqueIdentifier>{65d19b6a-3513-4b97-a0d4-8a168cd1a844}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hawk\dist">
+			<UniqueIdentifier>{e7ddd3b3-3605-4be8-8aa6-c263d2564f17}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dashdash">
+			<UniqueIdentifier>{954c9c2f-64b9-44b4-9605-bd1df7b1b8b5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dashdash\lib">
+			<UniqueIdentifier>{12ddf998-ec77-4415-93d4-a6d8a8cc4b13}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\boom\lib">
+			<UniqueIdentifier>{76a6e07c-a353-4897-9394-e476ac07f9eb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\mime-types">
+			<UniqueIdentifier>{50e84d82-93de-4696-bf7c-94d58b4793e8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\unittests">
+			<UniqueIdentifier>{64c94fdd-6e69-47e1-91e1-342ee665c61b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs\test">
+			<UniqueIdentifier>{ebde11a6-833f-403c-9b73-106c3fc675be}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\draft-03">
+			<UniqueIdentifier>{453986e6-235f-4cd7-a073-62249af4ab30}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\draft-03\examples">
+			<UniqueIdentifier>{86e5f716-50e9-492d-aef3-b5cb39cb15a7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\data">
+			<UniqueIdentifier>{9b1edcc6-888c-4436-bcdf-47ddd2db6069}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\data\var">
+			<UniqueIdentifier>{fa9cd36b-aed6-445d-b31a-e2e0c36287b5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\oauth-sign">
+			<UniqueIdentifier>{a3b07bb2-367d-4d9c-a497-645bcbb8a377}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\verror\tests">
+			<UniqueIdentifier>{eeed5098-261c-4148-b97b-bdfdfb0e3140}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asn1\tst">
+			<UniqueIdentifier>{54a306d9-823c-40e1-94de-272fd662130a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\asn1\tst\ber">
+			<UniqueIdentifier>{802743ed-7ac1-4090-b6a9-0ae87dee4f37}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator\src">
+			<UniqueIdentifier>{8e99c70a-817c-4e33-ab78-134c296238eb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\css\var">
+			<UniqueIdentifier>{7a090982-4384-4bf9-bc72-affb8671f9ac}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\draft-01">
+			<UniqueIdentifier>{f646e912-d53a-4a2b-be7c-aa28335391e4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\exports">
+			<UniqueIdentifier>{86d6ae15-894e-4d98-8a96-2a7ff551121e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\extend">
+			<UniqueIdentifier>{9775f550-dc79-4d47-86c0-8ca039d2f7e0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\man">
+			<UniqueIdentifier>{a499b995-4536-43ee-98de-bbb77e083cd0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\man\man1">
+			<UniqueIdentifier>{5f1705a2-5ee4-4aef-bfdb-c8116750e70c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\Test">
+			<UniqueIdentifier>{bf480d4c-0c78-49b7-b120-db513a1cfcd1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sntp\examples">
+			<UniqueIdentifier>{291c6907-ab7d-41e8-bbc4-ab3adea50e7f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\google-oauth-jwt\test">
+			<UniqueIdentifier>{88cf8b93-a554-4469-a6a8-4c98b54f8afe}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\event">
+			<UniqueIdentifier>{c2595c34-83d9-4a57-9933-5d52e9288674}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\queue">
+			<UniqueIdentifier>{0c2d44e0-dcc8-4ac4-a787-10a7130f1a53}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\is-typedarray">
+			<UniqueIdentifier>{480a13d0-7193-4563-85d3-5d34e23003b3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\LegendaryQuestDev">
+			<UniqueIdentifier>{0d8da094-6136-4235-b44e-ed6e8dc92b67}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\lib\dotjs">
+			<UniqueIdentifier>{a051e332-62de-4b6a-b203-7e341305a7b0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsbn">
+			<UniqueIdentifier>{482d2508-b4c1-484d-91d3-5910cf0581df}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\safe-buffer">
+			<UniqueIdentifier>{d8af197f-dbce-46fe-aac1-774e2d7c1f38}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\tunnel-agent">
+			<UniqueIdentifier>{fad7e42d-fcff-424f-b1a0-04bf1fecd0a6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\combined-stream">
+			<UniqueIdentifier>{a14d84cc-146b-4707-8ab5-54a2c611a5d2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\form-data\lib">
+			<UniqueIdentifier>{8acc7f43-1fb4-4b2b-a013-a5a07c20a5a7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hawk\images">
+			<UniqueIdentifier>{3d8aa673-ab13-4c96-8d86-32631bd617f7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\dist">
+			<UniqueIdentifier>{1fb09f4b-019e-45af-8db0-92ed823d511e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\boom\images">
+			<UniqueIdentifier>{ca877a18-8a12-401b-a5ce-d6e473a4ef6a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\scripts">
+			<UniqueIdentifier>{8a9689e1-a41a-4b6e-abf3-af69573bc717}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\underscore">
+			<UniqueIdentifier>{bbbcc738-f81f-4746-84b2-91b917885020}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\delayed-stream">
+			<UniqueIdentifier>{e86cf5c7-8d3d-4dfe-ae52-66f805bff268}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\delayed-stream\lib">
+			<UniqueIdentifier>{6bef3f65-03f4-4512-a7b6-5d61d6ab09c3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\caseless">
+			<UniqueIdentifier>{4ae8178c-f7a2-4283-b305-8717acfa034b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\qs\dist">
+			<UniqueIdentifier>{5379ecc8-845f-4abb-91d0-2d4567842a94}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\manipulation">
+			<UniqueIdentifier>{d9f37fcf-f7fe-445f-b47c-bc8c94c73a9c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\core">
+			<UniqueIdentifier>{7b7f8f7b-b794-424c-a125-8f6edffa539f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-schema\draft-02">
+			<UniqueIdentifier>{5939d323-34ab-4b61-859e-bdf2229b4f42}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\external">
+			<UniqueIdentifier>{c04a66a4-b4b1-47af-ba97-af33bd474ba0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\external\sizzle">
+			<UniqueIdentifier>{5b057ef9-5c4a-4626-9358-5a3d818a9288}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\aws4">
+			<UniqueIdentifier>{5f9fff36-1d0d-4e5d-95fb-c5c94410e9de}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dashdash\etc">
+			<UniqueIdentifier>{6d7fac1e-93fe-41b7-9e46-857374d97f9b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\LegendaryQuest">
+			<UniqueIdentifier>{7acbe44e-009d-4543-8fd0-d7c9c126a60a}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\cryptiles">
+			<UniqueIdentifier>{ba540a80-5162-4ed6-9fda-f72068b6db46}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\cryptiles\test">
+			<UniqueIdentifier>{d3264009-fefb-447f-b27a-cb713273291b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\node_modules">
+			<UniqueIdentifier>{cbfaf0e6-ef6c-4ce6-b6bb-d8ea27281b1f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sshpk\node_modules\assert-plus">
+			<UniqueIdentifier>{4ac6848b-2548-4428-9341-850e9398c780}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\notes">
+			<UniqueIdentifier>{1b47c11b-3f4a-48b2-a852-233b5e3ce91c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\lib\dot">
+			<UniqueIdentifier>{47f5847b-f6d2-4424-a3d2-364940e94b56}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\effects">
+			<UniqueIdentifier>{59e9bf34-5fce-4b4a-b961-d346dd382acd}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\core\var">
+			<UniqueIdentifier>{e0421277-4ccc-4241-bc7a-bc078c9a36ad}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\vs\x64\Dev">
+			<UniqueIdentifier>{bcd5f18f-d856-461e-beac-3e8b963e87e9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\har-validator\lib\browser">
+			<UniqueIdentifier>{4cfc51f0-56d5-4085-95c8-0acaa2bca6a8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hoek\test">
+			<UniqueIdentifier>{b661de59-08ed-4259-b9ec-58dd244fb89b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\json-stable-stringify\example">
+			<UniqueIdentifier>{69f054a4-0735-4b31-843b-de55d36d2ec5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\debug\src">
+			<UniqueIdentifier>{219fe6bc-38ea-46f1-9efc-c14659413377}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\tweetnacl">
+			<UniqueIdentifier>{a4f12330-115c-4b2b-aec5-5b58b0dc0a79}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\request">
+			<UniqueIdentifier>{ecdae97a-6080-435b-aef2-789e3283fafb}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\request\lib">
+			<UniqueIdentifier>{3e5efa64-f58e-420a-afd7-17468da8881c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsprim\node_modules">
+			<UniqueIdentifier>{b973ee9d-31cd-4e4b-b26e-30aeadf693aa}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jsprim\node_modules\assert-plus">
+			<UniqueIdentifier>{1f3fc0ae-3cf6-445d-b55c-16d6e0fa5774}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\ajax">
+			<UniqueIdentifier>{645b4524-24ed-4d16-8ff7-808061c991af}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\performance-now\src">
+			<UniqueIdentifier>{0dcb16b6-1499-4245-a7d3-013ee57db420}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\ajax\var">
+			<UniqueIdentifier>{28bf7831-156d-478a-a228-c08b2c18a13f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\external\sizzle\dist">
+			<UniqueIdentifier>{2df24b7e-0bf5-492d-bb34-ab3f9bd50406}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hawk\lib">
+			<UniqueIdentifier>{44c4299c-977a-4a90-9f12-3170f5ad145b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\data">
+			<UniqueIdentifier>{81bb30a1-2c5a-4408-9a0d-7eea1ba7e3fc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\aws-sign2">
+			<UniqueIdentifier>{f217fd01-2fa0-4c5d-aef9-7e2b17ea5df5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hawk\example">
+			<UniqueIdentifier>{43f68bea-7a7e-49ec-be3c-c0715a19f2e6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\assert-plus">
+			<UniqueIdentifier>{b58e6d4b-bcc3-4dc1-baa5-5c2f27b518d7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\http-signature\lib">
+			<UniqueIdentifier>{af808cf6-ce50-4fc1-9c58-5fe5a8fcbad3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\combined-stream\lib">
+			<UniqueIdentifier>{a0097a76-d8ac-4105-a1de-9700bb234b51}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\verror\examples">
+			<UniqueIdentifier>{c4f593a8-95fd-43c4-9ea3-7560e652365d}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\punycode">
+			<UniqueIdentifier>{0464e21b-f441-4f9f-8ad5-742e688593f4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\deferred">
+			<UniqueIdentifier>{b099e2e5-2a6c-4c80-8d30-186b0084a855}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dashdash\node_modules">
+			<UniqueIdentifier>{96bfe6de-b9c2-404c-8de5-d8f9a7959d22}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\dashdash\node_modules\assert-plus">
+			<UniqueIdentifier>{031762ff-d5fe-4bf9-bbe6-8d39144c7f1e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\cryptiles\lib">
+			<UniqueIdentifier>{189348e9-3c96-424e-b7d6-853ab6b843f0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\performance-now\lib">
+			<UniqueIdentifier>{777d18a4-635b-460c-b165-524da42d49b1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\stringstream">
+			<UniqueIdentifier>{99a6fb72-44ad-4f18-aea3-b0506d9ca79e}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\jquery\src\manipulation\var">
+			<UniqueIdentifier>{ef7c1117-367f-4524-a83f-682e4558c5dc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\hoek\test\modules">
+			<UniqueIdentifier>{606f636d-d2a8-4ecd-ab10-de23dc59f432}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\ajv\lib\dot\v5">
+			<UniqueIdentifier>{2ba5a388-b163-487d-8e46-c02a2621d14f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\node_modules\sntp\lib">
+			<UniqueIdentifier>{e4c86887-2282-43db-9612-383a3311c7ea}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source\modules">
+			<UniqueIdentifier>{07bcc442-63e1-4b15-b127-1294f7ff4a04}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\node_modules\forever-agent\index.js">
+			<Filter>source\node_modules\forever-agent</Filter>
+		</None>
+		<None Include="..\node_modules\forever-agent\LICENSE">
+			<Filter>source\node_modules\forever-agent</Filter>
+		</None>
+		<None Include="..\node_modules\forever-agent\package.json">
+			<Filter>source\node_modules\forever-agent</Filter>
+		</None>
+		<None Include="..\node_modules\forever-agent\README.md">
+			<Filter>source\node_modules\forever-agent</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\db.json">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\HISTORY.md">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\index.js">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\LICENSE">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\package.json">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\mime-db\README.md">
+			<Filter>source\node_modules\mime-db</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\formats.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\index.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\parse.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\stringify.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\qs\lib\utils.js">
+			<Filter>source\node_modules\qs\lib</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-00\hyper-schema">
+			<Filter>source\node_modules\json-schema\draft-00</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-00\json-ref">
+			<Filter>source\node_modules\json-schema\draft-00</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-00\links">
+			<Filter>source\node_modules\json-schema\draft-00</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-00\schema">
+			<Filter>source\node_modules\json-schema\draft-00</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\sshpk-conv">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\sshpk-conv.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\sshpk-sign">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\sshpk-sign.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\sshpk-verify">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\sshpk-verify.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\uuid">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\.bin\uuid.cmd">
+			<Filter>source\node_modules\.bin</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\.npmignore">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\.travis.yml">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\bower.json">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\component.json">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\LICENSE">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\package.json">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\README.md">
+			<Filter>source\node_modules\hawk</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\arr.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\class2type.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\concat.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\document.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\documentElement.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\fnToString.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\getProto.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\hasOwn.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\indexOf.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\ObjectFunctionString.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\pnum.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\push.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\rcssNum.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\rnothtmlwhite.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\slice.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\support.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\var\toString.js">
+			<Filter>source\node_modules\jquery\src\var</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-zyp-json-schema-03.xml">
+			<Filter>source\node_modules\json-schema</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-zyp-json-schema-04.xml">
+			<Filter>source\node_modules\json-schema</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\package.json">
+			<Filter>source\node_modules\json-schema</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\README.md">
+			<Filter>source\node_modules\json-schema</Filter>
+		</None>
+		<None Include="..\.\install.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\legendaryquestdev.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\legendaryquestdev.en.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\legendaryquestdev.ko.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\main.js">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\package-lock.json">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\package.json">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\systemdev.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\test.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\unittest.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\unittest.js">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\version.bat">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\.\version.js">
+			<Filter>source</Filter>
+		</None>
+		<None Include="..\vs\x64\LegendaryQuestDev.en\drivetojson.log">
+			<Filter>source\vs\x64\LegendaryQuestDev.en</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\index.js">
+			<Filter>source\node_modules\jsonify</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\package.json">
+			<Filter>source\node_modules\jsonify</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\README.markdown">
+			<Filter>source\node_modules\jsonify</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\.eslintrc.json">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\AUTHORS">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\HISTORY.md">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\index.js">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\LICENSE.md">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\package.json">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\README.md">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\v1.js">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\v4.js">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\v5.js">
+			<Filter>source\node_modules\uuid</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-04\hyper-schema">
+			<Filter>source\node_modules\json-schema\draft-04</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-04\links">
+			<Filter>source\node_modules\json-schema\draft-04</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-04\schema">
+			<Filter>source\node_modules\json-schema\draft-04</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\.npmignore">
+			<Filter>source\node_modules\asn1</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\.travis.yml">
+			<Filter>source\node_modules\asn1</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\LICENSE">
+			<Filter>source\node_modules\asn1</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\package.json">
+			<Filter>source\node_modules\asn1</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\README.md">
+			<Filter>source\node_modules\asn1</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.coveralls.yml">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.eslintrc">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.npmignore">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\.travis.yml">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\CHANGELOG.md">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\component.json">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\karma.conf.js">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\LICENSE">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\Makefile">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\node.js">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\package.json">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\debug\README.md">
+			<Filter>source\node_modules\debug</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\images\hoek.png">
+			<Filter>source\node_modules\hoek\images</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\lib\links.js">
+			<Filter>source\node_modules\json-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\lib\validate.js">
+			<Filter>source\node_modules\json-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\lib\ec.js">
+			<Filter>source\node_modules\ecc-jsbn\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\lib\LICENSE-jsbn">
+			<Filter>source\node_modules\ecc-jsbn\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\lib\sec.js">
+			<Filter>source\node_modules\ecc-jsbn\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\attr.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\classes.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\prop.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\support.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes\val.js">
+			<Filter>source\node_modules\jquery\src\attributes</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\AUTHORS.txt">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\bower.json">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\LICENSE.txt">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\package.json">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\README.md">
+			<Filter>source\node_modules\jquery</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\.dir-locals.el">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\.npmignore">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\CHANGES.md">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\http_signing.md">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\LICENSE">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\package.json">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\README.md">
+			<Filter>source\node_modules\http-signature</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node4\async.js">
+			<Filter>source\node_modules\har-validator\lib\node4</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node4\error.js">
+			<Filter>source\node_modules\har-validator\lib\node4</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node4\promise.js">
+			<Filter>source\node_modules\har-validator\lib\node4</Filter>
+		</None>
+		<None Include="..\node_modules\q\CONTRIBUTING.md">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\LICENSE">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\package.json">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\q.js">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\queue.js">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\q\README.md">
+			<Filter>source\node_modules\q</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\lib\parse.js">
+			<Filter>source\node_modules\jsonify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\lib\stringify.js">
+			<Filter>source\node_modules\jsonify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\boom\.npmignore">
+			<Filter>source\node_modules\boom</Filter>
+		</None>
+		<None Include="..\node_modules\boom\.travis.yml">
+			<Filter>source\node_modules\boom</Filter>
+		</None>
+		<None Include="..\node_modules\boom\CONTRIBUTING.md">
+			<Filter>source\node_modules\boom</Filter>
+		</None>
+		<None Include="..\node_modules\boom\LICENSE">
+			<Filter>source\node_modules\boom</Filter>
+		</None>
+		<None Include="..\node_modules\boom\package.json">
+			<Filter>source\node_modules\boom</Filter>
+		</None>
+		<None Include="..\node_modules\boom\README.md">
+			<Filter>source\node_modules\boom</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\lib\index.js">
+			<Filter>source\node_modules\getpass\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\bin\sshpk-conv">
+			<Filter>source\node_modules\sshpk\bin</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\bin\sshpk-sign">
+			<Filter>source\node_modules\sshpk\bin</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\bin\sshpk-verify">
+			<Filter>source\node_modules\sshpk\bin</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\.npmignore">
+			<Filter>source\node_modules\getpass</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\.travis.yml">
+			<Filter>source\node_modules\getpass</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\LICENSE">
+			<Filter>source\node_modules\getpass</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\package.json">
+			<Filter>source\node_modules\getpass</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\README.md">
+			<Filter>source\node_modules\getpass</Filter>
+		</None>
+		<None Include="..\vs\x64\UnitTest\drivetojson.log">
+			<Filter>source\vs\x64\UnitTest</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\abort.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\async.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\defer.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\iterate.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\readable_asynckit.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\readable_parallel.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\readable_serial.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\readable_serial_ordered.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\state.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\streamify.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\lib\terminator.js">
+			<Filter>source\node_modules\asynckit\lib</Filter>
+		</None>
+		<None Include="..\node_modules\form-data\License">
+			<Filter>source\node_modules\form-data</Filter>
+		</None>
+		<None Include="..\node_modules\form-data\package.json">
+			<Filter>source\node_modules\form-data</Filter>
+		</None>
+		<None Include="..\node_modules\form-data\README.md">
+			<Filter>source\node_modules\form-data</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node6\async.js">
+			<Filter>source\node_modules\har-validator\lib\node6</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node6\error.js">
+			<Filter>source\node_modules\har-validator\lib\node6</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node6\promise.js">
+			<Filter>source\node_modules\har-validator\lib\node6</Filter>
+		</None>
+		<None Include="..\node_modules\verror\lib\verror.js">
+			<Filter>source\node_modules\verror\lib</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\.gitmodules">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\jsl.node.conf">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\LICENSE">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\Makefile">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\Makefile.deps">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\Makefile.targ">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\package.json">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\README.md">
+			<Filter>source\node_modules\extsprintf</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\lib\extsprintf.js">
+			<Filter>source\node_modules\extsprintf\lib</Filter>
+		</None>
+		<None Include="..\node_modules\q\benchmark\compare-with-callbacks.js">
+			<Filter>source\node_modules\q\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\q\benchmark\scenarios.js">
+			<Filter>source\node_modules\q\benchmark</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\LICENSE">
+			<Filter>source\node_modules\har-schema</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\package.json">
+			<Filter>source\node_modules\har-schema</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\README.md">
+			<Filter>source\node_modules\har-schema</Filter>
+		</None>
+		<None Include="..\node_modules\ms\index.js">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\ms\license.md">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\ms\package.json">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\ms\readme.md">
+			<Filter>source\node_modules\ms</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\.npmignore">
+			<Filter>source\node_modules\hoek</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\.travis.yml">
+			<Filter>source\node_modules\hoek</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\CONTRIBUTING.md">
+			<Filter>source\node_modules\hoek</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\LICENSE">
+			<Filter>source\node_modules\hoek</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\package.json">
+			<Filter>source\node_modules\hoek</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\README.md">
+			<Filter>source\node_modules\hoek</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node7\async.js">
+			<Filter>source\node_modules\har-validator\lib\node7</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node7\error.js">
+			<Filter>source\node_modules\har-validator\lib\node7</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\node7\promise.js">
+			<Filter>source\node_modules\har-validator\lib\node7</Filter>
+		</None>
+		<None Include="..\node_modules\extsprintf\examples\simple.js">
+			<Filter>source\node_modules\extsprintf\examples</Filter>
+		</None>
+		<None Include="..\node_modules\co\History.md">
+			<Filter>source\node_modules\co</Filter>
+		</None>
+		<None Include="..\node_modules\co\index.js">
+			<Filter>source\node_modules\co</Filter>
+		</None>
+		<None Include="..\node_modules\co\LICENSE">
+			<Filter>source\node_modules\co</Filter>
+		</None>
+		<None Include="..\node_modules\co\package.json">
+			<Filter>source\node_modules\co</Filter>
+		</None>
+		<None Include="..\node_modules\co\Readme.md">
+			<Filter>source\node_modules\co</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-transporters\in-memory-transporter-spec.js">
+			<Filter>source\node_modules\requestify\test\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-transporters\mongo-transporter-spec.js">
+			<Filter>source\node_modules\requestify\test\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-transporters\redis-trasporter-spec.js">
+			<Filter>source\node_modules\requestify\test\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\lib\cookie.js">
+			<Filter>source\node_modules\tough-cookie\lib</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\lib\memstore.js">
+			<Filter>source\node_modules\tough-cookie\lib</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\lib\pathMatch.js">
+			<Filter>source\node_modules\tough-cookie\lib</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\lib\permuteDomain.js">
+			<Filter>source\node_modules\tough-cookie\lib</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\lib\pubsuffix.js">
+			<Filter>source\node_modules\tough-cookie\lib</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\lib\store.js">
+			<Filter>source\node_modules\tough-cookie\lib</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\.jshintrc">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\.npmignore">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\.travis.yml">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\isstream.js">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\LICENSE.md">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\package.json">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\README.md">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\isstream\test.js">
+			<Filter>source\node_modules\isstream</Filter>
+		</None>
+		<None Include="..\node_modules\bcrypt-pbkdf\index.js">
+			<Filter>source\node_modules\bcrypt-pbkdf</Filter>
+		</None>
+		<None Include="..\node_modules\bcrypt-pbkdf\package.json">
+			<Filter>source\node_modules\bcrypt-pbkdf</Filter>
+		</None>
+		<None Include="..\node_modules\bcrypt-pbkdf\README.md">
+			<Filter>source\node_modules\bcrypt-pbkdf</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\logger-adapters\console-adapter.js">
+			<Filter>source\node_modules\requestify\lib\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\logger-adapters\winston-adapter.js">
+			<Filter>source\node_modules\requestify\lib\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\test\cmp.js">
+			<Filter>source\node_modules\json-stable-stringify\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\test\nested.js">
+			<Filter>source\node_modules\json-stable-stringify\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\test\replacer.js">
+			<Filter>source\node_modules\json-stable-stringify\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\test\space.js">
+			<Filter>source\node_modules\json-stable-stringify\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\test\str.js">
+			<Filter>source\node_modules\json-stable-stringify\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\test\to-json.js">
+			<Filter>source\node_modules\json-stable-stringify\test</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\auto.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\openssh-cert.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\pem.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\pkcs1.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\pkcs8.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\rfc4253.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\ssh-private.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\ssh.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\x509-pem.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\formats\x509.js">
+			<Filter>source\node_modules\sshpk\lib\formats</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\dist\ajv.bundle.js">
+			<Filter>source\node_modules\ajv\dist</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\dist\ajv.min.js">
+			<Filter>source\node_modules\ajv\dist</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\dist\ajv.min.js.map">
+			<Filter>source\node_modules\ajv\dist</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\dist\nodent.min.js">
+			<Filter>source\node_modules\ajv\dist</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\dist\regenerator.min.js">
+			<Filter>source\node_modules\ajv\dist</Filter>
+		</None>
+		<None Include="..\node_modules\boom\test\index.js">
+			<Filter>source\node_modules\boom\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\addGetHookIf.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\adjustCSS.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\curCSS.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\hiddenVisibleSelectors.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\showHide.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\support.js">
+			<Filter>source\node_modules\jquery\src\css</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\.tonic_example.js">
+			<Filter>source\node_modules\ajv</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\LICENSE">
+			<Filter>source\node_modules\ajv</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\package.json">
+			<Filter>source\node_modules\ajv</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\README.md">
+			<Filter>source\node_modules\ajv</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\test\mocha.opts">
+			<Filter>source\node_modules\performance-now\test</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\test\performance-now.coffee">
+			<Filter>source\node_modules\performance-now\test</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\afterRequest.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\beforeRequest.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\browser.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\cache.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\content.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\cookie.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\creator.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\entry.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\har.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\header.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\index.js">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\log.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\page.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\pageTimings.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\postData.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\query.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\request.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\response.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\har-schema\lib\timings.json">
+			<Filter>source\node_modules\har-schema\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\lib\jsprim.js">
+			<Filter>source\node_modules\jsprim\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\browser.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\client.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\crypto.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\index.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\readme.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\server.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\uri.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\test\utils.js">
+			<Filter>source\node_modules\hawk\test</Filter>
+		</None>
+		<None Include="..\output\test.js">
+			<Filter>source\output</Filter>
+		</None>
+		<None Include="..\output\test.json">
+			<Filter>source\output</Filter>
+		</None>
+		<None Include="..\output\unittest_util.txt">
+			<Filter>source\output</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\lib\escape.js">
+			<Filter>source\node_modules\hoek\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\lib\index.js">
+			<Filter>source\node_modules\hoek\lib</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\node_modules\assert-plus\assert.js">
+			<Filter>source\node_modules\getpass\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\node_modules\assert-plus\AUTHORS">
+			<Filter>source\node_modules\getpass\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\node_modules\assert-plus\CHANGES.md">
+			<Filter>source\node_modules\getpass\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\node_modules\assert-plus\package.json">
+			<Filter>source\node_modules\getpass\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\getpass\node_modules\assert-plus\README.md">
+			<Filter>source\node_modules\getpass\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\lib\bytesToUuid.js">
+			<Filter>source\node_modules\uuid\lib</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\lib\rng-browser.js">
+			<Filter>source\node_modules\uuid\lib</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\lib\rng.js">
+			<Filter>source\node_modules\uuid\lib</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\lib\sha1-browser.js">
+			<Filter>source\node_modules\uuid\lib</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\lib\sha1.js">
+			<Filter>source\node_modules\uuid\lib</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\lib\ber\errors.js">
+			<Filter>source\node_modules\asn1\lib\ber</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\lib\ber\index.js">
+			<Filter>source\node_modules\asn1\lib\ber</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\lib\ber\reader.js">
+			<Filter>source\node_modules\asn1\lib\ber</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\lib\ber\types.js">
+			<Filter>source\node_modules\asn1\lib\ber</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\lib\ber\writer.js">
+			<Filter>source\node_modules\asn1\lib\ber</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\test\tests.js">
+			<Filter>source\node_modules\json-schema\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\test\mocha.opts">
+			<Filter>source\node_modules\json-stringify-safe\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\test\stringify_test.js">
+			<Filter>source\node_modules\json-stringify-safe\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\.jshintrc">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\.npmignore">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\.travis.yml">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\index.js">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\LICENSE.txt">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\package.json">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\README.md">
+			<Filter>source\node_modules\requestify</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\equal.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\formats.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\index.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\resolve.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\rules.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\schema_obj.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\ucs2length.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\util.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\validation_error.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\compile\_rules.js">
+			<Filter>source\node_modules\ajv\lib\compile</Filter>
+		</None>
+		<None Include="..\node_modules\uuid\bin\uuid">
+			<Filter>source\node_modules\uuid\bin</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\refs\json-schema-draft-04.json">
+			<Filter>source\node_modules\ajv\lib\refs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\refs\json-schema-v5.json">
+			<Filter>source\node_modules\ajv\lib\refs</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache-transporters\in-memory-transporter.js">
+			<Filter>source\node_modules\requestify\lib\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache-transporters\mongo-transporter.js">
+			<Filter>source\node_modules\requestify\lib\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache-transporters\redis-transporter.js">
+			<Filter>source\node_modules\requestify\lib\cache-transporters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\logger-adapters\console-adapter-spec.js">
+			<Filter>source\node_modules\requestify\test\logger-adapters</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\logger-adapters\winston-adapter-spec.js">
+			<Filter>source\node_modules\requestify\test\logger-adapters</Filter>
+		</None>
+		<None Include="..\vs\x64\SystemDev\drivetojson.log">
+			<Filter>source\vs\x64\SystemDev</Filter>
+		</None>
+		<None Include="..\vs\.vs\drivetojson\v15\Browse.VC.db">
+			<Filter>source\vs\.vs\drivetojson\v15</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\ajv.d.ts">
+			<Filter>source\node_modules\ajv\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\ajv.js">
+			<Filter>source\node_modules\ajv\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\async.js">
+			<Filter>source\node_modules\ajv\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\cache.js">
+			<Filter>source\node_modules\ajv\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\keyword.js">
+			<Filter>source\node_modules\ajv\lib</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\v5.js">
+			<Filter>source\node_modules\ajv\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\test\index.js">
+			<Filter>source\node_modules\sntp\test</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\test\parse.js">
+			<Filter>source\node_modules\jsonify\test</Filter>
+		</None>
+		<None Include="..\node_modules\jsonify\test\stringify.js">
+			<Filter>source\node_modules\jsonify\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\var\dir.js">
+			<Filter>source\node_modules\jquery\src\traversing\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\var\rneedsContext.js">
+			<Filter>source\node_modules\jquery\src\traversing\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\var\siblings.js">
+			<Filter>source\node_modules\jquery\src\traversing\var</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\lib\auth.js">
+			<Filter>source\node_modules\google-oauth-jwt\lib</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\lib\request-jwt.js">
+			<Filter>source\node_modules\google-oauth-jwt\lib</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\lib\token-cache.js">
+			<Filter>source\node_modules\google-oauth-jwt\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\dist\client.js">
+			<Filter>source\node_modules\hawk\dist</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\lib\dashdash.js">
+			<Filter>source\node_modules\dashdash\lib</Filter>
+		</None>
+		<None Include="..\node_modules\boom\lib\index.js">
+			<Filter>source\node_modules\boom\lib</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\HISTORY.md">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\index.js">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\LICENSE">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\package.json">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\node_modules\mime-types\README.md">
+			<Filter>source\node_modules\mime-types</Filter>
+		</None>
+		<None Include="..\unittests\cursor.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\sheettoobject.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\unittests\util.js">
+			<Filter>source\unittests</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\.eslintrc">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\index.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\parse.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\stringify.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\qs\test\utils.js">
+			<Filter>source\node_modules\qs\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\.npmignore">
+			<Filter>source\node_modules\json-stable-stringify</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\.travis.yml">
+			<Filter>source\node_modules\json-stable-stringify</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\index.js">
+			<Filter>source\node_modules\json-stable-stringify</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\LICENSE">
+			<Filter>source\node_modules\json-stable-stringify</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\package.json">
+			<Filter>source\node_modules\json-stable-stringify</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\readme.markdown">
+			<Filter>source\node_modules\json-stable-stringify</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\lib\index.js">
+			<Filter>source\node_modules\asn1\lib</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\examples\address">
+			<Filter>source\node_modules\json-schema\draft-03\examples</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\examples\calendar">
+			<Filter>source\node_modules\json-schema\draft-03\examples</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\examples\card">
+			<Filter>source\node_modules\json-schema\draft-03\examples</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\examples\geo">
+			<Filter>source\node_modules\json-schema\draft-03\examples</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\examples\interfaces">
+			<Filter>source\node_modules\json-schema\draft-03\examples</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\var\acceptData.js">
+			<Filter>source\node_modules\jquery\src\data\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\var\dataPriv.js">
+			<Filter>source\node_modules\jquery\src\data\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\var\dataUser.js">
+			<Filter>source\node_modules\jquery\src\data\var</Filter>
+		</None>
+		<None Include="..\node_modules\oauth-sign\index.js">
+			<Filter>source\node_modules\oauth-sign</Filter>
+		</None>
+		<None Include="..\node_modules\oauth-sign\LICENSE">
+			<Filter>source\node_modules\oauth-sign</Filter>
+		</None>
+		<None Include="..\node_modules\oauth-sign\package.json">
+			<Filter>source\node_modules\oauth-sign</Filter>
+		</None>
+		<None Include="..\node_modules\oauth-sign\README.md">
+			<Filter>source\node_modules\oauth-sign</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\.npmignore">
+			<Filter>source\node_modules\google-oauth-jwt</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\CHANGELOG">
+			<Filter>source\node_modules\google-oauth-jwt</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\index.js">
+			<Filter>source\node_modules\google-oauth-jwt</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\LICENSE">
+			<Filter>source\node_modules\google-oauth-jwt</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\package.json">
+			<Filter>source\node_modules\google-oauth-jwt</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\README.md">
+			<Filter>source\node_modules\google-oauth-jwt</Filter>
+		</None>
+		<None Include="..\node_modules\verror\tests\tst.inherit.js">
+			<Filter>source\node_modules\verror\tests</Filter>
+		</None>
+		<None Include="..\node_modules\verror\tests\tst.verror.js">
+			<Filter>source\node_modules\verror\tests</Filter>
+		</None>
+		<None Include="..\node_modules\verror\tests\tst.werror.js">
+			<Filter>source\node_modules\verror\tests</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\tst\ber\reader.test.js">
+			<Filter>source\node_modules\asn1\tst\ber</Filter>
+		</None>
+		<None Include="..\node_modules\asn1\tst\ber\writer.test.js">
+			<Filter>source\node_modules\asn1\tst\ber</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\src\async.js">
+			<Filter>source\node_modules\har-validator\src</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\src\error.js">
+			<Filter>source\node_modules\har-validator\src</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\src\promise.js">
+			<Filter>source\node_modules\har-validator\src</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\.npmignore">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\CHANGELOG.md">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\LICENSE">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\Makefile">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\package.json">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\README.md">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\json-stringify-safe\stringify.js">
+			<Filter>source\node_modules\json-stringify-safe</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\cssExpand.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\getStyles.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\isHiddenWithinTree.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\rmargin.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\rnumnonpx.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css\var\swap.js">
+			<Filter>source\node_modules\jquery\src\css\var</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-01\hyper-schema">
+			<Filter>source\node_modules\json-schema\draft-01</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-01\json-ref">
+			<Filter>source\node_modules\json-schema\draft-01</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-01\links">
+			<Filter>source\node_modules\json-schema\draft-01</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-01\schema">
+			<Filter>source\node_modules\json-schema\draft-01</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\exports\amd.js">
+			<Filter>source\node_modules\jquery\src\exports</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\exports\global.js">
+			<Filter>source\node_modules\jquery\src\exports</Filter>
+		</None>
+		<None Include="..\node_modules\extend\.eslintrc">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\.jscs.json">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\.npmignore">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\.travis.yml">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\CHANGELOG.md">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\component.json">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\index.js">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\LICENSE">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\package.json">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\extend\README.md">
+			<Filter>source\node_modules\extend</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\man\man1\sshpk-conv.1">
+			<Filter>source\node_modules\sshpk\man\man1</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\man\man1\sshpk-sign.1">
+			<Filter>source\node_modules\sshpk\man\man1</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\man\man1\sshpk-verify.1">
+			<Filter>source\node_modules\sshpk\man\man1</Filter>
+		</None>
+		<None Include="..\vs\x64\Test\drivetojson.log">
+			<Filter>source\vs\x64\Test</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\examples\offset.js">
+			<Filter>source\node_modules\sntp\examples</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\examples\time.js">
+			<Filter>source\node_modules\sntp\examples</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\test\jwt-settings.json">
+			<Filter>source\node_modules\google-oauth-jwt\test</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\test\jwt-settings.json.sample">
+			<Filter>source\node_modules\google-oauth-jwt\test</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\test\key.pem">
+			<Filter>source\node_modules\google-oauth-jwt\test</Filter>
+		</None>
+		<None Include="..\node_modules\google-oauth-jwt\test\test-google-oauth-jwt.js">
+			<Filter>source\node_modules\google-oauth-jwt\test</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\ajax.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\alias.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\focusin.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\support.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event\trigger.js">
+			<Filter>source\node_modules\jquery\src\event</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\queue\delay.js">
+			<Filter>source\node_modules\jquery\src\queue</Filter>
+		</None>
+		<None Include="..\node_modules\is-typedarray\index.js">
+			<Filter>source\node_modules\is-typedarray</Filter>
+		</None>
+		<None Include="..\node_modules\is-typedarray\LICENSE.md">
+			<Filter>source\node_modules\is-typedarray</Filter>
+		</None>
+		<None Include="..\node_modules\is-typedarray\package.json">
+			<Filter>source\node_modules\is-typedarray</Filter>
+		</None>
+		<None Include="..\node_modules\is-typedarray\README.md">
+			<Filter>source\node_modules\is-typedarray</Filter>
+		</None>
+		<None Include="..\node_modules\is-typedarray\test.js">
+			<Filter>source\node_modules\is-typedarray</Filter>
+		</None>
+		<None Include="..\vs\x64\LegendaryQuestDev\drivetojson.log">
+			<Filter>source\vs\x64\LegendaryQuestDev</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\allOf.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\anyOf.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\constant.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\custom.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\dependencies.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\enum.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\format.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\items.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\multipleOf.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\not.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\oneOf.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\pattern.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\patternRequired.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\properties.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\README.md">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\ref.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\required.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\switch.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\uniqueItems.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\validate.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\_formatLimit.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\_limit.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\_limitItems.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\_limitLength.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dotjs\_limitProperties.js">
+			<Filter>source\node_modules\ajv\lib\dotjs</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\.npmignore">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\example.html">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\example.js">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\index.js">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\LICENSE">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\package.json">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\jsbn\README.md">
+			<Filter>source\node_modules\jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\safe-buffer\.travis.yml">
+			<Filter>source\node_modules\safe-buffer</Filter>
+		</None>
+		<None Include="..\node_modules\safe-buffer\index.js">
+			<Filter>source\node_modules\safe-buffer</Filter>
+		</None>
+		<None Include="..\node_modules\safe-buffer\LICENSE">
+			<Filter>source\node_modules\safe-buffer</Filter>
+		</None>
+		<None Include="..\node_modules\safe-buffer\package.json">
+			<Filter>source\node_modules\safe-buffer</Filter>
+		</None>
+		<None Include="..\node_modules\safe-buffer\README.md">
+			<Filter>source\node_modules\safe-buffer</Filter>
+		</None>
+		<None Include="..\node_modules\safe-buffer\test.js">
+			<Filter>source\node_modules\safe-buffer</Filter>
+		</None>
+		<None Include="..\node_modules\tunnel-agent\index.js">
+			<Filter>source\node_modules\tunnel-agent</Filter>
+		</None>
+		<None Include="..\node_modules\tunnel-agent\LICENSE">
+			<Filter>source\node_modules\tunnel-agent</Filter>
+		</None>
+		<None Include="..\node_modules\tunnel-agent\package.json">
+			<Filter>source\node_modules\tunnel-agent</Filter>
+		</None>
+		<None Include="..\node_modules\tunnel-agent\README.md">
+			<Filter>source\node_modules\tunnel-agent</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\cache-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\interface-validator-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\logger-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\request-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\requestify-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\test\response-spec.js">
+			<Filter>source\node_modules\requestify\test</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\bench.js">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\index.js">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\LICENSE">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\package.json">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\parallel.js">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\README.md">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\serial.js">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\serialOrdered.js">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\asynckit\stream.js">
+			<Filter>source\node_modules\asynckit</Filter>
+		</None>
+		<None Include="..\node_modules\combined-stream\License">
+			<Filter>source\node_modules\combined-stream</Filter>
+		</None>
+		<None Include="..\node_modules\combined-stream\package.json">
+			<Filter>source\node_modules\combined-stream</Filter>
+		</None>
+		<None Include="..\node_modules\combined-stream\Readme.md">
+			<Filter>source\node_modules\combined-stream</Filter>
+		</None>
+		<None Include="..\node_modules\form-data\lib\browser.js">
+			<Filter>source\node_modules\form-data\lib</Filter>
+		</None>
+		<None Include="..\node_modules\form-data\lib\form_data.js">
+			<Filter>source\node_modules\form-data\lib</Filter>
+		</None>
+		<None Include="..\node_modules\form-data\lib\populate.js">
+			<Filter>source\node_modules\form-data\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\images\hawk.png">
+			<Filter>source\node_modules\hawk\images</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\images\logo.png">
+			<Filter>source\node_modules\hawk\images</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\core.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.min.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.min.map">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.slim.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.slim.min.js">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\dist\jquery.slim.min.map">
+			<Filter>source\node_modules\jquery\dist</Filter>
+		</None>
+		<None Include="..\node_modules\boom\images\boom.png">
+			<Filter>source\node_modules\boom\images</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\scripts\.eslintrc.yml">
+			<Filter>source\node_modules\ajv\scripts</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\scripts\bundle.js">
+			<Filter>source\node_modules\ajv\scripts</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\scripts\compile-dots.js">
+			<Filter>source\node_modules\ajv\scripts</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\scripts\info">
+			<Filter>source\node_modules\ajv\scripts</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\scripts\prepare-tests">
+			<Filter>source\node_modules\ajv\scripts</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\scripts\travis-gh-pages">
+			<Filter>source\node_modules\ajv\scripts</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\LICENSE">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\package.json">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\README.md">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\underscore-min.js">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\underscore-min.map">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\underscore\underscore.js">
+			<Filter>source\node_modules\underscore</Filter>
+		</None>
+		<None Include="..\node_modules\delayed-stream\lib\delayed_stream.js">
+			<Filter>source\node_modules\delayed-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\caseless\index.js">
+			<Filter>source\node_modules\caseless</Filter>
+		</None>
+		<None Include="..\node_modules\caseless\LICENSE">
+			<Filter>source\node_modules\caseless</Filter>
+		</None>
+		<None Include="..\node_modules\caseless\package.json">
+			<Filter>source\node_modules\caseless</Filter>
+		</None>
+		<None Include="..\node_modules\caseless\README.md">
+			<Filter>source\node_modules\caseless</Filter>
+		</None>
+		<None Include="..\node_modules\caseless\test.js">
+			<Filter>source\node_modules\caseless</Filter>
+		</None>
+		<None Include="..\node_modules\qs\dist\qs.js">
+			<Filter>source\node_modules\qs\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\buildFragment.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\getAll.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\setGlobalEval.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\support.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\wrapMap.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\_evalUrl.js">
+			<Filter>source\node_modules\jquery\src\manipulation</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\.npmignore">
+			<Filter>source\node_modules\sshpk</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\.travis.yml">
+			<Filter>source\node_modules\sshpk</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\LICENSE">
+			<Filter>source\node_modules\sshpk</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\package.json">
+			<Filter>source\node_modules\sshpk</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\README.md">
+			<Filter>source\node_modules\sshpk</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\access.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\DOMEval.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\init.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\nodeName.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\parseHTML.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\ready-no-deferred.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\ready.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\readyException.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\stripAndCollapse.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\support.js">
+			<Filter>source\node_modules\jquery\src\core</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-02\hyper-schema">
+			<Filter>source\node_modules\json-schema\draft-02</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-02\json-ref">
+			<Filter>source\node_modules\json-schema\draft-02</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-02\links">
+			<Filter>source\node_modules\json-schema\draft-02</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-02\schema">
+			<Filter>source\node_modules\json-schema\draft-02</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\LICENSE.txt">
+			<Filter>source\node_modules\jquery\external\sizzle</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\.npmignore">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\.tern-port">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\.travis.yml">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\aws4.js">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\LICENSE">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\lru.js">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\package.json">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\aws4\README.md">
+			<Filter>source\node_modules\aws4</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\hyper-schema">
+			<Filter>source\node_modules\json-schema\draft-03</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\json-ref">
+			<Filter>source\node_modules\json-schema\draft-03</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\links">
+			<Filter>source\node_modules\json-schema\draft-03</Filter>
+		</None>
+		<None Include="..\node_modules\json-schema\draft-03\schema">
+			<Filter>source\node_modules\json-schema\draft-03</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\etc\dashdash.bash_completion.in">
+			<Filter>source\node_modules\dashdash\etc</Filter>
+		</None>
+		<None Include="..\vs\x64\LegendaryQuest\drivetojson.log">
+			<Filter>source\vs\x64\LegendaryQuest</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\cache.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\interface-validator.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\logger.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\request.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\requestify.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\requestify\lib\response.js">
+			<Filter>source\node_modules\requestify\lib</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\test\index.js">
+			<Filter>source\node_modules\cryptiles\test</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\node_modules\assert-plus\assert.js">
+			<Filter>source\node_modules\sshpk\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\node_modules\assert-plus\AUTHORS">
+			<Filter>source\node_modules\sshpk\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\node_modules\assert-plus\CHANGES.md">
+			<Filter>source\node_modules\sshpk\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\node_modules\assert-plus\package.json">
+			<Filter>source\node_modules\sshpk\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\node_modules\assert-plus\README.md">
+			<Filter>source\node_modules\sshpk\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\notes\notes.txt">
+			<Filter>source\notes</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\allOf.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\anyOf.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\coerce.def">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\custom.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\defaults.def">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\definitions.def">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\dependencies.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\enum.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\errors.def">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\format.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\items.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\missing.def">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\multipleOf.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\not.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\oneOf.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\pattern.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\properties.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\ref.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\required.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\uniqueItems.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\validate.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\_limit.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\_limitItems.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\_limitLength.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\_limitProperties.jst">
+			<Filter>source\node_modules\ajv\lib\dot</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\effects\animatedSelector.js">
+			<Filter>source\node_modules\jquery\src\effects</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\effects\Tween.js">
+			<Filter>source\node_modules\jquery\src\effects</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\algs.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\certificate.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\dhe.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\ed-compat.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\errors.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\fingerprint.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\identity.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\index.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\key.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\private-key.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\signature.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\ssh-buffer.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\sshpk\lib\utils.js">
+			<Filter>source\node_modules\sshpk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core\var\rsingleTag.js">
+			<Filter>source\node_modules\jquery\src\core\var</Filter>
+		</None>
+		<None Include="..\vs\x64\Dev\drivetojson.log">
+			<Filter>source\vs\x64\Dev</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\browser\async.js">
+			<Filter>source\node_modules\har-validator\lib\browser</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\browser\error.js">
+			<Filter>source\node_modules\har-validator\lib\browser</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\lib\browser\promise.js">
+			<Filter>source\node_modules\har-validator\lib\browser</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\test\escaper.js">
+			<Filter>source\node_modules\hoek\test</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\test\index.js">
+			<Filter>source\node_modules\hoek\test</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\example\key_cmp.js">
+			<Filter>source\node_modules\json-stable-stringify\example</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\example\nested.js">
+			<Filter>source\node_modules\json-stable-stringify\example</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\example\str.js">
+			<Filter>source\node_modules\json-stable-stringify\example</Filter>
+		</None>
+		<None Include="..\node_modules\json-stable-stringify\example\value_cmp.js">
+			<Filter>source\node_modules\json-stable-stringify\example</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\.npmignore">
+			<Filter>source\node_modules\cryptiles</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\.travis.yml">
+			<Filter>source\node_modules\cryptiles</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\LICENSE">
+			<Filter>source\node_modules\cryptiles</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\package.json">
+			<Filter>source\node_modules\cryptiles</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\README.md">
+			<Filter>source\node_modules\cryptiles</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\LICENSE">
+			<Filter>source\node_modules\tough-cookie</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\package.json">
+			<Filter>source\node_modules\tough-cookie</Filter>
+		</None>
+		<None Include="..\node_modules\tough-cookie\README.md">
+			<Filter>source\node_modules\tough-cookie</Filter>
+		</None>
+		<None Include="..\node_modules\qs\.eslintignore">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\.eslintrc">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\.jscs.json">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\CHANGELOG.md">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\LICENSE">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\package.json">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\qs\README.md">
+			<Filter>source\node_modules\qs</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\.npmignore">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\.travis.yml">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\index.js">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\LICENSE">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\Makefile">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\package.json">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\README.md">
+			<Filter>source\node_modules\sntp</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\browser.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\debug.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\index.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\debug\src\node.js">
+			<Filter>source\node_modules\debug\src</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\.npmignore">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\.tm_properties">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\.travis.yml">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\license.txt">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\Makefile">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\package.json">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\README.md">
+			<Filter>source\node_modules\performance-now</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\.npmignore">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\AUTHORS.md">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\CHANGELOG.md">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\LICENSE">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\nacl-fast.js">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\nacl-fast.min.js">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\nacl.d.ts">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\nacl.js">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\nacl.min.js">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\package.json">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\PULL_REQUEST_TEMPLATE.md">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\tweetnacl\README.md">
+			<Filter>source\node_modules\tweetnacl</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\CHANGES.md">
+			<Filter>source\node_modules\dashdash</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\LICENSE.txt">
+			<Filter>source\node_modules\dashdash</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\package.json">
+			<Filter>source\node_modules\dashdash</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\README.md">
+			<Filter>source\node_modules\dashdash</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\auth.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\cookies.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\getProxyFromURI.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\har.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\helpers.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\multipart.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\oauth.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\querystring.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\redirect.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\request\lib\tunnel.js">
+			<Filter>source\node_modules\request\lib</Filter>
+		</None>
+		<None Include="..\node_modules\verror\.gitmodules">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\.npmignore">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\jsl.node.conf">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\LICENSE">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\Makefile">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\Makefile.targ">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\package.json">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\verror\README.md">
+			<Filter>source\node_modules\verror</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\node_modules\assert-plus\assert.js">
+			<Filter>source\node_modules\jsprim\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\node_modules\assert-plus\AUTHORS">
+			<Filter>source\node_modules\jsprim\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\node_modules\assert-plus\CHANGES.md">
+			<Filter>source\node_modules\jsprim\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\node_modules\assert-plus\package.json">
+			<Filter>source\node_modules\jsprim\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\node_modules\assert-plus\README.md">
+			<Filter>source\node_modules\jsprim\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\jsonp.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\load.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\parseXML.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\script.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\xhr.js">
+			<Filter>source\node_modules\jquery\src\ajax</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\src\performance-now.coffee">
+			<Filter>source\node_modules\performance-now\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\var\location.js">
+			<Filter>source\node_modules\jquery\src\ajax\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\var\nonce.js">
+			<Filter>source\node_modules\jquery\src\ajax\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax\var\rquery.js">
+			<Filter>source\node_modules\jquery\src\ajax\var</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\LICENSE">
+			<Filter>source\node_modules\har-validator</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\package.json">
+			<Filter>source\node_modules\har-validator</Filter>
+		</None>
+		<None Include="..\node_modules\har-validator\README.md">
+			<Filter>source\node_modules\har-validator</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\dist\sizzle.js">
+			<Filter>source\node_modules\jquery\external\sizzle\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\dist\sizzle.min.js">
+			<Filter>source\node_modules\jquery\external\sizzle\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\external\sizzle\dist\sizzle.min.map">
+			<Filter>source\node_modules\jquery\external\sizzle\dist</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\.eslintrc.json">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\ajax.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\attributes.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\callbacks.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\core.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\css.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\deferred.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\deprecated.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\dimensions.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\effects.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\event.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\jquery.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\offset.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\queue.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\selector-native.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\selector-sizzle.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\selector.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\serialize.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\wrap.js">
+			<Filter>source\node_modules\jquery\src</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\lib\browser.js">
+			<Filter>source\node_modules\hawk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\lib\client.js">
+			<Filter>source\node_modules\hawk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\lib\crypto.js">
+			<Filter>source\node_modules\hawk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\lib\index.js">
+			<Filter>source\node_modules\hawk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\lib\server.js">
+			<Filter>source\node_modules\hawk\lib</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\lib\utils.js">
+			<Filter>source\node_modules\hawk\lib</Filter>
+		</None>
+		<None Include="..\data\client_secret_key.json">
+			<Filter>source\data</Filter>
+		</None>
+		<None Include="..\data\key.pem">
+			<Filter>source\data</Filter>
+		</None>
+		<None Include="..\data\lqre-83306d1c97e1.p12">
+			<Filter>source\data</Filter>
+		</None>
+		<None Include="..\data\lqre-fd91410c4261.json">
+			<Filter>source\data</Filter>
+		</None>
+		<None Include="..\data\version_legendaryquest_dev.json">
+			<Filter>source\data</Filter>
+		</None>
+		<None Include="..\data\version_system_dev.json">
+			<Filter>source\data</Filter>
+		</None>
+		<None Include="..\node_modules\aws-sign2\index.js">
+			<Filter>source\node_modules\aws-sign2</Filter>
+		</None>
+		<None Include="..\node_modules\aws-sign2\LICENSE">
+			<Filter>source\node_modules\aws-sign2</Filter>
+		</None>
+		<None Include="..\node_modules\aws-sign2\package.json">
+			<Filter>source\node_modules\aws-sign2</Filter>
+		</None>
+		<None Include="..\node_modules\aws-sign2\README.md">
+			<Filter>source\node_modules\aws-sign2</Filter>
+		</None>
+		<None Include="..\node_modules\hawk\example\usage.js">
+			<Filter>source\node_modules\hawk\example</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\.npmignore">
+			<Filter>source\node_modules\ecc-jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\index.js">
+			<Filter>source\node_modules\ecc-jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\LICENSE">
+			<Filter>source\node_modules\ecc-jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\package.json">
+			<Filter>source\node_modules\ecc-jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\README.md">
+			<Filter>source\node_modules\ecc-jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\ecc-jsbn\test.js">
+			<Filter>source\node_modules\ecc-jsbn</Filter>
+		</None>
+		<None Include="..\node_modules\assert-plus\assert.js">
+			<Filter>source\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\assert-plus\AUTHORS">
+			<Filter>source\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\assert-plus\CHANGES.md">
+			<Filter>source\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\assert-plus\package.json">
+			<Filter>source\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\assert-plus\README.md">
+			<Filter>source\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\lib\index.js">
+			<Filter>source\node_modules\http-signature\lib</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\lib\parser.js">
+			<Filter>source\node_modules\http-signature\lib</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\lib\signer.js">
+			<Filter>source\node_modules\http-signature\lib</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\lib\utils.js">
+			<Filter>source\node_modules\http-signature\lib</Filter>
+		</None>
+		<None Include="..\node_modules\http-signature\lib\verify.js">
+			<Filter>source\node_modules\http-signature\lib</Filter>
+		</None>
+		<None Include="..\node_modules\combined-stream\lib\combined_stream.js">
+			<Filter>source\node_modules\combined-stream\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\traversing\findFilter.js">
+			<Filter>source\node_modules\jquery\src\traversing</Filter>
+		</None>
+		<None Include="..\node_modules\request\CHANGELOG.md">
+			<Filter>source\node_modules\request</Filter>
+		</None>
+		<None Include="..\node_modules\request\index.js">
+			<Filter>source\node_modules\request</Filter>
+		</None>
+		<None Include="..\node_modules\request\LICENSE">
+			<Filter>source\node_modules\request</Filter>
+		</None>
+		<None Include="..\node_modules\request\package.json">
+			<Filter>source\node_modules\request</Filter>
+		</None>
+		<None Include="..\node_modules\request\README.md">
+			<Filter>source\node_modules\request</Filter>
+		</None>
+		<None Include="..\node_modules\request\request.js">
+			<Filter>source\node_modules\request</Filter>
+		</None>
+		<None Include="..\node_modules\delayed-stream\.npmignore">
+			<Filter>source\node_modules\delayed-stream</Filter>
+		</None>
+		<None Include="..\node_modules\delayed-stream\License">
+			<Filter>source\node_modules\delayed-stream</Filter>
+		</None>
+		<None Include="..\node_modules\delayed-stream\Makefile">
+			<Filter>source\node_modules\delayed-stream</Filter>
+		</None>
+		<None Include="..\node_modules\delayed-stream\package.json">
+			<Filter>source\node_modules\delayed-stream</Filter>
+		</None>
+		<None Include="..\node_modules\delayed-stream\Readme.md">
+			<Filter>source\node_modules\delayed-stream</Filter>
+		</None>
+		<None Include="..\node_modules\verror\examples\levels-verror.js">
+			<Filter>source\node_modules\verror\examples</Filter>
+		</None>
+		<None Include="..\node_modules\verror\examples\levels-werror.js">
+			<Filter>source\node_modules\verror\examples</Filter>
+		</None>
+		<None Include="..\node_modules\verror\examples\varargs.js">
+			<Filter>source\node_modules\verror\examples</Filter>
+		</None>
+		<None Include="..\node_modules\verror\examples\verror.js">
+			<Filter>source\node_modules\verror\examples</Filter>
+		</None>
+		<None Include="..\node_modules\verror\examples\werror.js">
+			<Filter>source\node_modules\verror\examples</Filter>
+		</None>
+		<None Include="..\node_modules\punycode\LICENSE-MIT.txt">
+			<Filter>source\node_modules\punycode</Filter>
+		</None>
+		<None Include="..\node_modules\punycode\package.json">
+			<Filter>source\node_modules\punycode</Filter>
+		</None>
+		<None Include="..\node_modules\punycode\punycode.js">
+			<Filter>source\node_modules\punycode</Filter>
+		</None>
+		<None Include="..\node_modules\punycode\README.md">
+			<Filter>source\node_modules\punycode</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\deferred\exceptionHook.js">
+			<Filter>source\node_modules\jquery\src\deferred</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\node_modules\assert-plus\assert.js">
+			<Filter>source\node_modules\dashdash\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\node_modules\assert-plus\AUTHORS">
+			<Filter>source\node_modules\dashdash\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\node_modules\assert-plus\CHANGES.md">
+			<Filter>source\node_modules\dashdash\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\node_modules\assert-plus\package.json">
+			<Filter>source\node_modules\dashdash\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\dashdash\node_modules\assert-plus\README.md">
+			<Filter>source\node_modules\dashdash\node_modules\assert-plus</Filter>
+		</None>
+		<None Include="..\node_modules\cryptiles\lib\index.js">
+			<Filter>source\node_modules\cryptiles\lib</Filter>
+		</None>
+		<None Include="..\node_modules\performance-now\lib\performance-now.js">
+			<Filter>source\node_modules\performance-now\lib</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\CHANGES.md">
+			<Filter>source\node_modules\jsprim</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\LICENSE">
+			<Filter>source\node_modules\jsprim</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\package.json">
+			<Filter>source\node_modules\jsprim</Filter>
+		</None>
+		<None Include="..\node_modules\jsprim\README.md">
+			<Filter>source\node_modules\jsprim</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\.npmignore">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\.travis.yml">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\example.js">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\LICENSE.txt">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\package.json">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\README.md">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\stringstream\stringstream.js">
+			<Filter>source\node_modules\stringstream</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\var\rcheckableType.js">
+			<Filter>source\node_modules\jquery\src\manipulation\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\var\rscriptType.js">
+			<Filter>source\node_modules\jquery\src\manipulation\var</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\manipulation\var\rtagName.js">
+			<Filter>source\node_modules\jquery\src\manipulation\var</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\test\modules\ignore.txt">
+			<Filter>source\node_modules\hoek\test\modules</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\test\modules\test1.js">
+			<Filter>source\node_modules\hoek\test\modules</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\test\modules\test2.js">
+			<Filter>source\node_modules\hoek\test\modules</Filter>
+		</None>
+		<None Include="..\node_modules\hoek\test\modules\test3.js">
+			<Filter>source\node_modules\hoek\test\modules</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\v5\constant.jst">
+			<Filter>source\node_modules\ajv\lib\dot\v5</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\v5\patternRequired.jst">
+			<Filter>source\node_modules\ajv\lib\dot\v5</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\v5\switch.jst">
+			<Filter>source\node_modules\ajv\lib\dot\v5</Filter>
+		</None>
+		<None Include="..\node_modules\ajv\lib\dot\v5\_formatLimit.jst">
+			<Filter>source\node_modules\ajv\lib\dot\v5</Filter>
+		</None>
+		<None Include="..\node_modules\jquery\src\data\Data.js">
+			<Filter>source\node_modules\jquery\src\data</Filter>
+		</None>
+		<None Include="..\node_modules\sntp\lib\index.js">
+			<Filter>source\node_modules\sntp\lib</Filter>
+		</None>
+		<None Include="..\modules\config.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\cursor.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\dataserver.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\drivetoobject.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\googlehelper.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\mockdataserver.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\sheettoobject.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\test.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\util.js">
+			<Filter>source\modules</Filter>
+		</None>
+		<None Include="..\modules\version.js">
+			<Filter>source\modules</Filter>
+		</None>
+	</ItemGroup>
+</Project>

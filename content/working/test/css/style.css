@@ -1,0 +1,708 @@
+html, body, .fullheight {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	overflow: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+/*
+flex-direction: row(d) | row-reverse | column | column-reverse;
+flex-wrap: nowrap(d) | wrap | wrap-reverse;
+justify-content: flex-start(d) | flex-end | center | space-between | space-around;
+align-items: flex-start | flex-end | center | baseline | stretch(d);
+*/
+.flexcontainervertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.flexcontainerhorizontal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+}
+/*
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+*/
+.flexitemgrow {
+	flex: 1 1 auto
+}
+
+.flexitem {
+	flex: 0 1 auto
+}
+
+.flexitemalignend {
+	align-self: flex-end;
+}
+
+.padend {
+	padding:0em 1em 1em 0em;
+}
+
+.margin {
+	margin:1em
+}
+
+.fullwidth {
+	width:100%;
+}
+
+/*
+	top right bottom left
+	margin: 15% auto;
+	height: 35%;
+*/
+button {
+	pointer-events:auto;
+	padding:0em 2.5em 1em 0.5em;
+}
+
+button:focus {
+	outline:0;
+}
+
+input {
+	width:100%;
+	border-style: none;
+}
+
+.modal {
+	width:50%;
+	margin: auto;
+	cursor: auto;
+}
+.footer {
+	flex-shrink:0;
+	text-align: center;
+}
+
+.modalbackground {
+	top: 0; left: 0; bottom: 0; right: 0;
+	position: fixed;
+	z-index:10;
+	cursor: pointer;
+}
+
+/*
+==========================================
+	COLOUR SCHEMES
+==========================================
+*/
+.invalid {
+	outline:#ff0000 solid thin;
+}
+
+html {
+	background: linear-gradient(0deg, #888f90, #888f90 40%, #727e90);
+	background-attachment: fixed;
+}
+
+.frame {
+	padding:1em;
+	background: grey;
+	height: 100%;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+.frame:before {
+	background: #3f3f3f;
+	border-style: solid;
+	border-width: 0.25em;
+	border-color: #3f3f3f;
+}
+.frame:after {
+	background: #2f2f2f;
+	border-style: solid;
+	border-width: 0.25em;
+	border-color: #2f2f2f;
+}
+
+.modalbackground {
+	background: black;
+	background: rgba(0,0,0,0.85);
+}
+
+/*
+	a solid geometry cover top level element
+*/
+.solidfront {
+	position: relative;
+	z-index:1;
+	margin:0 1em 1em 0;
+}
+
+.solidfront:before {
+	position: absolute;
+	content: "";
+	width:1em;
+	height:100%;
+	top:0.5em;
+	right:-1em;
+	transform: skewY(45deg);
+}
+
+.solidfront:after {
+	position: absolute;
+	content: "";
+	width:100%;
+	height:1em;
+	bottom:-1em;
+	right:-0.5em;
+	transform: skewX(45deg);
+}
+
+/*
+	a transparent geometry cover for a child element
+*/
+.gemfront {
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:-1em;
+	left:-1em;
+	z-index:1;
+}
+.gemfront:before {
+	position: absolute;
+	content: "";
+	width:1em;
+	height:100%;
+	top:0.5em;
+	right:-1em;
+	transform: skewY(45deg);
+	z-index:1;
+}
+.gemfront:after {
+	position: absolute;
+	content: "";
+	width:100%;
+	height:1em;
+	bottom:-1em;
+	right:-0.5em;
+	transform: skewX(45deg);
+	z-index:1;
+}
+
+/*
+	a transparent geometry under for a parent element
+*/
+.gemback {
+	position: relative;
+	top:1em;
+	left:1em;
+	z-index:0;
+}
+.gemback:before {
+	position: absolute;
+	content: "";
+	width:1em;
+	height:100%;
+	top:-0.5em;
+	left:-1em;
+	transform: skewY(45deg);
+	z-index:0;
+}
+.gemback:after {
+	position: absolute;
+	content: "";
+	width:100%;
+	height:1em;
+	top:-1em;
+	right:0.5em;
+	transform: skewX(45deg);
+	z-index:0;
+}
+
+
+/*
+	a white shine highlight gradient that moves over a button on hover
+*/
+button .highlight{
+	content: "";
+	overflow: hidden;
+	z-index: 2;
+	background: none;
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:-1em;
+	left:-1em;
+}
+button .highlight:before {
+	content: "";
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	background-image: linear-gradient(135deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%); 
+	top: -200%;
+	left: -200%;
+}
+button:hover .highlight:before {
+	top: 100%;
+	left: 100%;
+	transition: all 0.5s ease-out; 
+}
+
+
+
+/*
+	input element
+*/
+input{
+	background: blue;
+	background: linear-gradient(45deg, #c9e2fd, #7887c7 60%,#2e2f45);
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.65);
+}
+input:hover {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+
+
+/*
+	colour scheme for a default interactive element
+*/
+.tabbutton{
+	background: blue;
+	background: linear-gradient(45deg, #c9e2fd, #7887c7 60%,#2e2f45);
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.65);
+}
+
+.tabbutton:before{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.8), rgba(45,49,87,0.8));
+}
+
+.tabbutton:after{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.9), rgba(45,49,87,0.9));
+}
+
+.tabbutton > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.5);
+}
+
+.tabbutton > .gemfront:before{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.9), rgba(36,36,61,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #373f7d;
+}
+
+.tabbutton > .gemfront:after{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.9), rgba(36,36,61,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #373f7d;
+}
+
+.tabbutton:hover {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+.tabbutton:hover:before {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+.tabbutton:hover:after {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+
+.tabbutton:hover  > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.5);
+}
+.tabbutton:hover > .gemfront:before {
+	background: blue;
+	background: linear-gradient(0deg, rgba(36,36,61,0.5), rgba(58,83,161,0.5));
+	border-color: #20207d;
+}
+.tabbutton:hover > .gemfront:after {
+	background: blue;
+	background: linear-gradient(0deg, rgba(36,36,61,0.5), rgba(58,83,161,0.5));
+	border-color: #20207d;
+}
+
+.tabbuttonfocus, .tabbutton:focus {
+	background: grey;
+	box-shadow: none;
+}
+
+.tabbuttonfocus:before, .tabbutton:focus:before {
+	background: grey;
+	box-shadow: none;
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: grey;
+}
+
+.tabbuttonfocus:after, .tabbutton:focus:after {
+	background: grey;
+	box-shadow: none;
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: grey;
+}
+
+
+.tabbuttonfocus > .gemfront, .tabbutton:focus > .gemfront{
+	background: none;
+	box-shadow: none;
+}
+
+.tabbuttonfocus > .gemfront:before, .tabbutton:focus > .gemfront:before{
+	background: #3f3f3f;
+	border-color: #3f3f3f;
+}
+
+.tabbuttonfocus > .gemfront:after, .tabbutton:focus > .gemfront:after{
+	background: #2f2f2f;
+	border-color: #2f2f2f;
+}
+
+.tabbuttonfocus > .highlight:before, .tabbutton:focus > .highlight:before{
+	background-image: none;
+}
+
+
+
+/*
+	colour scheme for a default interactive element
+*/
+.interactive{
+	background: blue;
+	background: linear-gradient(45deg, #c9e2fd, #7887c7 60%,#2e2f45);
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.65);
+}
+
+.interactive:before{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.8), rgba(45,49,87,0.8));
+}
+
+.interactive:after{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.9), rgba(45,49,87,0.9));
+}
+
+.interactive > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.5);
+}
+
+.interactive > .gemfront:before{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.9), rgba(36,36,61,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #373f7d;
+}
+
+.interactive > .gemfront:after{
+	background: blue;
+	background: linear-gradient(0deg, rgba(58,83,161,0.9), rgba(36,36,61,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #373f7d;
+}
+
+.interactive:hover {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+.interactive:hover:before {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+.interactive:hover:after {
+	background: blue;
+	background: linear-gradient(45deg, #2e2f45, #4040c7 60%, #373f7d);
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.65);
+}
+
+.interactive:hover  > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(0,0,0,0.5);
+}
+.interactive:hover > .gemfront:before {
+	background: blue;
+	background: linear-gradient(0deg, rgba(36,36,61,0.5), rgba(58,83,161,0.5));
+	border-color: #20207d;
+}
+.interactive:hover > .gemfront:after {
+	background: blue;
+	background: linear-gradient(0deg, rgba(36,36,61,0.5), rgba(58,83,161,0.5));
+	border-color: #20207d;
+}
+
+.interactive:focus {
+	background: blue;
+	background: linear-gradient(45deg, #8282EE, #3838DD 60%, #babaFF);
+	box-shadow: none;
+}
+
+.interactive:focus:before {
+	background: blue;
+	background: linear-gradient(45deg, #8282EE, #3838DD 60%, #babaFF);
+	box-shadow: none;
+}
+
+.interactive:focus:after {
+	background: blue;
+	background: linear-gradient(45deg, #8282EE, #3838DD 60%, #babaFF);
+	box-shadow: none;
+}
+
+
+.interactive:focus > .gemfront{
+	background: none;
+	box-shadow: none;
+}
+
+.interactive:focus > .gemfront:before{
+	background: linear-gradient(0deg, rgba(94,94,255,0.5), rgba(194,194,230,0.5));
+	border-color: #8282cf;
+}
+
+.interactive:focus > .gemfront:after{
+	background: linear-gradient(0deg, rgba(94,94,255,0.5), rgba(194,194,230,0.5));
+	border-color: #8282cf;
+}
+
+.interactive:focus > .highlight:before{
+	background-image: none;
+}
+
+
+
+/*
+	colour scheme for a call to action element
+*/
+.callaction{
+	background: yellow;
+	background: linear-gradient(45deg, #d1d0ba, #877838 60%,#361d02);
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.65);
+}
+
+.callaction:before{
+	background: yellow;
+	background: linear-gradient(0deg, rgba(210,206,168,0.8), rgba(197,172,94,0.8));
+}
+
+.callaction:after{
+	background: yellow;
+	background: linear-gradient(0deg, rgba(210,206,168,0.8), rgba(197,172,94,0.8));
+}
+
+.callaction > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.5);
+}
+
+.callaction > .gemfront:before{
+	background: yellow;
+	background: linear-gradient(0deg, rgba(219,219,194,0.9), rgba(197,172,94,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #c8c082;
+}
+
+.callaction > .gemfront:after{
+	background: yellow;
+	background: linear-gradient(0deg, rgba(219,219,194,0.9), rgba(197,172,94,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #c8c082;
+}
+
+.callaction:hover {
+	background: yellow;
+	background: linear-gradient(45deg, #c8c082, #bfbf38 60%, #d1d0ba);
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.65);
+}
+.callaction:hover:before {
+	background: yellow;
+	background: linear-gradient(45deg, #c8c082, #bfbf38 60%, #d1d0ba);
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.65);
+}
+.callaction:hover:after {
+	background: yellow;
+	background: linear-gradient(45deg, #c8c082, #bfbf38 60%, #d1d0ba);
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.65);
+}
+
+.callaction:hover  > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.5);
+}
+.callaction:hover > .gemfront:before {
+	background: yellow;
+	background: linear-gradient(0deg, rgba(197,172,94,0.5), rgba(219,219,194,0.5));
+	border-color: #afaf82;
+}
+.callaction:hover > .gemfront:after {
+	background: yellow;
+	background: linear-gradient(0deg, rgba(197,172,94,0.5), rgba(219,219,194,0.5));
+	border-color: #afaf82;
+}
+
+
+.callaction:focus {
+	background: yellow;
+	background: linear-gradient(45deg, #EEEE82, #DDDD38 60%, #FFFFba);
+	box-shadow: none;
+}
+.callaction:focus:before {
+	background: yellow;
+	background: linear-gradient(45deg, #EEEE82, #DDDD38 60%, #FFFFba);
+	box-shadow: none;
+}
+.callaction:focus:after {
+	background: yellow;
+	background: linear-gradient(45deg, #EEEE82, #DDDD38 60%, #FFFFba);
+	box-shadow: none;
+}
+
+
+.callaction:focus > .gemfront{
+	background: none;
+	box-shadow: none;
+}
+
+.callaction:focus > .gemfront:before{
+	background: linear-gradient(0deg, rgba(255,230,94,0.5), rgba(230,230,194,0.5));
+	border-color: #cfcf82;
+}
+
+.callaction:focus > .gemfront:after{
+	background: linear-gradient(0deg, rgba(255,230,94,0.5), rgba(230,230,194,0.5));
+	border-color: #cfcf82;
+}
+
+
+
+
+/*
+	colour scheme for a destructive element (button that deletes something)
+*/
+.destructive{
+	background: red;
+	background: linear-gradient(45deg, #d1baba, #873838 60%,#360202);
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.65);
+}
+
+.destructive:before{
+	background: red;
+	background: linear-gradient(0deg, rgba(210,168,168,0.8), rgba(197,94,94,0.8));
+}
+
+.destructive:after{
+	background: red;
+	background: linear-gradient(0deg, rgba(210,168,168,0.8), rgba(197,94,94,0.8));
+}
+
+.destructive > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(255,255,255,0.5);
+}
+
+.destructive > .gemfront:before{
+	background: red;
+	background: linear-gradient(0deg, rgba(219,194,194,0.9), rgba(197,94,94,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #c88282;
+}
+
+.destructive > .gemfront:after{
+	background: red;
+	background: linear-gradient(0deg, rgba(219,194,194,0.9), rgba(197,94,94,0.75));
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #c88282;
+}
+
+.destructive:hover {
+	background: red;
+	background: linear-gradient(45deg, #c88282, #bf3838 60%, #d1baba);
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.65);
+}
+.destructive:hover:before {
+	background: red;
+	background: linear-gradient(45deg, #c88282, #bf3838 60%, #d1baba);
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.65);
+}
+.destructive:hover:after {
+	background: red;
+	background: linear-gradient(45deg, #c88282, #bf3838 60%, #d1baba);
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.65);
+}
+
+.destructive:hover  > .gemfront{
+	background: none;
+	box-shadow: inset 0 0 1em rgba(50,0,0,0.5);
+}
+.destructive:hover > .gemfront:before {
+	background: red;
+	background: linear-gradient(0deg, rgba(197,94,94,0.5), rgba(219,194,194,0.5));
+	border-color: #af8282;
+}
+.destructive:hover > .gemfront:after {
+	background: red;
+	background: linear-gradient(0deg, rgba(197,94,94,0.5), rgba(219,194,194,0.5));
+	border-color: #af8282;
+}
+
+
+.destructive:focus {
+	background: red;
+	background: linear-gradient(45deg, #EE8282, #DD3838 60%, #FFbaba);
+	box-shadow: none;
+}
+.destructive:focus:before {
+	background: red;
+	background: linear-gradient(45deg, #EE8282, #DD3838 60%, #FFbaba);
+	box-shadow: none;
+}
+.destructive:focus:after {
+	background: red;
+	background: linear-gradient(45deg, #EE8282, #DD3838 60%, #FFbaba);
+	box-shadow: none;
+}
+
+
+.destructive:focus > .gemfront{
+	background: none;
+	box-shadow: none;
+}
+
+.destructive:focus > .gemfront:before{
+	background: linear-gradient(0deg, rgba(255,94,94,0.5), rgba(230,194,194,0.5));
+	border-color: #cf8282;
+}
+
+.destructive:focus > .gemfront:after{
+	background: linear-gradient(0deg, rgba(255,94,94,0.5), rgba(230,194,194,0.5));
+	border-color: #cf8282;
+}

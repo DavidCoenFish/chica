@@ -1,0 +1,3 @@
+
+start "" "code" . 
+exit

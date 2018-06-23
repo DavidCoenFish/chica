@@ -1,0 +1,81 @@
+html, body, #root {
+	height:100%;
+}
+
+/*
+==========================================
+	COLOUR SCHEMES
+==========================================
+*/
+html {
+	background: linear-gradient(0deg, #808080, #787993);
+	background-attachment: fixed;
+}
+
+.disable {
+	background: #c0c0c0;
+	border-color: #404040;
+	color:#404040;
+}
+
+.interact {
+	background: #A8C8E8;
+	border-color: #486888;
+}
+.interact:hover {
+	background: #C0E0FF;
+}
+.interact:focus {
+	background: #90B0D0;
+}
+.interact:active {
+	background: #7898B8;
+}
+
+.call {
+	background: #98D8B8;
+	border-color: #387858;
+}
+.call:hover {
+	background: #B0F0D0;
+}
+.call:focus {
+	background: #80C0A0;
+}
+.call:active {
+	background: #68A888;
+}
+
+.destruct {
+	background: #C888A8;
+	border-color: #682848;
+}
+.destruct:hover {
+	background: #E0A0C0;
+}
+.destruct:focus {
+	background: #B07090;
+}
+.destruct:active {
+	background: #985878;
+}
+
+.foreground{
+	background: #c0c0c0;
+	border-color: #486888;
+}
+
+.menu ul, .toolpop, .backboardinner {
+	background: #c0c0c0;
+	border-color: #486888;
+	box-shadow: 2px 2px 4px #080820;
+}
+
+.wash {
+	background-color: rgba(8, 8, 32, 0.75);
+}
+
+.tooltext{
+	color: #284868;
+}
+

@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<style>
+
+/*
+top right bottom left			
+*/
+
+html, body {
+	background: blue;
+	height:100%;
+	margin:0;
+	padding 0;
+}
+.flex {
+	display:flex;
+	background: red;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.main {
+	background: green;
+	margin: auto;
+}
+.footer {
+	flex-shrink:0;
+	background: grey;
+	width: 50%;
+}
+
+		</style>
+	</head>
+	<body class="flex">
+		<div class="main">main
+
+		</div>
+		<div class="footer">footer</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "documentengine", "documentengine.vcxproj", "{2BEB1D63-265F-493B-A3FD-CF6515385749}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Common|x64 = Common|x64
+		CommonUnitTest|x64 = CommonUnitTest|x64
+		LegendaryQuestDev|x64 = LegendaryQuestDev|x64
+		SystemDev|x64 = SystemDev|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.Common|x64.ActiveCfg = Common|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.Common|x64.Build.0 = Common|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.CommonUnitTest|x64.ActiveCfg = CommonUnitTest|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.CommonUnitTest|x64.Build.0 = CommonUnitTest|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.LegendaryQuestDev|x64.ActiveCfg = LegendaryQuestDev|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.LegendaryQuestDev|x64.Build.0 = LegendaryQuestDev|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.SystemDev|x64.ActiveCfg = SystemDev|x64
+		{2BEB1D63-265F-493B-A3FD-CF6515385749}.SystemDev|x64.Build.0 = SystemDev|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

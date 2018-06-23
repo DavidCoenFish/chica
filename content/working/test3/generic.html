@@ -1,0 +1,215 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" style="height:100%;">
+<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body style="height:100%;">
+		<div style="display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;height:100%;">
+
+			<ul class="menu" style="display:flex;margin:0 10em 0 3em;">
+				<li>
+					<a class="standard interact">menu0</a>
+					<ul>
+						<li>
+							<a class="wide interact">sub menu0</a>
+						</li>
+						<li>
+							<a class="wide interact expand">sub menu1</a>
+							<ul>
+								<li>
+									<a class="wide interact">sub sub menu0</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu1</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="wide interact expand">sub menu2</a>
+							<ul>
+								<li>
+									<a class="wide interact">sub sub menu0</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu1</a>
+								</li>
+								<li>
+									<a class="wide interact">sub sub menu2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<span style="flex-grow:1;flex-shrink:0;"></span>
+				<li>
+					<a class="standard interact">menu1</a>
+					<ul>
+						<li>
+							<a class="wide interact">sub menu0</a>
+						</li>
+						<li>
+							<a class="wide interact">sub menu1</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="standard interact">menu2</a>
+					<ul>
+						<li>
+							<a class="wide interact">sub menu0</a>
+						</li>
+						<li>
+							<a class="wide interact">sub menu1</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div id="sub_content" class="framewrapperparent" style="flex-grow:1;flex-shrink:0;">
+				<div class="framewrapper" style="top:-0.75em;right:0.5em;bottom:-0.5em;left:0.5em;">
+					<div class="frame">
+					</div>
+				</div>
+				
+				<ul style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;align-content: flex-start;padding:0.25em 1em 0 1.5em;">
+					<li key="0" class="gedit">
+						<p>name of member</p>
+						<textarea class="interact" rows="1" placeholder="generic text edit" style="width:100%;resize:none;vertical-align:top;padding:0 0.25em 0 0.25em;"></textarea>
+						<!-- <input class="interact" type="text" style="width:100%;height:1.333em;" value="generic text edit"></input> -->
+					</li>
+
+					<li key="1" class="gedit">
+						<p>name of member</p>
+						<textarea class="interact" rows="1" placeholder="generic text edit array" style="width:100%;height:1.333em;margin-bottom:0.25em;"></textarea>
+						<!-- <input class="interact" type="text" style="width:100%;height:1.333em;" value="generic text edit array"></input> -->
+						<div>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+							<span > of </span>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+						</div>
+					</li>
+
+					<li class="gedit">
+						<p>name of member</p>
+						<input class="interact" type="number" style="width:100%;height:1.333em;" value="0"></input>
+					</li>
+
+					<li class="gedit">
+						<p>name of member</p>
+						<input class="interact" type="number" style="width:100%;height:1.333em;" value="0"></input>
+						<div>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+							<span > of </span>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+						</div>
+					</li>
+
+
+
+					<li class="gedit">
+						<p>name of member</p>
+						<select class="interact" style="width:100%;height:1.3333em;">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</li>
+
+					<li class="gedit">
+						<p>name of member</p>
+						<select class="interact" style="width:100%;height:1.333em;">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+						<div>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+							<span > of </span>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+						</div>
+					</li>
+
+
+					<li class="gedit">
+						<p>name of member</p>
+						<input class="interact" type="checkbox" style="height:1.333em;"></input>
+					</li>
+
+					<li class="gedit">
+						<p>name of member</p>
+						<input class="interact" type="checkbox" style="height:1.333em;"></input>
+						<div>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+							<span > of </span>
+							<input class="interact" type="number" style="width:4em;height:1.333em;" value="0"></input>
+						</div>
+					</li>
+
+					<li class="gedit">
+						<p>name of member</p>
+						<div class="container foreground" style="height:4em;overflow-y:scroll;border-style:groove;border-width: 1px;">
+							<div class="iconwrapper">
+								<div class="icon"></div>
+								<span class="icontext">add</span>
+							</div>
+							<div class="iconwrapper">
+								<div class="icon"></div>
+								<span class="icontext">trash</span>
+							</div>
+							<div class="iconwrapper">
+								<div class="icon"></div>
+								<span class="icontext">foo</span>
+							</div>
+							<div class="iconwrapper">
+								<div class="icon"></div>
+								<span class="icontext">foo</span>
+							</div>
+							<div class="iconwrapper">
+								<div class="icon"></div>
+								<span class="icontext">foo</span>
+							</div>
+							<div class="iconwrapper">
+								<div class="icon"></div>
+								<span class="icontext">foo</span>
+							</div>
+						</div>
+					</li>
+
+					<li class="gedit">
+						<p>name of member</p>
+						<div class="iconwrapper">
+							<div class="icon"></div>
+							<span class="icontext">foo</span>
+						</div>
+					</li>
+
+					<li class="gedit">
+						<p>parent</p>
+						<a class="button standard interact">..</a>
+					</li>
+
+				</ul>
+
+			</div>
+			<div id="bottom_footer" style="flex-grow:0;flex-shrink:0;align-self:center;">
+				<p style="font-size:0.7em;margin-top:0.75em;">0123456789 data page served 0123456789 data version copywrite blurb</p>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>
